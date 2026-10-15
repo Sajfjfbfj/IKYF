@@ -1,0 +1,13 @@
+<main class="aboutus book">
+<section class="hero is-medium aboutus-book">
+  <div class="hero-body">
+      <h2 class="pagetitle black">月刊「弓道」<br>バックナンバー</h2>
+  </div>
+</section>
+<div class="bread_crumb">
+    <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="index-2.html">全日本弓道連盟について</a></li>
+        <li><a href="book.html">ブック（刊行物）</a></li>
+        <li>月刊「弓道」 バックナンバー</li>
+    </ul>

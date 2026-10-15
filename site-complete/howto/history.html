@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="世界の弓から日本の弓道まで、時代ごとの歴史と発展を紹介します。"
+    />
+    <title>弓道の歴史｜全日本弓道連盟</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root{color-scheme:dark;--bg:#14121c;--ink:#f3eef8;--sub:rgba(243,238,248,.72);--line:rgba(243,238,248,.18);--accent:#b79be0}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Shippori Mincho","Yu Mincho",serif;line-height:1.9}a{color:inherit;text-decoration:none}a:hover{color:var(--accent)}a:focus-visible{outline:2px solid var(--accent);outline-offset:4px}.top{padding:30px 7vw 24px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:24px}.brand b{display:block;font-size:18px;letter-spacing:.16em}.brand span{font:11px Arial,sans-serif;letter-spacing:.12em;color:var(--sub)}.top nav{display:flex;gap:24px;flex-wrap:wrap;font-size:13px;letter-spacing:.12em}.wrap{width:min(900px,86vw);margin:0 auto;padding:8vh 0 12vh}.crumb{font-size:12px;letter-spacing:.1em;color:var(--sub);margin-bottom:8vh}.crumb span{padding:0 .7em;color:var(--accent)}.eyebrow{font-size:12px;letter-spacing:.22em;color:var(--accent)}h1{font-size:clamp(30px,5vw,56px);font-weight:600;line-height:1.5;letter-spacing:.14em;margin:.5em 0 .7em;overflow-wrap:anywhere}.meta{display:flex;gap:1.5em;align-items:center;color:var(--sub);font-size:13px;border-bottom:1px solid var(--line);padding-bottom:1.5em}.summary{font-size:17px;line-height:2.1;max-width:42em;margin:3em 0 4em}.materials h2{font-size:19px;letter-spacing:.16em;font-weight:600;margin:0 0 1em}.materials ul{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}.materials li{padding:1em 0;border-bottom:1px solid var(--line)}.quiet{color:var(--sub);font-size:14px}.source{margin-top:4em;font-size:13px;color:var(--sub)}.source a{border-bottom:1px solid var(--accent);padding-bottom:.2em}.bottom{border-top:1px solid var(--line);padding:24px 7vw 42px;color:var(--sub);font-size:12px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}@media(max-width:650px){.top{align-items:flex-start;flex-direction:column}.top nav{gap:12px 18px}.wrap{padding-top:6vh}.crumb{margin-bottom:5vh}.summary{font-size:15px}}
+    
+/* ===== 共通メニューバー（的場の水鏡.html と同一） ===== */
+button{all:unset;cursor:pointer}
+button:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+header.site{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:flex-start;gap:20px;padding:calc(env(safe-area-inset-top,0px) + 3vh) 5vw 2vh;background:var(--bg);border-bottom:1px solid var(--line);text-shadow:none;transition:background .3s ease,border-color .3s ease}header.site.menu-open{background:transparent;border-bottom-color:transparent;text-shadow:0 1px 16px rgba(20,18,28,.7)}
+header.site .mark b{display:block;font-size:19px;letter-spacing:.16em;line-height:1.9}
+header.site .mark span{font:11px "Shippori Mincho","Yu Mincho",serif;letter-spacing:.12em;color:var(--sub)}
+.nav{display:none;gap:2.2em}
+.nav button{font-size:15px;letter-spacing:.2em;padding:.5em 0;position:relative;color:var(--ink)}
+.nav button::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--ink);transform:scaleX(0);transform-origin:left;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.nav button:hover::after,.nav button.on::after{transform:scaleX(1)}
+#mb{font-size:15px;letter-spacing:.3em;padding:.4em 0;border-bottom:1px solid var(--ink)}
+#cur{position:fixed;z-index:4;top:0;left:0;right:0;max-height:100vh;overflow:auto;visibility:hidden;clip-path:inset(0 0 100% 0);padding:calc(env(safe-area-inset-top,0px) + 13vh) 7vw 6vh;background:repeating-linear-gradient(90deg,rgba(255,255,255,.07) 0 2px,transparent 2px 6.5vw),linear-gradient(#5a4096,#43307a)}
+#cur a:hover{color:inherit}
+.grp{display:none}
+.grp.on{display:grid;grid-template-columns:minmax(9em,1fr) 3fr;gap:4vw}
+.grp h3{margin:0;font-size:clamp(28px,4vw,52px);font-weight:600;letter-spacing:.18em;line-height:1.3}
+.grp h3 button{font:inherit;letter-spacing:inherit;cursor:default}
+.grp ul{list-style:none;margin:0;padding:0;columns:2;column-gap:4vw}
+.grp li{break-inside:avoid;border-bottom:1px solid rgba(255,255,255,.22)}
+.grp a{display:flex;align-items:center;gap:.8em;padding:.7em 0;font-size:clamp(16px,1.6vw,21px);letter-spacing:.12em}
+.grp a::after{content:"";height:1px;width:0;background:#fff;transition:width .45s cubic-bezier(.2,.8,.2,1)}
+.grp a:hover::after,.grp a:focus-visible::after{width:2.6em}
+.util{margin-top:5vh;display:flex;gap:1.8em;flex-wrap:wrap;font-size:13px;letter-spacing:.12em;color:rgba(255,255,255,.82)}
+@media (min-width:900px){.nav{display:flex}#mb{display:none}}
+@media (max-width:899px){.grp,.grp.on{display:block;border-bottom:1px solid rgba(255,255,255,.22)}.grp h3{font-size:19px}.grp h3 button{display:flex;justify-content:space-between;width:100%;padding:.9em 0;cursor:pointer}.grp h3 button::after{content:"＋"}.grp.on h3 button::after{content:"－"}.grp ul{display:none;columns:1;padding-bottom:.6em}.grp.on ul{display:block}}
+@media (max-width:600px){header.site .mark b{font-size:16px}}
+/* ===== /共通メニューバー ===== */
+</style>
+  </head>
+  <body>
+    <header class="site">
+  <a class="mark" href="../../的場の水鏡.html"><b>全日本弓道連盟</b><span>All Nippon Kyudo Federation</span></a>
+  <nav class="nav" id="nav" aria-label="メインメニュー"></nav>
+  <button id="mb" aria-expanded="false" aria-controls="cur">メニュー</button>
+</header>
+<div id="cur" aria-label="サイトメニュー"><div id="cw"></div>
+  <div class="util"><a href="../notice/">連盟からのお知らせ</a><a href="../info/contact.html">お問い合わせ</a><a href="../info/english.html">English</a><a href="https://www.kyudo-shop.com/">オンラインショップ</a></div>
+</div>
+    <main class="wrap">
+      <div class="crumb">
+        <a href="../index.html">HOME</a><span>›</span
+        ><a href="index.html">弓道の心</a><span>›</span>弓道の歴史
+      </div>
+      <p class="eyebrow">弓道の心</p>
+      <h1>弓道の歴史</h1>
+      <div class="meta"><span>公益財団法人 全日本弓道連盟</span></div>
+      <p class="summary">
+        世界の弓、日本の弓：旧石器時代末期から、弓術の発達、心身鍛練としての弓、教育の道、未来へ、世界へ。弓道の歴史を時代ごとに紹介します。
+      </p>
+      <section class="materials">
+        <h2>世界の弓、日本の弓：旧石器時代末期から</h2>
+        <ul>
+          <li>
+            <p>
+              手の届かない所を走る、あるいは飛ぶ動物を捕らえて食べるための知惠の形として、世界中で弓は誕生し、旧石器時代末期には中近東アジア地方の民族により使用されていました。
+            </p>
+            <p>
+              日本でも、石器時代末の製作といわれる銅鐸に描かれた狩猟の絵に、下部に「握り」がある長弓が発見されています。これは、弥生式土器を使った時代と推定され、黒塗りの丸木弓の長弓に樺で隔巻をしてありました。
+            </p>
+            <p>
+              日本人が長弓を使っていたことは、中国の魏志倭人伝（3世紀前半）にも記録があります。古事記などの思想的、文化的な視点から、弓矢が威儀を示す行装として重い位置を占めていたと考えられ、後に宮中や武家の行事に弓矢の儀式が重視されるようになる要因ともいえるでしょう。
+            </p>
+            <img
+              src="../img/howto/history01.png"
+              alt=""
+              loading="lazy"
+              style="display: block; max-width: 100%; height: auto; margin: 1rem auto 0"
+            />
+          </li>
+        </ul>
+      </section>
+      <section class="materials">
+        <h2>中国文化の影響：4･5世紀以降</h2>
+        <ul>
+          <li>
+            <p>
+              中国との交流は4・5世紀頃、応神天皇以降ですが、日本文化への影響は多大。弓についての文献も多く、周礼や後漢書、特に礼記（中国、儒教の経書で五経の一つ）の「射義」の思想は日本の弓に大きく影響し、現在の弓道読本の冒頭にも記されています。日本古代からの弓矢の威徳の思想と、中国の弓矢における「射をもって、君子の争いとなす。」という射礼思想礼から、朝廷行事としての射礼の儀が誕生。武家時代には弓矢を通じた礼の思想がうまれ、やがて日本固有の武家思想と結びついていくのです。
+            </p>
+            <p>
+              平安時代の中頃（10世紀）の伏竹弓（ふせだけゆみ）、平安末期（12世紀）の3枚打などは、中国で合成弓を作る技術を導入。竹と木の合成弓が作られるようになりました。
+            </p>
+            <img
+              src="../img/howto/history02_img.png"
+              alt=""
+              loading="lazy"
+              style="display: block; max-width: 100%; height: auto; margin: 1rem auto 0"
+            />
+          </li>
+        </ul>
+      </section>
+      <section class="materials">
+        <h2>武家時代：12世紀以降</h2>
+        <ul>
+          <li>
+            <p>
+              源頼朝が鎌倉幕府を開いた12世紀、弓と馬の修練技術を通じて精神の高みに到達するという武士の道義が確立。武士として、身心の鍛錬および戦闘技術の訓練として犬追物（いぬおうもの：馬に乗り、犬を追いながら弓で射る競技）、笠懸（かさがけ：馬に乗り、遠い距離にセットされた的を射る競技）などが盛んに行なわれたことが、鎌倉時代の歴史書『吾妻鏡』にも記録されています。その時代は巻狩（まきがり）も盛んに行なわれ、平安時代に文射だった弓が、戦闘の弓へと変わっていきました。鎌倉の鶴岡八幡宮で源頼朝が放生会（8月15日）に奉納した流鏑馬（やぶさめ）の歴史は、今に伝承。さらに、犬追物や草鹿（くさじし：草を束ねて鹿の形にして、それを射る訓練）は厳格なルールが設けられ、今日ではスポーツとして形を変えています。
+            </p>
+            <img
+              src="../img/howto/history03_img.png"
+              alt=""
+              loading="lazy"
+              style="display: block; max-width: 100%; height: auto; margin: 1rem auto 0"
+            />
+          </li>
+        </ul>
+      </section>
+      <section class="materials">
+        <h2>技術の発達：14世紀以降</h2>
+        <ul>
+          <li>
+            <p>
+              吉野朝動乱から室町時代に至る14世紀、弓術に大きな技術革新が起きました。
+            </p>
+            <p>
+              後醍醐天皇の時代に、武家社会に伝承された弓法を小笠原貞宗・常興が集大成。弓馬術礼法の基準を確立した小笠原氏は、その後も徳川時代まで将軍家の弓馬術礼法の師範を務めます。また、室町時代の武将、今川了俊は射術の書として「了俊大草紙」に当時の射法を詳細に書き残しました。日置流の祖、日置弾正正次（へきだんじょうまさつぐ）もこの時代の人で、この技法は実践の射として普及。正次の射法はやがて吉田重賢に引継がれ、さらに出雲派・雪荷派が分派。雪荷から道雪が分派し、出雲派から印西派、大蔵派などが分派しながら、多くの俊才によって弓技は急速に進歩を重ねます。
+            </p>
+            <p>
+              さらに、竹林坊如成（ちくりんぼうなおしげ）によって竹林派が成立し、その後の尾張・紀州に定着して発展。このように15世紀から17世紀、室町末から徳川初期にかけての150年の間に、多くの流派が派生しています。
+            </p>
+            <p>
+              その後、江戸時代の元禄の頃に森川香山による大和流、明治時代に本多利実が本多流を創始しました。
+            </p>
+            <p>
+              この時代の弓術の技術革新は、室町時代に京都所司代を務めた多賀豊後守高忠による武術書「高忠聞書」に弓返りの射法の得失が書かれ、竹木合成の彎曲弓による技術の工夫を示す記述があります。
+            </p>
+            <img
+              src="../img/howto/history04_img.png"
+              alt=""
+              loading="lazy"
+              style="display: block; max-width: 100%; height: auto; margin: 1rem auto 0"
+            />
+          </li>
+        </ul>
+      </section>
+      <section class="materials">
+        <h2>心身鍛練としての弓</h2>
+        <ul>
+          <li>
+            <p>
+              織田と豊臣の16世紀、鉄砲の伝来により戦闘具としての弓の時代は終焉。弓術の目的は心身鍛練となることで、技法が次第に精妙になっていきます。
+            </p>
+            <p>
+              その一つが通し矢。起源は12世紀平安時代末期の保元の乱の頃で、16世紀末安土桃山時代に盛んになりました。1606（慶長11）年に京都三十三間堂で100本中51本を射通した朝岡平兵衛、1661-88（寛文・貞享）年には8,000本を越えた星野勘左衛門、24時間の規程時間内に13,053本を射て8,133本を射通した和佐大八郎の記録が残っています。通し矢は速射が必要で、打切りの射法。この時に工夫された弽（ゆがけ）の堅帽子が現在の堅帽子へと進化していきました。
+            </p>
+            <img
+              src="../img/howto/history05.png"
+              alt=""
+              loading="lazy"
+              style="display: block; max-width: 100%; height: auto; margin: 1rem auto 0"
+            />
+          </li>
+        </ul>
+      </section>
+      <section class="materials">
+        <h2>幕末から明治へ</h2>
+        <ul>
+          <li>
+            <p>
+              平和の続く江戸時代、弓は「術」として「道」として研修され、心身鍛練の弓道を確立。一方、洋式調練と鉄砲時代の幕末に、江戸幕府が武術を教える講武所が弓術は実戦的でないという理由で除外します。しかし、鉄砲は下級武士の仕事であると考える武士が、弓馬の稽古を盛んに行なっていたことも事実でした。
+            </p>
+            <p>
+              その後1895(明治28)年、古武道の保存と奨励を目的として京都に創立された大日本武徳会には弓道も含まれ、奨励されるようになります。
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="materials">
+        <h2>教育の道、未来へ、世界へ</h2>
+        <ul>
+          <li>
+            <p>
+              大正、昭和の時代、弓道は中等学校以上の学校教育として正課やクラブ活動に採用。その後も1941(昭和16)年、文部省による体練科武道として再び実戦と直結する方向に導かれましたが、1945(昭和20)年11月に武道の授業は禁止となりました。
+            </p>
+            <p>
+              1951(昭和26)年7月、文部次官通牒により学校における弓道の実施が許可されます。さらに1967(昭和42)年、体育局長通達によって高等学校における弓道の正科を採択。弓道は新しい意味における教育的意義、体育的意義が認められて、学校体育として発足することとなりました。
+            </p>
+            <p>
+              今後は、近代科学の新しい研究と新しい武道理念のもとに、教育においての意義づけを深めると同時に、新しい弓の世界を開拓・普及していくことが求められています。そのためにも世界交流の場で発信するなど、伝統文化としての弓道をより多くの人に知っていただける努力を続けています。
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="materials">
+        <h2>弓道の心コンテンツ</h2>
+        <ul>
+          <li><a href="index.html">弓道の歴史　詳しく見る</a></li>
+          <li><a href="syaho.html">射法について　詳しく見る</a></li>
+          <li><a href="terminology.html">弓道用語辞典　詳しく見る</a></li>
+        </ul>
+      </section>
+      <p class="source">
+        <a
+          href="../howto/history.html"
+          target="_blank"
+          rel="noopener"
+          >公式サイトの掲載内容を確認する</a
+        >
+      </p>
+    </main>
+    <footer class="bottom">
+      <span>公益財団法人 全日本弓道連盟</span
+      ><a href="../all-pages.html">全ページ一覧</a>
+    </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script>
+(function(){
+  var K="..";
+  var reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var M=[["弓道の心",[["弓道の心","/howto/"],["弓道の歴史","/howto/history.html"],["射法について","/howto/syaho.html"],["弓道用語辞典","/howto/terminology.html"]]],
+   ["見学・入門",[["弓道を始めたい方","/begin/"],["道具について","/begin/tool.html"],["よくある質問","/begin/faq.html"],["上達への道","/improve/"],["動画（MOVIE）","/movie/"]]],
+   ["大会・審査会情報",[["全国大会","/schedule/taikai/"],["中央審査会","/schedule/chuoshinsa/"],["連合審査会","/schedule/association/"],["地方審査会","/schedule/region/"],["資料・申込書","/documents/"]]],
+   ["全国弓道場",[["全国弓道場マップ","/map/"],["中央道場概要と使用日程","/schedule/chuoshinsa/overview.html"]]],
+   ["全日本弓道連盟について",[["概要","/aboutus/overview.html"],["中期計画","/aboutus/plan.html"],["加盟団体","/aboutus/org.html"],["職員採用案内","/aboutus/recruit.html"],["ブック（刊行物）","/aboutus/book.html"],["公式グッズ","/aboutus/officialgoods.html"]]]];
+  var NAV=["弓道の心","見学・入門","大会・審査会","弓道場","連盟について"];
+  var cur$=document.getElementById("cur"), cw=document.getElementById("cw"), nav=document.getElementById("nav"), mb=document.getElementById("mb"), hdr$=document.querySelector("header.site")||document.querySelector("header");
+  cw.innerHTML=M.map(function(g){return '<section class="grp"><h3><button type="button">'+g[0]+'</button></h3><ul>'+g[1].map(function(l){return '<li><a href="'+K+l[1]+'">'+l[0]+'</a></li>';}).join("")+'</ul></section>';}).join("");
+  nav.innerHTML=NAV.map(function(n){return '<button type="button">'+n+'</button>';}).join("");
+  var grps=cw.querySelectorAll(".grp"), navB=nav.querySelectorAll("button"), isOpen=false, act=-1, tm;
+  var desk=function(){return matchMedia("(min-width:900px)").matches;};
+  var D=function(x){return reduce?0:x;};
+  function reveal(){
+    if(!isOpen){isOpen=true; if(hdr$)hdr$.classList.add("menu-open"); cur$.style.visibility="visible"; gsap.to(cur$,{clipPath:"inset(0 0 0% 0)",duration:D(.7),ease:"power3.out"});}
+    gsap.fromTo(cur$.querySelectorAll(".grp.on li"),{y:14,opacity:0},{y:0,opacity:1,duration:D(.5),stagger:.04,ease:"power2.out",overwrite:true});
+  }
+  function show(i){act=i;grps.forEach(function(s,k){s.classList.toggle("on",k===i);});navB.forEach(function(b,k){b.classList.toggle("on",k===i);});reveal();}
+  function hide(){
+    if(!isOpen)return; isOpen=false; act=-1; if(hdr$)hdr$.classList.remove("menu-open");
+    navB.forEach(function(b){b.classList.remove("on");}); grps.forEach(function(s){s.classList.remove("on");});
+    gsap.to(cur$,{clipPath:"inset(0 0 100% 0)",duration:D(.5),ease:"power3.in",onComplete:function(){if(!isOpen)cur$.style.visibility="hidden";}});
+    document.body.style.overflow=""; mb.textContent="メニュー"; mb.setAttribute("aria-expanded","false");
+  }
+  navB.forEach(function(b,k){
+    b.addEventListener("mouseenter",function(){if(desk()){clearTimeout(tm);show(k);}});
+    b.addEventListener("click",function(){if(desk()){(isOpen&&act===k)?hide():show(k);}});
+  });
+  [nav,cur$].forEach(function(el){
+    el.addEventListener("mouseenter",function(){clearTimeout(tm);});
+    el.addEventListener("mouseleave",function(){if(desk())tm=setTimeout(hide,280);});
+  });
+  mb.onclick=function(){
+    if(isOpen){hide();return;}
+    grps.forEach(function(s){s.classList.remove("on");}); reveal();
+    document.body.style.overflow="hidden"; mb.textContent="閉じる"; mb.setAttribute("aria-expanded","true");
+  };
+  grps.forEach(function(s){s.querySelector("button").addEventListener("click",function(){
+    if(desk())return; var o=s.classList.contains("on"); grps.forEach(function(x){x.classList.remove("on");}); if(!o)s.classList.add("on");
+  });});
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<main class="wrap"><div class="crumb"><a href="../index.html">HOME</a><span>›</span>全国弓道場</div><p class="eyebrow">全国弓道場</p><h1>弓道場は公営・私営含め全国に1,000箇所以上。</h1><div class="meta"><time>2016.11.24</time><span>公益財団法人 全日本弓道連盟</span></div><p class="summary">道場名・都道府県や市区町村名などを検索枠に入力し、弓道場をお探しください。</p><section class="materials">
+<h2>全国弓道場マップ</h2>
+<p class="quiet legend">webサイト　各弓道場のwebサイトを表示します。 ／ マップ　各弓道場のマップを大きく表示します。</p>
+<label class="sr" for="q">道場名・住所で検索</label>
+<div class="filters"><select id="pref" aria-label="都道府県で絞り込み"><option value="">すべての都道府県</option></select>
+<input id="q" type="search" placeholder="道場名・都道府県・市区町村名で検索" autocomplete="off"></div>
+<p class="quiet hint">地図の操作：ホイール／ピンチで拡大縮小、ダブルクリックで拡大、ドラッグで移動、Shift＋ドラッグで範囲拡大。</p>
+<p class="count">合計<span id="n">0</span>件</p>
+<div class="split"><ul id="list"></ul><div id="map" role="region" aria-label="弓道場の地図"></div></div>
+</section><p class="source"><a href="https://www.kyudo.jp/map/">公式サイトの掲載内容を確認する</a></p></main>

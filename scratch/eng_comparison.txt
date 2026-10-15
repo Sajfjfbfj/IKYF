@@ -1,0 +1,136 @@
+=== MIRROR MAIN ===
+<main class="info english">
+<section class="hero is-medium info">
+  <div class="hero-body">
+      <h2 class="pagetitle">All Nippon Kyudo Federation</h2>
+  </div>
+</section>
+<div class="bread_crumb">
+    <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li>English</li>
+    </ul>
+</div><!-- bread_crumb end -->
+<div class="contents">
+<h3 class="title">The outline of ALL NIPPON KYUDO FEDERATION</h3>
+<div class="introduction">
+<p>INFORMATION : The 19th International Seminar of Budo Culture is held! <a href="#moreinfo" data-scroll class="link-more">MORE</a></p>
+
+<article class="message">
+    <div class="message-body">
+    <p>Kyudo is a traditional discipline that uses the Japanese bow for both recreation and sport as well as the training of body and mind. <br>
+    The All Nippon Kyudo Federation (ANKF) is the governing body for kyudo in Japan and under the auspice of the International Kyudo Federation (IKYF) is responsible for the promotion and development of kyudo worldwide.</p>
+    </div>
+</article><!-- message end -->
+
+<p>All Nippon Kyudo Federation responsibilties:</p>
+<ol>
+<li>Establishment of general policies in terms of the dissemination and promotion of kyudo.</li>
+<li>Organization of national and international competition and events.</li>
+<li>Assessment of instructors (shogo title holders) and examination for the kyudo and dan grade levels.</li>
+<li>Implementation of research and studies, and the organization of workshops.</li>
+<li>Publication of journals and information.</li>
+<li>Other projects necessary to accomplish its purposes.</li>
+</ol>
+<p>The birthplace of kyudo is Japan and as such the All Nippon KyudoFederation is responsible for the development of kyudo and keeping standards of practice to the many national organizations that are found throughout the world.</p>
+
+<article class="message is-white">
+<div class="message-header">
+<p>Address and Contacts</p>
+</div>
+<div class="message-body">
+<p>JAPAN SPORT OLYMPIC SQUARE<br>
+4-2, KASUMIGAOKA-MACHI, SHINJUKU-KU, TOKYO<br>
+160-0013 JAPAN</p>
+<p class="fax">81-3-3481-2398</p>
+<p class="e-mail"><a href="https://all-nippon-kyudo.sakura.ne.jp/info/contact.html">Contact Us (Japanese)</a></p>
+</div>
+</article><!-- message end -->
+</div><!-- introduction end -->
+
+<div class="cntbox" id="moreinfo">
+<table class="table-info">
+<tbody>
+<tr>
+<th>1.Objectives</th>
+<td>This seminar, aimed at foreign budo practitioners who live in Japan, is designed to deepen the
+understanding of historical philosophic and scientific aspects of budo to increase our mutual
+friendship and internationalize our traditional culture. This seminar will also teach the theories
+and techniques of budo.</td>
+</tr>
+<tr>
+<th>2.Organizer</th>
+<td>Nippon Budokan Foundation</td>
+</tr>
+<tr>
+<th>3.Supported by</th>
+<td>Ministry of Education, Culture, Sports, Science and Technology
+Japanese Budo Association</td>
+</tr>
+<tr>
+<th>4.With the cooperation of</th>
+<td>International Budo University</td>
+</tr>
+<tr>
+<th>5.Dates</th>
+<td>Friday, March 2 to Monday, March 5, 2007 (Four days three nights)<br>
+Participants are expected to arrange their own transportation to and from Katsuura Training Center.</td>
+</tr>
+<tr>
+<th>6.Place of seminar</th>
+<td>International Budo University<br>
+841 Shinga, Katsuura City, Chiba Prefecture Tel (0470) 73-4111<br>
+Nippon Budokan Training Center<br>
+582 Sawakura, Katsuura City, Chiba Prefecture Tel (0470) 73-2111<br>
+Accommodation: Nippon Budokan Training Center</td>
+</tr>
+<tr>
+<th>7.Conditions for</th>
+<td>(1) Applicants must be foreign practitioners of modern budo over 18 and be resident in Japan.
+acceptance: They must, in principle, have obtained shodan, at least.<br>
+(2) Applicants must understand either English or Japanese.<br>
+(Both languages will be used during the seminar.)<br>
+(3) Applicants must, in principle, be recommended by an organization belonging to the Japanese Budo Association.<br>
+Alternatively they must belong to a university or company budo club, and must be recommended by its leader.</td>
+</tr>
+<tr>
+<th>8.Number of participants</th>
+<td>100 (In principle, first time participants will be given preference if the number of applicants exceeds the limit.)</td>
+</tr>
+<tr>
+<th>9.Application</th>
+<td>Fill out the separate <a href="../pdf/info/english_isbc061227.pdf" target="_blank">application form</a> and send it with the fee to Nippon Budokan Foundation.<br>
+Participation fee: 5,250 yen (include tax) (Send by Registered Mail- Genkin Kakitome)<br>
+Only Japanese Yen will be accepted.<br>
+This must arrive at the Nippon Budokan by no later than 8th February 2007<br>
+Send to: Nippon Budokan Promotions Department<br>
+2-3, Kitanomaru-Koen, Chiyoda-ku,Tokyo 102-8321</td>
+</tr>
+<tr>
+<th>10.Financial assistance</th>
+<td>The organizers will be responsible for accommodation and meals during the seminar at the designated accommodation facility.
+Participants must pay their own travel expenses.</td>
+</tr>
+<tr>
+<th>11.Insurance</th>
+<td>(1) The Shiota Hospital in Katsuura has pledged their assistance in the event of an accident during the seminar.<br>
+(2) All participants will be covered by an insurance policy taken out by the Nippon Budokan. (Travel to and from the seminar venue is not included.)<br>
+You will be insured for \1,000,000 for death or serious injury, \1,500 in case of hospitalization (for up to 180 days), and \1,000 for travel to hospital (for 90 days within 180 days after the accident.)</td>
+</tr>
+<tr>
+<th>12.Address inquiries to</th>
+<td>Nippon Budokan Promotions Department<br>
+2-3, Kitanomaru-Koen, Chiyoda-ku, Tokyo 102-8321<br>
+TEL (03) 3216-5134 FAX (03) 3216-5117<br>
+10:00 to 17:00 except on Saturdays, Sundays, and public holidays.</td>
+</tr>
+</tbody>
+</table>
+<p class="note">* Please pass this information to any foreign friends practicing budo.</p>
+</div><!-- cntbox end -->
+
+</div><!-- contents END -->
+</main>
+
+=== SITE-COMPLETE MAIN ===
+<main class="wrap"><div class="crumb"><a href="../index.html">HOME</a><span>›</span>English</div><p class="eyebrow">Information</p><h1>All Nippon Kyudo Federation</h1><div class="meta"><span>公益財団法人 全日本弓道連盟 (ANKF)</span></div><div class="summary" style="line-height:2.1"><p>Kyudo is a traditional discipline that uses the Japanese bow for both recreation and sport as well as the training of body and mind.<br>The All Nippon Kyudo Federation (ANKF) is the governing body for kyudo in Japan and under the auspice of the International Kyudo Federation (IKYF) is responsible for the promotion and development of kyudo worldwide.</p></div><section class="materials"><h2>The outline of ALL NIPPON KYUDO FEDERATION</h2><p style="margin-bottom:1em">All Nippon Kyudo Federation responsibilities:</p><ol style="line-height:2;padding-left:1.5em;margin-bottom:2em"><li>1. Establishment of general policies in terms of the dissemination and promotion of kyudo.</li><li>2. Organization of national and international competition and events.</li><li>3. Assessment of instructors (shogo title holders) and examination for the kyudo and dan grade levels.</li><li>4. Implementation of research and studies, and the organization of workshops.</li><li>5. Publication of journals and information.</li><li>6. Other projects necessary to accomplish its purposes.</li></ol><p style="line-height:2">The birthplace of kyudo is Japan and as such the All Nippon Kyudo Federation is responsible for the development of kyudo and keeping standards of practice to the many national organizations that are found throughout the world.</p></section><section class="materials"><h2>Address and Contacts</h2><div style="background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:6px;padding:24px 28px;margin:1.5em 0;line-height:2"><p style="font-size:17px;font-weight:600;margin:0 0 .5em">All Nippon Kyudo Federation</p><p style="margin:.3em 0">JAPAN SPORT OLYMPIC SQUARE<br>4-2, KASUMIGAOKA-MACHI, SHINJUKU-KU, TOKYO<br>160-0013 JAPAN</p><p style="margin:.5em 0">FAX: +81-3-3481-2398</p><p style="margin:.5em 0"><a href="contact.html" style="color:var(--accent);border-bottom:1px solid var(--accent);padding-bottom:2px">Contact Us (Online Form)</a></p></div></section><p class="source"><a href="https://www.kyudo.jp/info/english.html">View original page on official website</a></p></main>

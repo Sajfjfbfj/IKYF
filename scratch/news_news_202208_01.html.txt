@@ -1,0 +1,248 @@
+<main class="begin tool">
+<section class="hero notice">
+  <div class="hero-body">
+      <h2 class="pagetitle">連盟からのお知らせ</h2>
+  </div>
+</section>
+<div class="bread_crumb">
+    <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li>連盟からのお知らせ</li>
+    </ul>
+</div><!-- bread_crumb end -->
+<div class="contents-full">
+<div class="width-inner">
+<div class="introduction">
+<p>弓道をテーマにしたアニメ映画「劇場版ツルネ ーはじまりの一射ー」が８月19日から公開になります。<br>
+綾野ことこの同名小説。弓道を志す全ての人におすすめの、この夏必見の映画です。</p>
+</div><!-- introduction end -->
+</div><!-- width-inner end -->
+
+
+
+
+
+<!-- 作品紹介：START -->
+<div class="product-title">
+    <div class="product-title-body">
+    <h3 class="title">作品紹介</h3>
+    </div>
+</div><!-- tool-title end -->
+<div class="tool-block tsuru">
+<div class="tool-block-body">
+    <div class="columns">
+      <div class="column img-block">
+        <a href="http://tsurune.com/" target="_blank"><img src="../img/news/01/tsurune_01.jpg" class="img_resposive img_center"></a>
+      </div>
+      <div class="column text-block">
+        <p><strong>「弦音」＝ツルネ</strong></p>
+        <p>矢を放ったときに鳴る弦の音。</p>
+        <br>
+        <p>射手にとって美しい弦音を響かせることは喜びであり、<br>
+        その美しい音は人の心をとらえて離さない。<br>
+        <br>
+        <p>同一人物が、同じ道具を使ったとしても<br>
+        同じ弦音を発することはできず、まさに一期一会。<br>
+        <br>
+        <p>一射一射が、一生に一度の<br>
+        〈出会い〉と〈別れ〉である。<br>
+        <br>
+        <p>鳴宮湊にとって、弦音が<br>
+        全ての〈出会い〉の始まりとなった……。<br>
+        <br>
+        <p>果てのない弓の道を歩み始めるのは、<br>
+        若葉のように瑞々しい高校１年生の少年たち。<br>
+        <br>
+        <p>彼らは弓道を通して一生に一度、<br>
+        かけがえのない経験をし、〈仲間〉を手に入れていく。<br>
+        <br>
+        <p><strong>木漏れ日のような、きらめく青春<br>
+        〝弓道〟アニメーション、開幕！</strong></p>
+        <br>
+        <br>
+        <p>アニメ制作：京都アニメーション<br>
+        配給：松竹<br>
+        製作：ツルネ製作委員会</p>
+
+      </div>
+    </div>
+    <div class="clear"></div>
+
+</div><!-- tool-block-body end -->
+</div><!-- tool-block tsuru end -->
+<!-- 作品紹介：END -->
+
+<!-- あらすじ：START -->
+<div class="product-title">
+    <div class="product-title-body">
+    <h3 class="title">あらすじ</h3>
+    </div>
+</div><!-- tool-title end -->
+<div class="tool-block gomukyuu">
+<div class="tool-block-body">
+
+<p>鳴宮湊は、弓引きの病とも言われる「早気」にかかり、弓道から身を引くことにした。</p>
+<br>
+<p>高校に進学後、親友の竹早静弥が弓道部に入ると言っても、湊の気持ちは変わらない。</p>
+<br>
+<p>だが、滝川雅貴と運命的な出会いを果たし、湊は傷つきながらも再び弓を手に取る。<br>
+「弓道部に戻って、いろいろなものが見えてきた気がするんだ」</p>
+<br>
+<p>雅貴は湊を指導する一方で、自分の師匠に深い復讐心を抱いていた。<br>
+「俺は、あいつみたいな師匠にはならない」</p>
+<br>
+<p>ともに歩み始めた雅貴と湊。<br>
+これまで湊を支えてきた静弥は、自分はもう必要のない存在だと思い始める。<br>
+「僕は、滝川さん。あなたが嫌いです」</p>
+<br>
+<p>弓への苦しみにもがき続ける、湊。</p>
+<p>師への愛憎にさいなまれる、雅貴。</p>
+<p>友への想いに追い詰められる、静弥。</p>
+<p>彼らが、たどりつく先は―――。</p>
+<div class="clear"></div></div><!-- tool-block-body end -->
+</div><!-- tool-block gomukyuu end -->
+<!-- あらすじ：END -->
+
+<!-- キャラクター紹介：START -->
+<div class="product-title">
+    <div class="product-title-body">
+    <h3 class="title">キャラクター紹介</h3>
+    </div>
+</div><!-- tool-title end -->
+<div class="tool-block makiwara">
+<div class="tool-block-body">
+<div class="width-inner">
+<div class="cntbox">
+
+
+<div class="products-cardlist">
+
+<div class="product-card">
+    <img src="../img/news/01/characterPicture1.png" class="photo02">
+    <p class="news_c yumi">鳴宮 湊</p>
+    <p class="issuance">CV. 上村祐翔</p>
+    <p class="name_news">「美しい弦音を響かせたい」という想いで弓道を始める。しかし、中学最後の試合中に、意に反して矢を放ってしまう早気を発症する。早気が原因でチームを敗北させたことに負い目を感じ、大好きだった弓道を辞めた。弓への思いを捨てきれずにいた高校１年の春、雅貴と出会う。雅貴の美しい射に胸を打たれ、もう一度、自分の弦音を取り戻そうと風舞高校弓道部へ入部する。</p>
+</div><!-- product-card -->
+
+<div class="product-card">
+    <img src="../img/news/01/characterPicture2.png" class="photo02">
+    <p class="news_c yumi">滝川雅貴</p>
+    <p class="issuance">CV. 浅沼晋太郎</p>
+    <p class="name_news">弓の師匠であった祖父に憧れ、弓道を続けてきた。湊と同じく早気になった過去を持つ。その際、祖父から厳しい言葉を浴びせられ、心に深い傷を負った。祖父亡き今も、憎しみに囚われている。弓に惑う湊の姿が過去の自分と重なり、積極的に関わりを持つようになる。夜多神社の神主を務めるかたわら、風舞高校弓道部のコーチとして湊たちを導く。</p>
+</div><!-- product-card -->
+
+<div class="product-card">
+    <img src="../img/news/01/characterPicture3.png" class="photo02">
+    <p class="news_c yumi">竹早静弥</p>
+    <p class="issuance">CV. 市川 蒼</p>
+    <p class="name_news">湊とは幼馴染で、家族ぐるみの付き合いをしてきた。幼い頃に経験したある出来事が原因で、償いきれない罪を一人で背負ってしまう。以来、すべての物事を湊を中心に考えるようになった。湊と一緒に進学した桐先中学で弓道を始め、風舞高校では弓道部の部長を務める。</p>
+</div><!-- product-card -->
+
+<div class="product-card">
+    <img src="../img/news/01/characterPicture4.png" class="photo02">
+    <p class="news_c yumi">山之内遼平</p>
+    <p class="issuance">CV. 鈴木崚汰</p>
+    <p class="name_news">風舞高校弓道部１年。高校進学後、本格的に弓道を始めた初心者。湊と静弥とは小学校時代の友人で、二人との再会を心から喜んだ。争いを好まず誰に対しても真心で接する。</p>
+</div><!-- product-card -->
+
+<div class="product-card">
+    <img src="../img/news/01/characterPicture5.png" class="photo02">
+    <p class="news_c yumi">如月七緒</p>
+    <p class="issuance">CV. 矢野奨吾</p>
+    <p class="name_news">風舞高校弓道部１年。人目を引くルックスと朗らかな人柄で、女子から人気を集める「王子様」。海斗とは従兄弟で、熱くなりやすい彼のフォローに回ることが多い。</p>
+</div><!-- product-card -->
+
+<div class="product-card">
+    <img src="../img/news/01/characterPicture6.png" class="photo02">
+    <p class="news_c yumi">小野木海斗</p>
+    <p class="issuance">CV. 石川界人</p>
+    <p class="name_news">風舞高校弓道部１年。副部長。人一倍真面目に弓道と向き合うあまり、一度は弓道を辞めた湊に対して威圧的な態度を取る。本当は情に厚い。</p>
+</div><!-- product-card -->
+
+<div class="product-card">
+    <img src="../img/news/01/characterPicture7.png" class="photo02">
+    <p class="news_c yumi">藤原 愁</p>
+    <p class="issuance">CV. 小野賢章</p>
+    <p class="name_news">名門桐先高校弓道部１年生。実力と風格を兼ね備えた、圧倒的な射を引く。小学生の頃、湊と同じ師匠のもとで弓道を学んだ。湊に優れた弓道のセンスを感じ取り、ともに弓道の高みを目指す唯一の同士と認めている。</p>
+</div><!-- product-card -->
+
+
+
+</div><!-- products-cardlist end -->
+</div><!-- cntbox end -->
+</div><!-- width-inner end -->
+<div class="clear"></div></div><!-- tool-block-body end -->
+</div><!-- tool-block makiwara end -->
+<!-- キャラクター紹介：END -->
+
+<!-- 上映情報：START -->
+<div class="product-title">
+    <div class="product-title-body">
+    <h3 class="title">上映情報</h3>
+    </div>
+</div><!-- tool-title end -->
+<div class="tool-block gomukyuu">
+<div class="tool-block-body">
+
+<p>「劇場版ツルネ ―はじまりの一射―」は2022年８月19日（金）から全国の映画館で公開となります。<br>
+上映劇場は作品公式HPをご確認ください。</p>
+<a href="http://tsurune.com/" target="_blank"><p class="hp">http://tsurune.com/</p></a>
+<img src="../img/news/01/qr20220728220440006.png" class="img_resposive img_left">
+<div class="clear"></div></div><!-- tool-block-body end -->
+</div><!-- tool-block gomukyuu end -->
+<!-- 上映情報：END -->
+
+
+</div><!-- contents-full END -->
+
+<!-- ▼▼ ssi/cnt-link START ▼▼ -->
+<section id="cnt-link">
+<h3 class="title begin"><p class="text">見学・入門<span class="subtitle">弓道を始めたい方コンテンツ</span></p></h3>
+<div class="cnt-link-list">
+<div class="cnt-link-block begin">
+    <a href="index.html">
+    <div class="cnt-link-block-body">
+    <div class="btn">
+    <img src="../img/begin/cont-link_btn_begin.png" alt="見学・入門 弓道を始めたい方　詳しく見る">
+    </div>
+    </div>
+    </a>
+</div><!-- cnt-link-block end -->
+<div class="cnt-link-block begin-tool">
+    <a href="tool.html">
+    <div class="cnt-link-block-body">
+    <div class="btn">
+    <img src="../img/begin/cont-link_btn_tool.png" alt="道具について　詳しく見る">
+    </div>
+    </div>
+    </a>
+</div><!-- cnt-link-block end -->
+<div class="cnt-link-block begin-faq">
+    <a href="faq.html">
+    <div class="cnt-link-block-body">
+    <div class="btn">
+    <img src="../img/begin/cont-link_btn_faq.png" alt="よくある質問　詳しく見る">
+    </div>
+    </div>
+    </a>
+</div><!-- cnt-link-block end -->
+</div><!-- cnt-link-list end -->
+</section><!-- cnt-link END -->
+<!-- ▲▲ ssi/cnt-link END ▲▲ -->
+
+<div class="contents-full">
+<div class="width-inner">
+<div class="dojomap">
+<a href="../map/index.html"><img src="../img/common/bn_dojomap.jpg" alt="全国弓道場マップ" class="img_resposive img_center"></a>
+</div><!-- dojomap end -->
+<!-- ▼▼ ssi/foot-banner START ▼▼ -->
+<div class="foot_banner">
+<a href="../howto/index.html"><img src="../img/common/foot_bn_howto.png" alt="弓道の心" title="弓道の心"></a>
+<a href="../begin/index.html"><img src="../img/common/foot_bn_begin.png" alt="弓道を始めたい方" title="弓道を始めたい方"></a>
+<a href="../schedule/index.html"><img src="../img/common/foot_bn_schedule.png" alt="大会・審査会情報" title="大会・審査会情報"></a>
+</div><!-- foot_banner end -->
+
+<!-- ▲▲ ssi/foot-banner END ▲▲ -->
+</div><!-- width-inner end -->
+</div><!-- contents-full END -->
+</main>

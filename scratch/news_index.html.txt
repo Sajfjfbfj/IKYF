@@ -1,0 +1,28 @@
+<main class="error">
+<section class="hero is-medium error">
+  <div class="hero-body">
+      <!--<h2 class="pagetitle"> </h2>-->
+  </div>
+</section>
+<div class="bread_crumb">
+    <ul>
+        <li><a href="http://www.kyudo.jp/">HOME</a></li>
+        <!--<li>お問い合わせ</li>-->
+    </ul>
+</div><!-- bread_crumb end -->
+<div class="contents">
+<h3 class="title">お探しのページはありません。</h3>
+<div class="introduction">
+<p>申し訳ありません。お探しいただいたURLは、当サイトにございません。</p>
+<p>ページが削除されたか、URLが変更となった可能性がございます。</p>
+<br>
+<p>お手数をお掛けいたしますが、当サイトのTOPページへお進みいただき、<br>
+引き続き、全日本弓道連盟公式サイトをお楽しみください。</p>
+<br>
+<a href="http://www.kyudo.jp/" class="btn">全日本弓道連盟公式サイトTOP</a>
+</div><!-- introduction end -->
+
+</div><!-- cntbox end -->
+</div><!-- contents END -->
+
+</main>

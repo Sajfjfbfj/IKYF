@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="弓道の心や、弓道を通して人生を豊かにする考え方、一人でも楽しめる弓道の魅力を紹介します。"
+    />
+    <title>弓道の心｜全日本弓道連盟</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #14121c;
+        --ink: #f3eef8;
+        --sub: rgba(243, 238, 248, 0.72);
+        --line: rgba(243, 238, 248, 0.18);
+        --accent: #b79be0;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: "Shippori Mincho", "Yu Mincho", serif;
+        line-height: 1.9;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      a:hover {
+        color: var(--accent);
+      }
+      a:focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 4px;
+      }
+      .top {
+        padding: 30px 7vw 24px;
+        border-bottom: 1px solid var(--line);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+      .brand b {
+        display: block;
+        font-size: 18px;
+        letter-spacing: 0.16em;
+      }
+      .brand span {
+        font:
+          11px Arial,
+          sans-serif;
+        letter-spacing: 0.12em;
+        color: var(--sub);
+      }
+      .top nav {
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+        font-size: 13px;
+        letter-spacing: 0.12em;
+      }
+      .wrap {
+        width: min(900px, 86vw);
+        margin: 0 auto;
+        padding: 8vh 0 12vh;
+      }
+      .crumb {
+        font-size: 12px;
+        letter-spacing: 0.1em;
+        color: var(--sub);
+        margin-bottom: 8vh;
+      }
+      .crumb span {
+        padding: 0 0.7em;
+        color: var(--accent);
+      }
+      .eyebrow {
+        font-size: 12px;
+        letter-spacing: 0.22em;
+        color: var(--accent);
+      }
+      h1 {
+        font-size: clamp(30px, 5vw, 56px);
+        font-weight: 600;
+        line-height: 1.5;
+        letter-spacing: 0.14em;
+        margin: 0.5em 0 0.7em;
+        overflow-wrap: anywhere;
+      }
+      .meta {
+        display: flex;
+        gap: 1.5em;
+        align-items: center;
+        color: var(--sub);
+        font-size: 13px;
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 1.5em;
+      }
+      .summary {
+        font-size: 17px;
+        line-height: 2.1;
+        max-width: 42em;
+        margin: 3em 0 4em;
+      }
+      .materials h2 {
+        font-size: 19px;
+        letter-spacing: 0.16em;
+        font-weight: 600;
+        margin: 0 0 1em;
+      }
+      .materials ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        border-top: 1px solid var(--line);
+      }
+      .materials li {
+        padding: 1em 0;
+        border-bottom: 1px solid var(--line);
+      }
+      .quiet {
+        color: var(--sub);
+        font-size: 14px;
+      }
+      .source {
+        margin-top: 4em;
+        font-size: 13px;
+        color: var(--sub);
+      }
+      .source a {
+        border-bottom: 1px solid var(--accent);
+        padding-bottom: 0.2em;
+      }
+      .bottom {
+        border-top: 1px solid var(--line);
+        padding: 24px 7vw 42px;
+        color: var(--sub);
+        font-size: 12px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      @media (max-width: 650px) {
+        .top {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+        .top nav {
+          gap: 12px 18px;
+        }
+        .wrap {
+          padding-top: 6vh;
+        }
+        .crumb {
+          margin-bottom: 5vh;
+        }
+        .summary {
+          font-size: 15px;
+        }
+      }
+    
+/* ===== 共通メニューバー（的場の水鏡.html と同一） ===== */
+button{all:unset;cursor:pointer}
+button:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+header.site{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:flex-start;gap:20px;padding:calc(env(safe-area-inset-top,0px) + 3vh) 5vw 2vh;background:var(--bg);border-bottom:1px solid var(--line);text-shadow:none;transition:background .3s ease,border-color .3s ease}header.site.menu-open{background:transparent;border-bottom-color:transparent;text-shadow:0 1px 16px rgba(20,18,28,.7)}
+header.site .mark b{display:block;font-size:19px;letter-spacing:.16em;line-height:1.9}
+header.site .mark span{font:11px "Shippori Mincho","Yu Mincho",serif;letter-spacing:.12em;color:var(--sub)}
+.nav{display:none;gap:2.2em}
+.nav button{font-size:15px;letter-spacing:.2em;padding:.5em 0;position:relative;color:var(--ink)}
+.nav button::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--ink);transform:scaleX(0);transform-origin:left;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.nav button:hover::after,.nav button.on::after{transform:scaleX(1)}
+#mb{font-size:15px;letter-spacing:.3em;padding:.4em 0;border-bottom:1px solid var(--ink)}
+#cur{position:fixed;z-index:4;top:0;left:0;right:0;max-height:100vh;overflow:auto;visibility:hidden;clip-path:inset(0 0 100% 0);padding:calc(env(safe-area-inset-top,0px) + 13vh) 7vw 6vh;background:repeating-linear-gradient(90deg,rgba(255,255,255,.07) 0 2px,transparent 2px 6.5vw),linear-gradient(#5a4096,#43307a)}
+#cur a:hover{color:inherit}
+.grp{display:none}
+.grp.on{display:grid;grid-template-columns:minmax(9em,1fr) 3fr;gap:4vw}
+.grp h3{margin:0;font-size:clamp(28px,4vw,52px);font-weight:600;letter-spacing:.18em;line-height:1.3}
+.grp h3 button{font:inherit;letter-spacing:inherit;cursor:default}
+.grp ul{list-style:none;margin:0;padding:0;columns:2;column-gap:4vw}
+.grp li{break-inside:avoid;border-bottom:1px solid rgba(255,255,255,.22)}
+.grp a{display:flex;align-items:center;gap:.8em;padding:.7em 0;font-size:clamp(16px,1.6vw,21px);letter-spacing:.12em}
+.grp a::after{content:"";height:1px;width:0;background:#fff;transition:width .45s cubic-bezier(.2,.8,.2,1)}
+.grp a:hover::after,.grp a:focus-visible::after{width:2.6em}
+.util{margin-top:5vh;display:flex;gap:1.8em;flex-wrap:wrap;font-size:13px;letter-spacing:.12em;color:rgba(255,255,255,.82)}
+@media (min-width:900px){.nav{display:flex}#mb{display:none}}
+@media (max-width:899px){.grp,.grp.on{display:block;border-bottom:1px solid rgba(255,255,255,.22)}.grp h3{font-size:19px}.grp h3 button{display:flex;justify-content:space-between;width:100%;padding:.9em 0;cursor:pointer}.grp h3 button::after{content:"＋"}.grp.on h3 button::after{content:"－"}.grp ul{display:none;columns:1;padding-bottom:.6em}.grp.on ul{display:block}}
+@media (max-width:600px){header.site .mark b{font-size:16px}}
+/* ===== /共通メニューバー ===== */
+</style>
+  </head>
+  <body>
+    <header class="site">
+  <a class="mark" href="../../的場の水鏡.html"><b>全日本弓道連盟</b><span>All Nippon Kyudo Federation</span></a>
+  <nav class="nav" id="nav" aria-label="メインメニュー"></nav>
+  <button id="mb" aria-expanded="false" aria-controls="cur">メニュー</button>
+</header>
+<div id="cur" aria-label="サイトメニュー"><div id="cw"></div>
+  <div class="util"><a href="../notice/">連盟からのお知らせ</a><a href="../info/contact.html">お問い合わせ</a><a href="../info/english.html">English</a><a href="https://www.kyudo-shop.com/">オンラインショップ</a></div>
+</div>
+    <main class="wrap">
+      <div class="crumb">
+        <a href="../index.html">HOME</a><span>›</span>弓道の心
+      </div>
+      <p class="eyebrow">弓道の心</p>
+      <h1>弓道の心</h1>
+      <div class="meta"><span>公益財団法人 全日本弓道連盟</span></div>
+      <p class="summary">
+        弓道は、人生そのものに喩えられます。誰しもが、最初は技術を磨き、上達することを目指します。しかし、上達するにつれて、技術を学ぶだけではなく、自己の人格を磨くことが必要だと気づくようになるのです。このような気づきは、弓道だけではなく、人生のあらゆる局面で起こることではないでしょうか。心と技を一体とし、内面の価値を高め、人生を深く豊かなものにするために、弓道は高い指標「真・善・美」を掲げています。
+      </p>
+      <section class="materials">
+        <h2>人生を、もっと豊かに</h2>
+        <ul>
+          <li>
+            <h3>｢真｣の弓は偽らない</h3>
+            <p>
+              弓道には正射必中という言葉があります。これは正しい射法で射られた矢は、必ず中るという意味です。そして、私たちは、的に中てるために、正しい射法を目指して日々練習するのです。弓を射るということは、正しい射法を目指す、「真」の探求です。そして、的は、私たちに、自分の今行った射が正しいものであるかを教えてくれる素晴らしい先生なのです。
+            </p>
+            <p>一射ごとに「真」を求める姿勢、それこそが弓道です。</p>
+          </li>
+          <li>
+            <h3>｢善｣は、平常心に宿る</h3>
+            <p>
+              弓は、争う、相手を憎む、という考え方とはまったく反対の世界です。
+            </p>
+            <p>
+              弓の世界に敵はいません。いるとしたら、揺らぎ、動揺する自分の心が、敵なのです。
+            </p>
+            <p>
+              自分と向かい合い、心を養い、常に平常心でいられる心を作ることこそが弓道の本来の目的なのです。
+            </p>
+            <p>
+              また、弓道場では、お互いに親しみ、礼節を重んじることを大切にしています。このようなことを大切にすることで、私たちはいま現代人に必要としている本当の教養を養うことができると考えています。「礼節」を大切にし、「相手を慈しむ」ことこそ、弓道の基本精神なのです。
+            </p>
+          </li>
+          <li>
+            <h3>｢美｣は、「真」と「善」の結晶</h3>
+            <p>
+              弓の世界で、「美」は「真」の形と「善」の心が一体となった時に現われると言われています。正しい構え、正しい動作、それに内面の人格的向上が一体となったとき、理想的な美しい弓が表現されるのです。完成された美しい形を目指して努力する姿こそ、日本の弓特有の美しさの世界なのです。
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="materials">
+        <h2>一人でも楽しめる「弓道」</h2>
+        <ul>
+          <li>
+            <p>
+              弓道は他の競技と多少異なり、「人」でなく、「的」を相手にする武道・スポーツです。そこには、一人でも楽しむことができる世界が広がっています。素朴で親しみやすいので、少年少女からご年配の方まで年齢や男女の制限はありません。それぞれが自分の体力に応じた強さの弓を使い、練習を始めることができます。晴雨にかかわらず、練習時間も道場の環境に合わせて調整することが可能です。
+            </p>
+          </li>
+          <li>
+            <h3>「的」は静止して動きません。</h3>
+            <p>
+              その「的」に当たるか外れるかだけでなく、射行（しゃぎょう：弓を射ること）として成功か失敗か、一本一本を味わいながら楽しめるので、興味は深まっていくのです。
+            </p>
+          </li>
+          <li>
+            <h3>弓を引く動作は「射法八節」という、八つの節に分けられます。</h3>
+            <p>
+              １つひとつを正しく組み立てることになっていますが、それは別々の動きではありません。この八節を始めから終わりまで一連の動作で、一貫した流れのように、正確に行うことによって的中率は高くなるのです。
+            </p>
+          </li>
+          <li>
+            <h3>弓道の弓には照準機がついていません。</h3>
+            <p>
+              自分の体感だけを頼りにするので、周囲の状況や対戦相手の的中などに影響されたり、ちょっとした心の動揺で射術が狂ったりすることもあります。そのために、射法の基本動作を確実にし、密度の高い練習を日々重ねて的中率を高めることはもちろんですが、物事に動じない「不動心」を養い、淡々とした「平常心」で行射できるように、心の修練を重ねることが大切です。
+            </p>
+          </li>
+          <li>
+            <h3>正しい射行は、正しい姿勢から。</h3>
+            <p>
+              背骨を伸ばし、胸郭を広げて左右の均衡を図り、気力を丹田（ヘソの下にあり、気力が集まる場所）に収め、精神の集中を持続する。そこから正確な的中が生まれます。「自分」「弓」「的」の三者が一体となった瞬間、果断に射放ちます。的中しない場合、すべての原因は自分にあるので、答えを求め、自己を見つめます。その繰り返しが、精神の修練に大きくプラスとなることも、弓道が愛され続ける魅力のひとつです。
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="materials">
+        <h2>弓道の心コンテンツ</h2>
+        <ul>
+          <li><a href="history.html">弓道の歴史</a></li>
+          <li><a href="syaho.html">射法について</a></li>
+          <li><a href="terminology.html">弓道用語辞典</a></li>
+        </ul>
+      </section>
+      <p class="source">
+        <a href="https://www.kyudo.jp/howto/" target="_blank" rel="noopener"
+          >公式サイトの掲載内容を確認する</a
+        >
+      </p>
+    </main>
+    <footer class="bottom">
+      <span>公益財団法人 全日本弓道連盟</span
+      ><a href="../all-pages.html">全ページ一覧</a>
+    </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script>
+(function(){
+  var K="..";
+  var reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var M=[["弓道の心",[["弓道の心","/howto/"],["弓道の歴史","/howto/history.html"],["射法について","/howto/syaho.html"],["弓道用語辞典","/howto/terminology.html"]]],
+   ["見学・入門",[["弓道を始めたい方","/begin/"],["道具について","/begin/tool.html"],["よくある質問","/begin/faq.html"],["上達への道","/improve/"],["動画（MOVIE）","/movie/"]]],
+   ["大会・審査会情報",[["全国大会","/schedule/taikai/"],["中央審査会","/schedule/chuoshinsa/"],["連合審査会","/schedule/association/"],["地方審査会","/schedule/region/"],["資料・申込書","/documents/"]]],
+   ["全国弓道場",[["全国弓道場マップ","/map/"],["中央道場概要と使用日程","/schedule/chuoshinsa/overview.html"]]],
+   ["全日本弓道連盟について",[["概要","/aboutus/overview.html"],["中期計画","/aboutus/plan.html"],["加盟団体","/aboutus/org.html"],["職員採用案内","/aboutus/recruit.html"],["ブック（刊行物）","/aboutus/book.html"],["公式グッズ","/aboutus/officialgoods.html"]]]];
+  var NAV=["弓道の心","見学・入門","大会・審査会","弓道場","連盟について"];
+  var cur$=document.getElementById("cur"), cw=document.getElementById("cw"), nav=document.getElementById("nav"), mb=document.getElementById("mb"), hdr$=document.querySelector("header.site")||document.querySelector("header");
+  cw.innerHTML=M.map(function(g){return '<section class="grp"><h3><button type="button">'+g[0]+'</button></h3><ul>'+g[1].map(function(l){return '<li><a href="'+K+l[1]+'">'+l[0]+'</a></li>';}).join("")+'</ul></section>';}).join("");
+  nav.innerHTML=NAV.map(function(n){return '<button type="button">'+n+'</button>';}).join("");
+  var grps=cw.querySelectorAll(".grp"), navB=nav.querySelectorAll("button"), isOpen=false, act=-1, tm;
+  var desk=function(){return matchMedia("(min-width:900px)").matches;};
+  var D=function(x){return reduce?0:x;};
+  function reveal(){
+    if(!isOpen){isOpen=true; if(hdr$)hdr$.classList.add("menu-open"); cur$.style.visibility="visible"; gsap.to(cur$,{clipPath:"inset(0 0 0% 0)",duration:D(.7),ease:"power3.out"});}
+    gsap.fromTo(cur$.querySelectorAll(".grp.on li"),{y:14,opacity:0},{y:0,opacity:1,duration:D(.5),stagger:.04,ease:"power2.out",overwrite:true});
+  }
+  function show(i){act=i;grps.forEach(function(s,k){s.classList.toggle("on",k===i);});navB.forEach(function(b,k){b.classList.toggle("on",k===i);});reveal();}
+  function hide(){
+    if(!isOpen)return; isOpen=false; act=-1; if(hdr$)hdr$.classList.remove("menu-open");
+    navB.forEach(function(b){b.classList.remove("on");}); grps.forEach(function(s){s.classList.remove("on");});
+    gsap.to(cur$,{clipPath:"inset(0 0 100% 0)",duration:D(.5),ease:"power3.in",onComplete:function(){if(!isOpen)cur$.style.visibility="hidden";}});
+    document.body.style.overflow=""; mb.textContent="メニュー"; mb.setAttribute("aria-expanded","false");
+  }
+  navB.forEach(function(b,k){
+    b.addEventListener("mouseenter",function(){if(desk()){clearTimeout(tm);show(k);}});
+    b.addEventListener("click",function(){if(desk()){(isOpen&&act===k)?hide():show(k);}});
+  });
+  [nav,cur$].forEach(function(el){
+    el.addEventListener("mouseenter",function(){clearTimeout(tm);});
+    el.addEventListener("mouseleave",function(){if(desk())tm=setTimeout(hide,280);});
+  });
+  mb.onclick=function(){
+    if(isOpen){hide();return;}
+    grps.forEach(function(s){s.classList.remove("on");}); reveal();
+    document.body.style.overflow="hidden"; mb.textContent="閉じる"; mb.setAttribute("aria-expanded","true");
+  };
+  grps.forEach(function(s){s.querySelector("button").addEventListener("click",function(){
+    if(desk())return; var o=s.classList.contains("on"); grps.forEach(function(x){x.classList.remove("on");}); if(!o)s.classList.add("on");
+  });});
+})();
+</script>
+</body>
+</html>

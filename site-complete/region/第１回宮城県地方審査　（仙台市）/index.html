@@ -1,0 +1,84 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="各地域の審査会に関する日程や案内を掲載しています。"><title>連盟からのお知らせ｜全日本弓道連盟</title><link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600&display=swap" rel="stylesheet"><style>
+:root{color-scheme:dark;--bg:#14121c;--ink:#f3eef8;--sub:rgba(243,238,248,.72);--line:rgba(243,238,248,.18);--accent:#b79be0}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Shippori Mincho","Yu Mincho",serif;line-height:1.9}a{color:inherit;text-decoration:none}a:hover{color:var(--accent)}a:focus-visible{outline:2px solid var(--accent);outline-offset:4px}.top{padding:30px 7vw 24px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:24px}.brand b{display:block;font-size:18px;letter-spacing:.16em}.brand span{font:11px Arial,sans-serif;letter-spacing:.12em;color:var(--sub)}.top nav{display:flex;gap:24px;flex-wrap:wrap;font-size:13px;letter-spacing:.12em}.wrap{width:min(900px,86vw);margin:0 auto;padding:8vh 0 12vh}.crumb{font-size:12px;letter-spacing:.1em;color:var(--sub);margin-bottom:8vh}.crumb span{padding:0 .7em;color:var(--accent)}.eyebrow{font-size:12px;letter-spacing:.22em;color:var(--accent)}h1{font-size:clamp(30px,5vw,56px);font-weight:600;line-height:1.5;letter-spacing:.14em;margin:.5em 0 .7em;overflow-wrap:anywhere}.meta{display:flex;gap:1.5em;align-items:center;color:var(--sub);font-size:13px;border-bottom:1px solid var(--line);padding-bottom:1.5em}.summary{font-size:17px;line-height:2.1;max-width:42em;margin:3em 0 4em}.materials h2{font-size:19px;letter-spacing:.16em;font-weight:600;margin:0 0 1em}.materials ul{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}.materials li{padding:1em 0;border-bottom:1px solid var(--line)}.quiet{color:var(--sub);font-size:14px}.source{margin-top:4em;font-size:13px;color:var(--sub)}.source a{border-bottom:1px solid var(--accent);padding-bottom:.2em}.bottom{border-top:1px solid var(--line);padding:24px 7vw 42px;color:var(--sub);font-size:12px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}@media(max-width:650px){.top{align-items:flex-start;flex-direction:column}.top nav{gap:12px 18px}.wrap{padding-top:6vh}.crumb{margin-bottom:5vh}.summary{font-size:15px}}
+
+/* ===== 共通メニューバー（的場の水鏡.html と同一） ===== */
+button{all:unset;cursor:pointer}
+button:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+header.site{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:flex-start;gap:20px;padding:calc(env(safe-area-inset-top,0px) + 3vh) 5vw 2vh;background:var(--bg);border-bottom:1px solid var(--line);text-shadow:none;transition:background .3s ease,border-color .3s ease}header.site.menu-open{background:transparent;border-bottom-color:transparent;text-shadow:0 1px 16px rgba(20,18,28,.7)}
+header.site .mark b{display:block;font-size:19px;letter-spacing:.16em;line-height:1.9}
+header.site .mark span{font:11px "Shippori Mincho","Yu Mincho",serif;letter-spacing:.12em;color:var(--sub)}
+.nav{display:none;gap:2.2em}
+.nav button{font-size:15px;letter-spacing:.2em;padding:.5em 0;position:relative;color:var(--ink)}
+.nav button::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--ink);transform:scaleX(0);transform-origin:left;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.nav button:hover::after,.nav button.on::after{transform:scaleX(1)}
+#mb{font-size:15px;letter-spacing:.3em;padding:.4em 0;border-bottom:1px solid var(--ink)}
+#cur{position:fixed;z-index:4;top:0;left:0;right:0;max-height:100vh;overflow:auto;visibility:hidden;clip-path:inset(0 0 100% 0);padding:calc(env(safe-area-inset-top,0px) + 13vh) 7vw 6vh;background:repeating-linear-gradient(90deg,rgba(255,255,255,.07) 0 2px,transparent 2px 6.5vw),linear-gradient(#5a4096,#43307a)}
+#cur a:hover{color:inherit}
+.grp{display:none}
+.grp.on{display:grid;grid-template-columns:minmax(9em,1fr) 3fr;gap:4vw}
+.grp h3{margin:0;font-size:clamp(28px,4vw,52px);font-weight:600;letter-spacing:.18em;line-height:1.3}
+.grp h3 button{font:inherit;letter-spacing:inherit;cursor:default}
+.grp ul{list-style:none;margin:0;padding:0;columns:2;column-gap:4vw}
+.grp li{break-inside:avoid;border-bottom:1px solid rgba(255,255,255,.22)}
+.grp a{display:flex;align-items:center;gap:.8em;padding:.7em 0;font-size:clamp(16px,1.6vw,21px);letter-spacing:.12em}
+.grp a::after{content:"";height:1px;width:0;background:#fff;transition:width .45s cubic-bezier(.2,.8,.2,1)}
+.grp a:hover::after,.grp a:focus-visible::after{width:2.6em}
+.util{margin-top:5vh;display:flex;gap:1.8em;flex-wrap:wrap;font-size:13px;letter-spacing:.12em;color:rgba(255,255,255,.82)}
+@media (min-width:900px){.nav{display:flex}#mb{display:none}}
+@media (max-width:899px){.grp,.grp.on{display:block;border-bottom:1px solid rgba(255,255,255,.22)}.grp h3{font-size:19px}.grp h3 button{display:flex;justify-content:space-between;width:100%;padding:.9em 0;cursor:pointer}.grp h3 button::after{content:"＋"}.grp.on h3 button::after{content:"－"}.grp ul{display:none;columns:1;padding-bottom:.6em}.grp.on ul{display:block}}
+@media (max-width:600px){header.site .mark b{font-size:16px}}
+/* ===== /共通メニューバー ===== */
+</style></head><body><header class="site">
+  <a class="mark" href="../../../的場の水鏡.html"><b>全日本弓道連盟</b><span>All Nippon Kyudo Federation</span></a>
+  <nav class="nav" id="nav" aria-label="メインメニュー"></nav>
+  <button id="mb" aria-expanded="false" aria-controls="cur">メニュー</button>
+</header>
+<div id="cur" aria-label="サイトメニュー"><div id="cw"></div>
+  <div class="util"><a href="../../notice/">連盟からのお知らせ</a><a href="../../info/contact.html">お問い合わせ</a><a href="../../info/english.html">English</a><a href="https://www.kyudo-shop.com/">オンラインショップ</a></div>
+</div><main class="wrap"><div class="crumb"><a href="../../index.html">HOME</a><span>›</span>地方審査会</div><p class="eyebrow">地方審査会</p><h1>第１回宮城県地方審査　（仙台市）</h1><div class="meta"><time>2017.08.29</time><span>公益財団法人 全日本弓道連盟</span></div><p class="summary">各地域の審査会に関する日程や案内を掲載しています。</p><section class="materials"><h2>関連資料</h2><ul><li class="quiet">このページに関連する資料リンクはありません。</li></ul></section><p class="source"><a href="https://www.kyudo.jp/region/%e7%ac%ac%ef%bc%91%e5%9b%9e%e5%ae%ae%e5%9f%8e%e7%9c%8c%e5%9c%b0%e6%96%b9%e5%af%a9%e6%9f%bb%e3%80%80%ef%bc%88%e4%bb%99%e5%8f%b0%e5%b8%82%ef%bc%89/">公式サイトの掲載内容を確認する</a></p></main><footer class="bottom"><span>公益財団法人 全日本弓道連盟</span><a href="../../all-pages.html">全ページ一覧</a></footer><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script>
+(function(){
+  var K="../..";
+  var reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var M=[["弓道の心",[["弓道の心","/howto/"],["弓道の歴史","/howto/history.html"],["射法について","/howto/syaho.html"],["弓道用語辞典","/howto/terminology.html"]]],
+   ["見学・入門",[["弓道を始めたい方","/begin/"],["道具について","/begin/tool.html"],["よくある質問","/begin/faq.html"],["上達への道","/improve/"],["動画（MOVIE）","/movie/"]]],
+   ["大会・審査会情報",[["全国大会","/schedule/taikai/"],["中央審査会","/schedule/chuoshinsa/"],["連合審査会","/schedule/association/"],["地方審査会","/schedule/region/"],["資料・申込書","/documents/"]]],
+   ["全国弓道場",[["全国弓道場マップ","/map/"],["中央道場概要と使用日程","/schedule/chuoshinsa/overview.html"]]],
+   ["全日本弓道連盟について",[["概要","/aboutus/overview.html"],["中期計画","/aboutus/plan.html"],["加盟団体","/aboutus/org.html"],["職員採用案内","/aboutus/recruit.html"],["ブック（刊行物）","/aboutus/book.html"],["公式グッズ","/aboutus/officialgoods.html"]]]];
+  var NAV=["弓道の心","見学・入門","大会・審査会","弓道場","連盟について"];
+  var cur$=document.getElementById("cur"), cw=document.getElementById("cw"), nav=document.getElementById("nav"), mb=document.getElementById("mb"), hdr$=document.querySelector("header.site")||document.querySelector("header");
+  cw.innerHTML=M.map(function(g){return '<section class="grp"><h3><button type="button">'+g[0]+'</button></h3><ul>'+g[1].map(function(l){return '<li><a href="'+K+l[1]+'">'+l[0]+'</a></li>';}).join("")+'</ul></section>';}).join("");
+  nav.innerHTML=NAV.map(function(n){return '<button type="button">'+n+'</button>';}).join("");
+  var grps=cw.querySelectorAll(".grp"), navB=nav.querySelectorAll("button"), isOpen=false, act=-1, tm;
+  var desk=function(){return matchMedia("(min-width:900px)").matches;};
+  var D=function(x){return reduce?0:x;};
+  function reveal(){
+    if(!isOpen){isOpen=true; if(hdr$)hdr$.classList.add("menu-open"); cur$.style.visibility="visible"; gsap.to(cur$,{clipPath:"inset(0 0 0% 0)",duration:D(.7),ease:"power3.out"});}
+    gsap.fromTo(cur$.querySelectorAll(".grp.on li"),{y:14,opacity:0},{y:0,opacity:1,duration:D(.5),stagger:.04,ease:"power2.out",overwrite:true});
+  }
+  function show(i){act=i;grps.forEach(function(s,k){s.classList.toggle("on",k===i);});navB.forEach(function(b,k){b.classList.toggle("on",k===i);});reveal();}
+  function hide(){
+    if(!isOpen)return; isOpen=false; act=-1; if(hdr$)hdr$.classList.remove("menu-open");
+    navB.forEach(function(b){b.classList.remove("on");}); grps.forEach(function(s){s.classList.remove("on");});
+    gsap.to(cur$,{clipPath:"inset(0 0 100% 0)",duration:D(.5),ease:"power3.in",onComplete:function(){if(!isOpen)cur$.style.visibility="hidden";}});
+    document.body.style.overflow=""; mb.textContent="メニュー"; mb.setAttribute("aria-expanded","false");
+  }
+  navB.forEach(function(b,k){
+    b.addEventListener("mouseenter",function(){if(desk()){clearTimeout(tm);show(k);}});
+    b.addEventListener("click",function(){if(desk()){(isOpen&&act===k)?hide():show(k);}});
+  });
+  [nav,cur$].forEach(function(el){
+    el.addEventListener("mouseenter",function(){clearTimeout(tm);});
+    el.addEventListener("mouseleave",function(){if(desk())tm=setTimeout(hide,280);});
+  });
+  mb.onclick=function(){
+    if(isOpen){hide();return;}
+    grps.forEach(function(s){s.classList.remove("on");}); reveal();
+    document.body.style.overflow="hidden"; mb.textContent="閉じる"; mb.setAttribute("aria-expanded","true");
+  };
+  grps.forEach(function(s){s.querySelector("button").addEventListener("click",function(){
+    if(desk())return; var o=s.classList.contains("on"); grps.forEach(function(x){x.classList.remove("on");}); if(!o)s.classList.add("on");
+  });});
+})();
+</script>
+</body></html>

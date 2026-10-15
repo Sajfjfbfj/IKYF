@@ -1,0 +1,61 @@
+<main class="documents">
+<section class="hero is-large map">
+  <div class="hero-body">
+      <h2 class="pagetitle">全国弓道場マップ</h2>
+  </div>
+</section>
+<div class="bread_crumb">
+    <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li>全国弓道場マップ</li>
+    </ul>
+</div><!-- bread_crumb end -->
+<div class="contents">
+<div class="introduction is-small">
+  <h3 class="title">弓道場は公営・私営含め全国に1,000箇所以上。</h3>
+  <p>道場名・都道府県や市区町村名などを検索枠に入力し、弓道場をお探しください。</p>
+  <!--<p>自宅・学校・お勤め先などの近くにある弓道場をお探しください。<b>弓道場検索</b>・・・道場名・都道府県名・市区町村名など、キーワードを入力してください。</p>-->
+  <div class="mapCaptionArea">
+  <span class="site_link"><i class="fas fa-globe fa-fw"></i>webサイト</span> 各弓道場のwebサイトを表示します。<span class="spnone"> / </span><br class="pcnone"><span class="map_link"><i class="fas fa-map-marker-alt fa-fw"></i>マップ</span> 各弓道場のマップを大きく表示します。
+</div>
+</div><!-- introduction end -->
+
+<div class="map_box">
+  <div class="map_left">
+    <div class="map_search_head">
+      <form action="#">
+        <input type="text" class="search_text" placeholder="道場名・都道府県名・市町村名を入力してください">
+        <input type="image" class="map_search_btn" src="../img/map/search_btnBlue.png">
+      </form>
+    </div>
+    <div class="result_count" style="text-align: center; padding: 5px 0;border-bottom:none;">合計1178件</div>
+    <div class="map_list">
+          <div class="gym">
+        <b>千代台公園弓道場</b><br>
+        040-0013 北海道函館市千代台町27-8
+                <br>電話：0138-53-4322        
+        <div class="mapLinkArea">
+                    <a href="http://hako-kyu.moo.jp/" class="site_link" target="_blank"><i class="fas fa-globe fa-fw"></i>webサイト</a>
+                    <a href="http://maps.google.co.jp/maps?q='%E5%8C%97%E6%B5%B7%E9%81%93%E5%87%BD%E9%A4%A8%E5%B8%82%E5%8D%83%E4%BB%A3%E5%8F%B0%E7%94%BA27-8" class="map_link" target="_blank"><i class="fas fa-map-marker-alt fa-fw"></i>マップ</a>
+        </div>
+        <div class="search_word">千代台公園弓道場0400013北海道函館市千代台町27-8</div>
+        <div class="lat">41.7849785</div>
+        <div class="lng">140.748611</div>
+      </div>
+          <div class="gym">
+        <b>厚沢部町営弓道場</b><br>
+        043-1113 北海道檜山郡厚沢部町新町115
+                <br>電話：01396-4-3141        
+        <div class="mapLinkArea">
+                    <a href="http://maps.google.co.jp/maps?q='%E5%8C%97%E6%B5%B7%E9%81%93%E6%AA%9C%E5%B1%B1%E9%83%A1%E5%8E%9A%E6%B2%A2%E9%83%A8%E7%94%BA%E6%96%B0%E7%94%BA115" class="map_link" target="_blank"><i class="fas fa-map-marker-alt fa-fw"></i>マップ</a>
+        </div>
+        <div class="search_word">厚沢部町営弓道場0431113北海道檜山郡厚沢部町新町115</div>
+        <div class="lat">41.9196426</div>
+        <div class="lng">140.2262943</div>
+      </div>
+          <div class="gym">
+        <b>岩内弓道場</b><br>
+        045-0012 北海道岩内郡岩内町宮園２９７
+                <br>電話：0135-62-8712        
+        <div class="mapLinkArea">
+                    <a href="http://maps.google.co.jp/maps?q='%E5%8C%97%E6%B5%B7%E9%81%93%E5%B2%A9%E5%86%85%E9%83%A1%E5%B2%A9%E5%86%85%E7%94%BA%E5%AE%AE%E5%9C%92%EF%BC%92%EF%BC%99%EF%BC%97" class="map_link" 

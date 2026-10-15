@@ -1,0 +1,264 @@
+<main class="improve">
+ <section class="hero is-medium">
+  <div class="hero-body">
+      <h2 class="pagetitle black">上達への道。</h2>
+  </div>
+ </section>
+ <div class="bread_crumb">
+    <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="index-2.html">上達への道。</a></li>
+        <li>vol.02</li>
+    </ul>
+ </div><!-- bread_crumb end -->
+ <section>
+   <div class="width-inner">
+    <div class="improveCap">
+      <h3>上達への道。</h3>
+      <p><span>月刊弓道に連載中の「上達への道。」その第二話をご紹介。</span>
+        弓道の基本や、 基礎知識などについて、 写真やイラストなど多彩に使用し、わかりやすく、読みやすい内容になっております。<br>
+      第2回目は、素引き練習です。前回のゴム弓練習は、ゴム弓を使って射法八節の形や動作を練習しましたが、今回は実際に弓を持って行います。はじめの頃は弓に慣れずに、肩や身体全体に、余計な力がかかってしまうかもしれません。ですが、何度も練習することで、そのこわばりも解消できるはず。まずは地道にしっかりとこなして、きちんとした形や動きを習得しましょう。</p>
+      <img src="../img/improve/book201809.png" alt="月刊弓道" class="spnone">
+    </div><!-- improveCap end -->
+   </div><!-- width-inner end -->
+  </section>
+
+  <section>
+   <div class="improveContentsArea">
+    <div class="width-inner">
+     <h3>
+      <span>上達への道。vol.02</span>
+      効果的な“素引き練習”で<br class="pcnone">基礎を習得する
+     </h3>
+     <div class="improve02MainCap">
+      <p>はじめに覚えるのは、手の内のつくり方です。<br>手の内とは、左手でしっかりと弓を握ることです。正しく握ることができれば、的中率が上がるといっても過言ではないので、基礎を覚え、どうすれば調えられるかを確実に学んでください。<br>次のページで、ポイントを説明しているので、上手な手の内のつくり方をマスターしましょう。<br>次に覚えてほしいのは、バランス感覚です。<br>慣れないうちは、弓を持つと必要以上に力んでしまい、手首に力を入れ過ぎたり、身体がブレてしまったりすることがあります。<br>射法八節の動作には、それぞれの形がありますが、いずれも正しい姿勢を保つことがいちばん大切。そのカギを握るのが、バランス感覚ですが、これを養うには、練習を重ねるしかありません。<br>何度も素引きで練習をして、自然に会得できるように、鍛錬しましょう。何事もコツコツと、地道に頑張ることが近道となります。</p>
+      <img src="../img/improve/yumi.png" alt="弓">
+     </div><!-- improve02MainCap end -->
+     <div class="improve02MainCapU">
+      <div class="improve02MainCapUR">
+        <h4>弓の張り方を覚えよう！</h4>
+        <div class="improve02MainCapImg">
+         <img src="../img/improve/improve02HARI01.jpg" alt="弓の張り方">
+         <img src="../img/improve/improve02HARI02.jpg" alt="弓の張り方">
+         <img src="../img/improve/improve02HARI03.jpg" alt="弓の張り方">
+        </div>
+         <p>&#9312;写真のように、弓を押さえる人が末弭（弓の上部にある先端）部分を、しっかりと右手の手のひらで押さえます。張る人は左手で握りの下あたりをつかみ、右手で弦輪を持ちます。<br>
+          &#9313;次に張る人が腰をかがめ、左足の太ももに弓を乗せ、弦輪がピンと張るように左手で握りの下あたりを押しながら、本弭（弓の下部）に弦輪をかけます。<br>※弓張り板が設置されている場所では、指導に従って的確に張りましょう。</p>
+      </div><!-- improve02MainCapUR end -->
+     </div><!-- improve02MainCapU end -->
+
+    </div><!-- width-inner end -->
+
+     <div class="improveTit">
+      <h3>手の内のつくり方</h3>
+      <p>射を決めるのが手の内です。ここでは、そんな手の内のつくり方の基礎を紹介します。</p>
+     </div><!-- improveTit end -->
+
+    <div class="width-inner">
+
+     <div class="improve02handFoundation">
+       <ul>
+        <li>
+          <img src="../img/improve/improve02hand01.jpg" alt="手の内のつくり方1">
+          <h4>左手の「天紋筋」に<br>弓を当てる</h4>
+          <p>「天紋筋」に弓と手のひらが直角になるように、弓の外竹の左角を当てる。その際、親指以外の指は伸ばす。</p>
+        </li>
+        <li>
+          <img src="../img/improve/improve02hand02.jpg" alt="手の内のつくり方2">
+          <h4>親指で<br>弓をつかむ</h4>
+          <p>⒈のまま、イラストにある親指と人さし指の間にある「虎口」にある皮を、弓にあてがうようにして巻き込む。このとき親指以外の指は、伸ばしたままの状態で。</p>
+        </li>
+        <li>
+          <img src="../img/improve/improve02hand03.jpg" alt="手の内のつくり方3">
+          <h4>包むような感覚で<br>握る</h4>
+          <p>⒉の状態から、人さし指以外は弓を包むような感覚で内側に曲げる。中指の先と親指のはらが離れないようにし、また親指の根元と小指の根元ができるだけ近づくようにする。人さし指は伸ばしても曲げてもよいが、指先が下に向かないようにする。</p>
+        </li>
+       </ul>
+       <div class="improve02handBox">
+        <div class="improve02handBoxL">
+         <div class="improve02handBoxLS">
+          <h4>手の内の調え方を左右する<br>左手の手のひらの各部位</h4>
+          <p>「天紋筋」は、手のひらにある小指側から人さし指に向かって伸びている線のこと。「虎口」は親指の根元と人さし指の間にある部分。この皮を弓に下から巻き込むのがポイント。</p>
+         </div>
+          <img src="../img/improve/improve02hand04.jpg">
+        </div>
+        <div class="improve02handBoxR">
+         <img src="../img/improve/improve02hand05.jpg">
+         <div class="improve02handBoxRS">
+          <h4>素引きでの右手は、<br>しっかりと握る</h4>
+          <p>素引き練習では、弽をつけないで行うので、弦から指が離れないように、右手の４本の指でしっかりと握る！</p>
+         </div><!-- improve02handBoxRS end -->
+        </div><!-- improve02handBoxR end -->
+       </div><!-- improve02handBox end -->
+     </div><!-- improve02handFoundation end -->
+
+    </div><!-- width-inner end -->
+
+    <div class="improveTit">
+      <h3>素引き練習の基本を紹介</h3>
+     </div><!-- improveTit end -->
+
+    <div class="width-inner">
+
+     <div class="improveProcedure">
+      <div class="improveProcedureBox">
+       <div class="improveProcedureBoxL improveProcedureBoxLvol02">
+        <div class="improveProcedureLL">
+          <div class="improveProcedureTxtvol2">
+           <h4>執弓の姿勢から<br>足を開いて構える</h4>
+           <p>左手に弓を持ち、右手は腰に当て、足を左右に踏み開く。足を開く幅は、身長の半分くらいの長さで、その角度は60度が基本。</p>
+          </div><!-- improveProcedureTxt end -->
+        </div>
+        <img src="../img/improve/improve02_01.jpg" class="improve02Img">
+       </div><!-- improveProcedureBoxL end -->
+
+       <div class="improveProcedureBoxR">
+           <div class="improveProcedureBoxSH">
+            <h3><span>射法八節の1</span>足踏み</h3>
+            <img src="../img/improve/improve01SH.jpg">
+           </div>
+       </div><!-- improveProcedureBoxR end -->
+      </div><!-- improveProcedureBox end -->
+
+      <div class="improveProcedureBox">
+       <div class="improveProcedureBoxL improveProcedureBoxLvol02">
+        <div class="improveProcedureLL">
+          <div class="improveProcedureTxtvol2">
+           <h4>重心を<br>腰の中心に置く</h4>
+           <p>⒈の「足踏み」で調えた姿勢を保ちながら、両足の上に上体を正しく置く。腰をすえ、左右の肩を沈め、心気（気持ちや心のもち方）を丹田におさめる。</p>
+          </div><!-- improveProcedureTxt end -->
+        </div>
+        <img src="../img/improve/improve02_02.jpg" class="improve02Img">
+       </div><!-- improveProcedureBoxL end -->
+
+       <div class="improveProcedureBoxR">
+           <div class="improveProcedureBoxSH">
+            <h3><span>射法八節の2</span>胴造り</h3>
+            <img src="../img/improve/improve02SH.jpg">
+           </div>
+       </div><!-- improveProcedureBoxR end -->
+      </div><!-- improveProcedureBox end -->
+
+      <div class="improveProcedureBox">
+       <div class="improveProcedureBoxL improveProcedureBoxLvol02">
+        <div class="improveProcedureLL">
+          <div class="improveProcedureTxtvol2">
+           <h4>左右のこぶしは、<br>同じ高さで</h4>
+           <p>左手に持った弓を起こし、身体の中心あたりにもってくる。右手はしっかりと弦を握る。右のこぶし、左のこぶしは同じ高さにして、弓の下部にある本弭は左足の膝の上あたりに置く。このとき左手は、前ページで紹介した、手の内をしっかりとつくっておく。<br><span>※射法には正面と斜面<br>（弓構え～打起し）がありますが、<br>ここでは正面を説明しています。</span></p>
+          </div><!-- improveProcedureTxt end -->
+        </div>
+        <img src="../img/improve/improve02_03.jpg" class="improve02Img">
+       </div><!-- improveProcedureBoxL end -->
+
+       <div class="improveProcedureBoxR">
+           <div class="improveProcedureBoxSH">
+            <h3><span>射法八節の3</span>弓構え</h3>
+            <img src="../img/improve/improve03SH.jpg">
+           </div>
+       </div><!-- improveProcedureBoxR end -->
+      </div><!-- improveProcedureBox end -->
+
+      <div class="improveProcedureBox">
+       <div class="improveProcedureBoxL improveProcedureBoxLvol02">
+        <div class="improveProcedureLL">
+          <div class="improveProcedureTxtvol2">
+           <h4>両腕を<br>しなやかに上げる</h4>
+           <p>弓を持った左手、弦を持った右手を、呼吸に合わせて、しなやかに上にすくい上げる。両方のこぶしは、頭よりやや上にして、肩に余計な力を入れないようにする。</p>
+          </div><!-- improveProcedureTxt end -->
+        </div>
+        <img src="../img/improve/improve02_04.jpg" class="improve02Img">
+       </div><!-- improveProcedureBoxL end -->
+
+       <div class="improveProcedureBoxR">
+           <div class="improveProcedureBoxSH">
+            <h3><span>射法八節の4</span>打起し</h3>
+            <img src="../img/improve/improve04SH.jpg">
+           </div>
+       </div><!-- improveProcedureBoxR end -->
+      </div><!-- improveProcedureBox end -->
+
+      <div class="improveProcedureBox">
+       <div class="improveProcedureBoxL improveProcedureBoxLvol02">
+        <div class="improveProcedureLL">
+          <div class="improveProcedureTxtvol2">
+           <h4>左右の肩、両こぶしが<br>平行になるように</h4>
+           <p>両方のこぶしの高さをそろえながら、弓を持った左手を押し開く。右のこぶしは額の斜め上くらいの位置を目安にして右ひじを折り曲げる。左右の肩、左右のこぶしは、それぞれ高低差をつけず、平行になることが重要。調えた手の内の形が変わらないように注意する。</p>
+          </div><!-- improveProcedureTxt end -->
+        </div>
+        <img src="../img/improve/improve02_05.jpg" class="improve02Img">
+       </div><!-- improveProcedureBoxL end -->
+
+       <div class="improveProcedureBoxR">
+           <div class="improveProcedureBoxSH">
+            <h3><span>射法八節の5</span>引分け</h3>
+            <img src="../img/improve/improve05SH.jpg">
+           </div>
+       </div><!-- improveProcedureBoxR end -->
+      </div><!-- improveProcedureBox end -->
+
+      <div class="improveProcedureBox">
+       <div class="improveProcedureBoxL improveProcedureBoxLvol02">
+        <div class="improveProcedureLL">
+          <div class="improveProcedureTxtvol2">
+           <h4>身体全体を使って<br>張り合う</h4>
+           <p>⒌の「引分け」の状態のまま、両腕を左右均等に張り合う。背骨がまっすぐに上に伸びているか、足、肩、腰の３つの線が重なっているかなど、「ゴム弓練習法」で学んだ『五重十文字』の働きをイメージして、左右均等に伸び合うようにする。</p>
+           <div class="improveProcedureTxtvol2NG">
+             <img src="../img/improve/ngMark.png">
+             いずれの動作のなかでも、顔をそらせたり、また逆にのぞき込むなど、身体の中心線をずらしてはいけない。つねにバランス感覚を保てるように努力しよう。
+           </div>
+          </div><!-- improveProcedureTxt end -->
+        </div>
+        <div>
+         <img src="../img/improve/improve02_06.jpg" class="improve02Img">
+         <div class="improveProcedure06HO">
+          <img src="../img/improve/improve02_06HO1.jpg">
+          <img src="../img/improve/improve02_06HO2.jpg">
+         </div>
+        </div>
+       </div><!-- improveProcedureBoxL end -->
+
+       <div class="improveProcedureBoxR">
+           <div class="improveProcedureBoxSH">
+            <h3><span>射法八節の6</span>会</h3>
+            <img src="../img/improve/improve06SH.jpg">
+           </div>
+       </div><!-- improveProcedureBoxR end -->
+      </div><!-- improveProcedureBox end -->
+
+      <p class="staffArea">監修／影山 一（全日本弓道連盟理事）<br>指導／山田紀之（埼玉県立川越総合高等学校弓道部顧問）　演武協力／埼玉大学弓道部<br>参考資料／『弓道教本第1巻』『弓道講座全４巻（DVD）』（いずれも全日本弓道連盟発行）<br>撮影／杉田賢治</p>
+
+  </section>
+
+  <div class="improveLinkArea">
+    <div class="improveLinkBox clearfix">
+     <a href="index-2.html"><img src="../img/improve/linkArrowLeft.png">上達への道。 vol.01へ</a>
+     <a href="#">&nbsp;</a>
+    </div>
+  </div>
+
+  <!--<div class="purchaseArea">
+    <img src="../img/improve/book201808.png" alt="月刊弓道">
+    <div class="purchaseBox">
+     <h3>月刊弓道を購入</h3>
+     <p>各種催し物のご案内、審査・大会の要項や結果、弓道理論、中央・地方・海外弓道界の現在がわかる！<br>
+        昭和24年に創刊。約70ページの多岐にわたる内容で、一冊360円とリーズナブル、<br>
+        12回／年の定期購読により常に新鮮な弓界の話題が毎月届けられコンフォータブル。<br><br>
+    4,100円(税込)【1年 12回発刊】</p>
+    <a href="">「月刊弓道」を年間購読する<img src="../img/improve/arrowH.png"></a>
+    <a href="">「月刊弓道」バックナンバーを購入する<img src="../img/improve/arrowH.png"></a>
+    </div>
+  </div>-->
+
+</div><!-- contents END -->
+
+<!-- ▼▼ ssi/foot-banner START ▼▼ -->
+<div class="foot_banner">
+<a href="../howto/index.html"><img src="../img/common/foot_bn_howto.png" alt="弓道の心" title="弓道の心"></a>
+<a href="../begin/index.html"><img src="../img/common/foot_bn_begin.png" alt="弓道を始めたい方" title="弓道を始めたい方"></a>
+<a href="../schedule/index.html"><img src="../img/common/foot_bn_schedule.png" alt="大会・審査会情報" title="大会・審査会情報"></a>
+</div><!-- foot_banner end -->
+
+<!-- ▲▲ ssi/foot-banner END ▲▲ -->
+</div><!-- width-inner end -->
+</div><!-- contents-full END -->
+</main>

@@ -1,0 +1,98 @@
+<main class="begin tool">
+<section class="hero notice">
+  <div class="hero-body">
+      <h2 class="pagetitle">連盟からのお知らせ</h2>
+  </div>
+</section>
+<div class="bread_crumb">
+    <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li>連盟からのお知らせ</li>
+    </ul>
+</div><!-- bread_crumb end -->
+<div class="contents-full">
+<div class="width-inner">
+<div class="introduction_news">
+<p style="margin-bottom: 20px;">弓道をテーマにしたアニメ映画「劇場版ツルネ ーはじまりの一射ー」が８月19日から公開になります。</p>
+</div><!-- introduction end -->
+</div><!-- width-inner end -->
+
+
+
+
+
+<!-- 作品紹介：START -->
+<div class="">
+
+</div><!-- tool-title end -->
+<div class="tool-block tsuru">
+<div class="tool-block-body">
+    <div class="columns">
+      <div class="column img-block">
+        <a href="news_202208_01.html"><img src="../img/news/01/gK_01.jpg" class="img_resposive img_center pc_only"></a>
+        <a href="news_202208_01.html"><img src="../img/news/01/gK_02.jpg" class="img_resposive img_center smp_only"></a>
+        <a href="news_202208_01.html"><img src="../img/news/01/gK_03.jpg" class="img_resposive img_center smp_only"></a>
+      </div>
+      
+    </div>
+    <div class="clear"></div>
+
+</div><!-- tool-block-body end -->
+</div><!-- tool-block tsuru end -->
+<!-- 作品紹介：END -->
+
+
+
+</div><!-- contents-full END -->
+
+<!-- ▼▼ ssi/cnt-link START ▼▼ -->
+<section id="cnt-link">
+<h3 class="title begin"><p class="text">見学・入門<span class="subtitle">弓道を始めたい方コンテンツ</span></p></h3>
+<div class="cnt-link-list">
+<div class="cnt-link-block begin">
+    <a href="index.html">
+    <div class="cnt-link-block-body">
+    <div class="btn">
+    <img src="../img/begin/cont-link_btn_begin.png" alt="見学・入門 弓道を始めたい方　詳しく見る">
+    </div>
+    </div>
+    </a>
+</div><!-- cnt-link-block end -->
+<div class="cnt-link-block begin-tool">
+    <a href="tool.html">
+    <div class="cnt-link-block-body">
+    <div class="btn">
+    <img src="../img/begin/cont-link_btn_tool.png" alt="道具について　詳しく見る">
+    </div>
+    </div>
+    </a>
+</div><!-- cnt-link-block end -->
+<div class="cnt-link-block begin-faq">
+    <a href="faq.html">
+    <div class="cnt-link-block-body">
+    <div class="btn">
+    <img src="../img/begin/cont-link_btn_faq.png" alt="よくある質問　詳しく見る">
+    </div>
+    </div>
+    </a>
+</div><!-- cnt-link-block end -->
+</div><!-- cnt-link-list end -->
+</section><!-- cnt-link END -->
+<!-- ▲▲ ssi/cnt-link END ▲▲ -->
+
+<div class="contents-full">
+<div class="width-inner">
+<div class="dojomap">
+<a href="../map/index.html"><img src="../img/common/bn_dojomap.jpg" alt="全国弓道場マップ" class="img_resposive img_center"></a>
+</div><!-- dojomap end -->
+<!-- ▼▼ ssi/foot-banner START ▼▼ -->
+<div class="foot_banner">
+<a href="../howto/index.html"><img src="../img/common/foot_bn_howto.png" alt="弓道の心" title="弓道の心"></a>
+<a href="../begin/index.html"><img src="../img/common/foot_bn_begin.png" alt="弓道を始めたい方" title="弓道を始めたい方"></a>
+<a href="../schedule/index.html"><img src="../img/common/foot_bn_schedule.png" alt="大会・審査会情報" title="大会・審査会情報"></a>
+</div><!-- foot_banner end -->
+
+<!-- ▲▲ ssi/foot-banner END ▲▲ -->
+</div><!-- width-inner end -->
+</div><!-- contents-full END -->
+</main>

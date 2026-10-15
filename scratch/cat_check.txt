@@ -1,0 +1,19 @@
+../../ count: 6
+../ count: 15
+
+Main content:
+<main class="wrap"><div class="crumb"><a href="../index.html">HOME</a><span>›</span><a href="../schedule/chuoshinsa/index.html">中央審査会</a><span>›</span>年度別一覧</div><p class="eyebrow">審査</p><h1>中央審査会 年度別一覧</h1><div class="meta"><span>公益財団法人 全日本弓道連盟</span></div>
+<section class="materials">
+<h2>年度別 中央審査会</h2>
+<p class="lead">各年度の中央審査会の日程・要項・結果をご覧いただけます。</p>
+<ul>
+<li><a href="2026chuoshinsa/index.html">令和8年度中央審査会<span class="more">詳しく見る</span></a></li>
+<li><a href="2025chuoshinsa/index.html">令和7年度中央審査会<span class="more">詳しく見る</span></a></li>
+<li><a href="2024chuoshinsa/index.html">令和6年度中央審査会<span class="more">詳しく見る</span></a></li>
+<li><a href="2023chuoshinsa/index.html">令和5年度中央審査会<span class="more">詳しく見る</span></a></li>
+<li><a href="2022chuoshinsa/index.html">令和4年度中央審査会<span class="more">詳しく見る</span></a></li>
+<li><a href="2021chuoshinsa/index.html">令和3年度中央審査会<span class="more">詳しく見る</span></a></li>
+<li><a href="2020chuoshinsa/index.html">令和2年度中央審査会<span class="more">詳しく見る</span></a></li>
+</ul>
+</section>
+<p class="source"><a href="https://www.kyudo.jp/category/chuoshinsa/">公式サイトの掲載内容を確認する</a></p></main>

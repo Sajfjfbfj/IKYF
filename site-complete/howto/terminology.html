@@ -1,0 +1,2871 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="弓道に関する用語と意味を日本語・英語で紹介します。"
+    />
+    <title>弓道用語辞典｜全日本弓道連盟</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root{color-scheme:dark;--bg:#14121c;--ink:#f3eef8;--sub:rgba(243,238,248,.72);--line:rgba(243,238,248,.18);--accent:#b79be0}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Shippori Mincho","Yu Mincho",serif;line-height:1.9}a{color:inherit;text-decoration:none}a:hover{color:var(--accent)}a:focus-visible{outline:2px solid var(--accent);outline-offset:4px}.top{padding:30px 7vw 24px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:24px}.brand b{display:block;font-size:18px;letter-spacing:.16em}.brand span{font:11px Arial,sans-serif;letter-spacing:.12em;color:var(--sub)}.top nav{display:flex;gap:24px;flex-wrap:wrap;font-size:13px;letter-spacing:.12em}.wrap{width:min(900px,86vw);margin:0 auto;padding:8vh 0 12vh}.crumb{font-size:12px;letter-spacing:.1em;color:var(--sub);margin-bottom:8vh}.crumb span{padding:0 .7em;color:var(--accent)}.eyebrow{font-size:12px;letter-spacing:.22em;color:var(--accent)}h1{font-size:clamp(30px,5vw,56px);font-weight:600;line-height:1.5;letter-spacing:.14em;margin:.5em 0 .7em;overflow-wrap:anywhere}.meta{display:flex;gap:1.5em;align-items:center;color:var(--sub);font-size:13px;border-bottom:1px solid var(--line);padding-bottom:1.5em}.summary{font-size:17px;line-height:2.1;max-width:42em;margin:3em 0 4em}.materials h2{font-size:19px;letter-spacing:.16em;font-weight:600;margin:0 0 1em}.materials ul{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}.materials li{padding:1em 0;border-bottom:1px solid var(--line)}.quiet{color:var(--sub);font-size:14px}.source{margin-top:4em;font-size:13px;color:var(--sub)}.source a{border-bottom:1px solid var(--accent);padding-bottom:.2em}.bottom{border-top:1px solid var(--line);padding:24px 7vw 42px;color:var(--sub);font-size:12px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}@media(max-width:650px){.top{align-items:flex-start;flex-direction:column}.top nav{gap:12px 18px}.wrap{padding-top:6vh}.crumb{margin-bottom:5vh}.summary{font-size:15px}}
+    
+/* ===== 共通メニューバー（的場の水鏡.html と同一） ===== */
+button{all:unset;cursor:pointer}
+button:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+header.site{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:flex-start;gap:20px;padding:calc(env(safe-area-inset-top,0px) + 3vh) 5vw 2vh;background:var(--bg);border-bottom:1px solid var(--line);text-shadow:none;transition:background .3s ease,border-color .3s ease}header.site.menu-open{background:transparent;border-bottom-color:transparent;text-shadow:0 1px 16px rgba(20,18,28,.7)}
+header.site .mark b{display:block;font-size:19px;letter-spacing:.16em;line-height:1.9}
+header.site .mark span{font:11px "Shippori Mincho","Yu Mincho",serif;letter-spacing:.12em;color:var(--sub)}
+.nav{display:none;gap:2.2em}
+.nav button{font-size:15px;letter-spacing:.2em;padding:.5em 0;position:relative;color:var(--ink)}
+.nav button::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--ink);transform:scaleX(0);transform-origin:left;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.nav button:hover::after,.nav button.on::after{transform:scaleX(1)}
+#mb{font-size:15px;letter-spacing:.3em;padding:.4em 0;border-bottom:1px solid var(--ink)}
+#cur{position:fixed;z-index:4;top:0;left:0;right:0;max-height:100vh;overflow:auto;visibility:hidden;clip-path:inset(0 0 100% 0);padding:calc(env(safe-area-inset-top,0px) + 13vh) 7vw 6vh;background:repeating-linear-gradient(90deg,rgba(255,255,255,.07) 0 2px,transparent 2px 6.5vw),linear-gradient(#5a4096,#43307a)}
+#cur a:hover{color:inherit}
+.grp{display:none}
+.grp.on{display:grid;grid-template-columns:minmax(9em,1fr) 3fr;gap:4vw}
+.grp h3{margin:0;font-size:clamp(28px,4vw,52px);font-weight:600;letter-spacing:.18em;line-height:1.3}
+.grp h3 button{font:inherit;letter-spacing:inherit;cursor:default}
+.grp ul{list-style:none;margin:0;padding:0;columns:2;column-gap:4vw}
+.grp li{break-inside:avoid;border-bottom:1px solid rgba(255,255,255,.22)}
+.grp a{display:flex;align-items:center;gap:.8em;padding:.7em 0;font-size:clamp(16px,1.6vw,21px);letter-spacing:.12em}
+.grp a::after{content:"";height:1px;width:0;background:#fff;transition:width .45s cubic-bezier(.2,.8,.2,1)}
+.grp a:hover::after,.grp a:focus-visible::after{width:2.6em}
+.util{margin-top:5vh;display:flex;gap:1.8em;flex-wrap:wrap;font-size:13px;letter-spacing:.12em;color:rgba(255,255,255,.82)}
+@media (min-width:900px){.nav{display:flex}#mb{display:none}}
+@media (max-width:899px){.grp,.grp.on{display:block;border-bottom:1px solid rgba(255,255,255,.22)}.grp h3{font-size:19px}.grp h3 button{display:flex;justify-content:space-between;width:100%;padding:.9em 0;cursor:pointer}.grp h3 button::after{content:"＋"}.grp.on h3 button::after{content:"－"}.grp ul{display:none;columns:1;padding-bottom:.6em}.grp.on ul{display:block}}
+@media (max-width:600px){header.site .mark b{font-size:16px}}
+/* ===== /共通メニューバー ===== */
+</style>
+    <style>
+      .kana-index {
+        margin-bottom: 2.5rem;
+      }
+
+      .kana-index ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem 0.75rem;
+        border-top: 0;
+      }
+
+      .kana-index li {
+        padding: 0;
+        border-bottom: 0;
+      }
+
+      .kana-index a {
+        display: block;
+        min-width: 3.25rem;
+        padding: 0.35rem 0.6rem;
+        border: 1px solid var(--line);
+        border-radius: 4px;
+        text-align: center;
+      }
+
+      .kana-index a:hover {
+        border-color: var(--accent);
+      }
+    
+/* ===== 共通メニューバー（的場の水鏡.html と同一） ===== */
+button{all:unset;cursor:pointer}
+button:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+header.site{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:flex-start;gap:20px;padding:calc(env(safe-area-inset-top,0px) + 3vh) 5vw 2vh;background:var(--bg);border-bottom:1px solid var(--line);text-shadow:none;transition:background .3s ease,border-color .3s ease}header.site.menu-open{background:transparent;border-bottom-color:transparent;text-shadow:0 1px 16px rgba(20,18,28,.7)}
+header.site .mark b{display:block;font-size:19px;letter-spacing:.16em;line-height:1.9}
+header.site .mark span{font:11px "Shippori Mincho","Yu Mincho",serif;letter-spacing:.12em;color:var(--sub)}
+.nav{display:none;gap:2.2em}
+.nav button{font-size:15px;letter-spacing:.2em;padding:.5em 0;position:relative;color:var(--ink)}
+.nav button::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--ink);transform:scaleX(0);transform-origin:left;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.nav button:hover::after,.nav button.on::after{transform:scaleX(1)}
+#mb{font-size:15px;letter-spacing:.3em;padding:.4em 0;border-bottom:1px solid var(--ink)}
+#cur{position:fixed;z-index:4;top:0;left:0;right:0;max-height:100vh;overflow:auto;visibility:hidden;clip-path:inset(0 0 100% 0);padding:calc(env(safe-area-inset-top,0px) + 13vh) 7vw 6vh;background:repeating-linear-gradient(90deg,rgba(255,255,255,.07) 0 2px,transparent 2px 6.5vw),linear-gradient(#5a4096,#43307a)}
+#cur a:hover{color:inherit}
+.grp{display:none}
+.grp.on{display:grid;grid-template-columns:minmax(9em,1fr) 3fr;gap:4vw}
+.grp h3{margin:0;font-size:clamp(28px,4vw,52px);font-weight:600;letter-spacing:.18em;line-height:1.3}
+.grp h3 button{font:inherit;letter-spacing:inherit;cursor:default}
+.grp ul{list-style:none;margin:0;padding:0;columns:2;column-gap:4vw}
+.grp li{break-inside:avoid;border-bottom:1px solid rgba(255,255,255,.22)}
+.grp a{display:flex;align-items:center;gap:.8em;padding:.7em 0;font-size:clamp(16px,1.6vw,21px);letter-spacing:.12em}
+.grp a::after{content:"";height:1px;width:0;background:#fff;transition:width .45s cubic-bezier(.2,.8,.2,1)}
+.grp a:hover::after,.grp a:focus-visible::after{width:2.6em}
+.util{margin-top:5vh;display:flex;gap:1.8em;flex-wrap:wrap;font-size:13px;letter-spacing:.12em;color:rgba(255,255,255,.82)}
+@media (min-width:900px){.nav{display:flex}#mb{display:none}}
+@media (max-width:899px){.grp,.grp.on{display:block;border-bottom:1px solid rgba(255,255,255,.22)}.grp h3{font-size:19px}.grp h3 button{display:flex;justify-content:space-between;width:100%;padding:.9em 0;cursor:pointer}.grp h3 button::after{content:"＋"}.grp.on h3 button::after{content:"－"}.grp ul{display:none;columns:1;padding-bottom:.6em}.grp.on ul{display:block}}
+@media (max-width:600px){header.site .mark b{font-size:16px}}
+/* ===== /共通メニューバー ===== */
+</style>
+  </head>
+  <body>
+    <header class="site">
+  <a class="mark" href="../../的場の水鏡.html"><b>全日本弓道連盟</b><span>All Nippon Kyudo Federation</span></a>
+  <nav class="nav" id="nav" aria-label="メインメニュー"></nav>
+  <button id="mb" aria-expanded="false" aria-controls="cur">メニュー</button>
+</header>
+<div id="cur" aria-label="サイトメニュー"><div id="cw"></div>
+  <div class="util"><a href="../notice/">連盟からのお知らせ</a><a href="../info/contact.html">お問い合わせ</a><a href="../info/english.html">English</a><a href="https://www.kyudo-shop.com/">オンラインショップ</a></div>
+</div>
+    <main class="wrap">
+      <div class="crumb">
+        <a href="../index.html">HOME</a><span>›</span
+        ><a href="index.html">弓道の心</a><span>›</span>弓道用語辞典
+      </div>
+      <p class="eyebrow">弓道の心</p>
+      <h1>弓道用語辞典</h1>
+      <div class="meta"><span>公益財団法人 全日本弓道連盟</span></div>
+      <p class="summary">弓道に関する簡単な説明の用語集です。</p>
+      <section class="materials kana-index">
+        <h2>五十音索引</h2>
+        <ul>
+          <li><a href="#group-0">あ行</a></li>
+          <li><a href="#group-1">か行</a></li>
+          <li><a href="#group-2">さ行</a></li>
+          <li><a href="#group-3">た行</a></li>
+          <li><a href="#group-4">な行</a></li>
+          <li><a href="#group-5">は行</a></li>
+          <li><a href="#group-6">ま行</a></li>
+          <li><a href="#group-7">や行</a></li>
+          <li><a href="#group-8">ら行</a></li>
+        </ul>
+      </section>
+      <section class="materials" id="group-0">
+        <h2>あ行</h2>
+        <ul>
+          <li>
+            <p>
+              <strong>足踏み</strong>
+              <span class="quiet">(あしぶみ) Ashibumi</span>
+            </p>
+            <p lang="ja">弓を引く時の足の踏み方。</p>
+            <p lang="en" class="quiet">
+              The way of placing the feet when drawing the Yumi.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>中り</strong> <span class="quiet">(あたり) Atari</span>
+            </p>
+            <p lang="ja">「的」に中ること。</p>
+            <p lang="en" class="quiet">Hitting the Mato.</p>
+          </li>
+          <li>
+            <p>
+              <strong>垜 / 安土</strong>
+              <span class="quiet">(あづち) Azuchi</span>
+            </p>
+            <p lang="ja">「的」を掛ける場所のこと。</p>
+            <p lang="en" class="quiet">The place where the Mato is set.</p>
+          </li>
+          <li>
+            <p>
+              <strong>中て弓</strong>
+              <span class="quiet">(あてゆみ) Ateyumi</span>
+            </p>
+            <p lang="ja">
+              「的」に当てることを主とし，基本を無視している弓引き者のこと。
+            </p>
+            <p lang="en" class="quiet">
+              A person who draws a Yumi and ignores the basics; concerned mainly
+              with hitting the Mato.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>合わせ離れ</strong>
+              <span class="quiet">(あわせはなれ) Awasehanare</span>
+            </p>
+            <p lang="ja">伸び合いがなく両手で調子を合わせて離す離れのこと。</p>
+            <p lang="en" class="quiet">
+              Hanare without Nobiai and releasing by adjusting both hands to
+              match.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>板付</strong>
+              <span class="quiet">(いたつき) Itatsuki</span>
+            </p>
+            <p lang="ja">矢じり。</p>
+            <p lang="en" class="quiet">Yajiri.</p>
+          </li>
+          <li>
+            <p>
+              <strong>射付節</strong>
+              <span class="quiet">(いつけぶし) Itsukebushi</span>
+            </p>
+            <p lang="ja">矢じりに近い節のこと。</p>
+            <p lang="en" class="quiet">
+              The bamboo joint closest to the Yajiri.
+            </p>
+          </li>
+          <li>
+            <p><strong>射手</strong> <span class="quiet">(いて) Ite</span></p>
+            <p lang="ja">弓を射るひと。</p>
+            <p lang="en" class="quiet">A person who shoots the Yumi.</p>
+          </li>
+          <li>
+            <p>
+              <strong>打起し</strong>
+              <span class="quiet">(うちおこし) Uchiokoshi</span>
+            </p>
+            <p lang="ja">弓矢を打ち上げる方法のこと。</p>
+            <p lang="en" class="quiet">
+              The method of raising the Yumiya (Yumi and Ya).
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>打ち切り</strong>
+              <span class="quiet">(うちきり) Uchikiri</span>
+            </p>
+            <p lang="ja">弓を強く握り締め「弓返り」をさせないこと。</p>
+            <p lang="en" class="quiet">
+              Gripping the Yumi tightly so that Yugaeri does not happen.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>内竹</strong>
+              <span class="quiet">(うちだけ) Uchidake</span>
+            </p>
+            <p lang="ja">弦を掛けた弓の内側の竹のこと。「前竹」とも言う。</p>
+            <p lang="en" class="quiet">
+              The bamboo on the inside of the Yumi when it is strung with the
+              Tsuru. Also referred to as the Maedake.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>裏反り</strong>
+              <span class="quiet">(うらぞり) Urazori</span>
+            </p>
+            <p lang="ja">弦を外した時，外竹の方へ反り返ること。</p>
+            <p lang="en" class="quiet">
+              The curving back of the Yumi towards the Todake when it is
+              unstrung.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>末矧</strong>
+              <span class="quiet">(うらはぎ) Urahagi</span>
+            </p>
+            <p lang="ja">
+              矢羽根を「箆」に付ける時，「筈」の側を糸で巻き留めた所のこと。「上矧」とも言う。
+            </p>
+            <p lang="en" class="quiet">
+              The place where the thread is wrapped on the side of the Hazu when
+              fixing the Yabane to the No. Also referred to as the Uwahagi.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>末弭</strong>
+              <span class="quiet">(うらはず) Urahazu</span>
+            </p>
+            <p lang="ja">
+              弓の上端の弦輪が掛かる部分のこと。「上弭」とも言う。
+            </p>
+            <p lang="en" class="quiet">
+              The upper end of the Yumi where the Tsuruwa is looped onto. Also
+              referred to as the Uwahazu.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>上押し</strong>
+              <span class="quiet">(うわおし) Uwaoshi</span>
+            </p>
+            <p lang="ja">
+              手首が上に折れ，左拳を下向きに押す「手の内」のこと。
+            </p>
+            <p lang="en" class="quiet">
+              A Tenouchi in which the wrist is bent pointing upwards and the
+              left fist is pushing downwards.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>上関板</strong>
+              <span class="quiet">(うわせきいた) Uwasekiita</span>
+            </p>
+            <p lang="ja">弓の「末弭」の内竹側に付けた「関止板」のこと。</p>
+            <p lang="en" class="quiet">
+              The Sekitomeita fixed on to the Urahazu on the side of the
+              Uchidake.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>上弦</strong>
+              <span class="quiet">(うわづる) Uwazuru</span>
+            </p>
+            <p lang="ja">「中仕掛け」より上部の弦のこと。</p>
+            <p lang="en" class="quiet">
+              The part of Tsuru above the Nakajikake.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>上弦を引く</strong>
+              <span class="quiet">(うわづるをひく) Uwazuru wo hiku</span>
+            </p>
+            <p lang="ja">「弦枕」の上の方を引っ張るように引くこと。</p>
+            <p lang="en" class="quiet">
+              A way of drawing the Yumi by pulling from the upper part of the
+              Tsurumakura.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>上成節</strong>
+              <span class="quiet">(うわなりぶし) Uwanaribushi</span>
+            </p>
+            <p lang="ja">弓の内竹の上部から2番目の節のこと。</p>
+            <p lang="en" class="quiet">
+              The second node of the bamboo from the top on the Uchidake of the
+              Yumi.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>上矧</strong>
+              <span class="quiet">(うわはぎ) Uwahagi</span>
+            </p>
+            <p lang="ja">
+              矢羽根を「箆」に付ける時，「筈」の側を糸で巻き留めた所のこと。「末矧」とも言う。
+            </p>
+            <p lang="en" class="quiet">
+              The place where the thread is wrapped on the side of the Hazu when
+              fixing the Yabane to the No. Also referred tu as the Urahagi.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>上弭</strong>
+              <span class="quiet">(うわはず) Uwahazu</span>
+            </p>
+            <p lang="ja">
+              弓の上端の弦輪が掛かる部分のこと。「末弭」とも言う。
+            </p>
+            <p lang="en" class="quiet">
+              The upper end of the Yumi where the Tsuruwa is looped onto. Also
+              referred tu as the Urahazu.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>上離れ</strong>
+              <span class="quiet">(うわばなれ) Uwabanare</span>
+            </p>
+            <p lang="ja">両手または右手が上に離れる離れのこと。</p>
+            <p lang="en" class="quiet">
+              A Hanare is which both hand or right hand release upward.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>円相</strong> <span class="quiet">(えんそう) Enso</span>
+            </p>
+            <p lang="ja">両肘を伸ばすことなく円を描くような形で構えること。</p>
+            <p lang="en" class="quiet">
+              The posture where both elbows are not stretched but form a
+              circular shape.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>大離れ</strong>
+              <span class="quiet">(おおばなれ) Obanare</span>
+            </p>
+            <p lang="ja">左右の手が大きく離れること。</p>
+            <p lang="en" class="quiet">
+              A large release to the left hand and right hand.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>大前</strong> <span class="quiet">(おおまえ) Omae</span>
+            </p>
+            <p lang="ja">「行射」をする時，1立ち毎の1番前の「射手」のこと。</p>
+            <p lang="en" class="quiet">
+              The first Ite in each Tachi (group) when performing Gyosha.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>送り離れ</strong>
+              <span class="quiet">(おくりばなれ) Okuribanare</span>
+            </p>
+            <p lang="ja">右手が的の方へ戻りつつ離れること。</p>
+            <p lang="en" class="quiet">
+              The right hand returns in the direction of the Mato when relasing.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>押手</strong> <span class="quiet">(おしで) Oshide</span>
+            </p>
+            <p lang="ja">左手のこと。「弓手」とも言う。</p>
+            <p lang="en" class="quiet">
+              The left hand. Also referred to as Yunde.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>押手弽</strong>
+              <span class="quiet">(おしでがけ) Oshidegake</span>
+            </p>
+            <p lang="ja">左手に用いる「弽」のこと。</p>
+            <p lang="en" class="quiet">A Yugake used on the left hand.</p>
+          </li>
+          <li>
+            <p><strong>落</strong> <span class="quiet">(おち) Ochi</span></p>
+            <p lang="ja">
+              「行射」をする時，1立ち毎の1番後ろの「射手」のこと。
+            </p>
+            <p lang="en" class="quiet">
+              The last Ite in each Tachi (group) when performing Gyosha.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>落肩</strong>
+              <span class="quiet">(おちがた) Ochigata</span>
+            </p>
+            <p lang="ja">左右の肩が水平でなく，右肩より左肩の低い肩のこと。</p>
+            <p lang="en" class="quiet">
+              The shoulders are not level; the left shoulder is lower than the
+              right.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>落ちる離れ</strong>
+              <span class="quiet">(おちるはなれ) Ochiruhanare</span>
+            </p>
+            <p lang="ja">肩の高さより低く下に離れること。</p>
+            <p lang="en" class="quiet">
+              A release that drops lower than height of the shoulder.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>乙矢</strong> <span class="quiet">(おとや) Otoya</span>
+            </p>
+            <p lang="ja">
+              「一手」のうち後で射る矢のこと。弦に番えた時，矢羽根の表が内側にある矢のこと。
+            </p>
+            <p lang="en" class="quiet">
+              One of the Ya in a Hitote that is shot later. When it is nocked
+              onto the Tsuru, the surface of the Hane faces inward.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="materials" id="group-1">
+        <h2>か行</h2>
+        <ul>
+          <li>
+            <p><strong>会</strong> <span class="quiet">(かい) Kai</span></p>
+            <p lang="ja">「矢束」を十分に引いた状態のこと。</p>
+            <p lang="en" class="quiet">
+              The state in which the Yazuka is completely drawn.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>介添え</strong>
+              <span class="quiet">(かいぞえ) Kaizoe</span>
+            </p>
+            <p lang="ja">「射礼」を行う時，「射手」を補佐する者のこと。</p>
+            <p lang="en" class="quiet">
+              The person who assists Ite when Sharei is performed.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>替弦</strong>
+              <span class="quiet">(かえづる) Kaezuru</span>
+            </p>
+            <p lang="ja">
+              不測の事態に備えて，あらかじめ準備する予備の弦のこと。
+            </p>
+            <p lang="en" class="quiet">
+              A replacement Tsuru prepared for unexpected situations.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>替矢</strong> <span class="quiet">(かえや) Kaeya</span>
+            </p>
+            <p lang="ja">
+              不測の事態に備えて，あらかじめ準備する予備の矢のこと。予備矢とも言う。
+            </p>
+            <p lang="en" class="quiet">
+              A replacement Ya prepared for unexpected situations. Also referred
+              to as Yobiya (spare Ya).
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>替弓</strong>
+              <span class="quiet">(かえゆみ) Kaeyumi</span>
+            </p>
+            <p lang="ja">
+              不測の事態に備えて，あらかじめ準備する予備の弓のこと。
+            </p>
+            <p lang="en" class="quiet">
+              A replacement Yumi prepared for unexpected situations.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>屈む胴</strong>
+              <span class="quiet">(かがむどう) Kagamudo</span>
+            </p>
+            <p lang="ja">前屈みになる同造りのこと。「伏し胴」とも言う。</p>
+            <p lang="en" class="quiet">
+              Bending forward during Dozukuri. Also referred to as Fushido.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>懸かる胴</strong>
+              <span class="quiet">(かかるどう) Kakarudo</span>
+            </p>
+            <p lang="ja">
+              的方向に傾いている「胴造り」のこと。「突胴」とも言う。
+            </p>
+            <p lang="en" class="quiet">
+              Dozukuri that is leaning towards the mato. Also referred to as
+              Totsudo.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>弽</strong>
+              <span class="quiet">(かけ/ゆがけ) Kake/Yugake</span>
+            </p>
+            <p lang="ja">右手にはめる鹿皮の手袋のこと。</p>
+            <p lang="en" class="quiet">
+              A deerskin glove worn on the right hand.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>掛口</strong>
+              <span class="quiet">(かけぐち) Kakeguchi</span>
+            </p>
+            <p lang="ja">「弽」の「弦枕」に弦が掛かるところのこと。</p>
+            <p lang="en" class="quiet">
+              The area on the Tsurumakura of the Yugake where the Tsuru is
+              nocked onto.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>掛口十文字</strong>
+              <span class="quiet"
+                >(かけぐちじゅうもんじ) Kakeguchi-Jumonji</span
+              >
+            </p>
+            <p lang="ja">「弽」の帽子と弦を直角にあてること。</p>
+            <p lang="en" class="quiet">
+              When the thumb of the Yugake and Tsuru form a right angle.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>下進上退</strong>
+              <span class="quiet">(かしんじょうたい) Kashin-Jotai</span>
+            </p>
+            <p lang="ja">
+              進む時は「下座」の足から，退く時は「上座」の足から運ぶ動作のこと。
+            </p>
+            <p lang="en" class="quiet">
+              When moving forward, one begins with the Geza/Shimoza (lower)
+              foot. When moving back, one begins with Kamiza (higher) foot.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>霞的</strong>
+              <span class="quiet">(かすみまと) Kasumi Mato</span>
+            </p>
+            <p lang="ja">中心を白とし，三つの同心円を描いた「的」のこと。</p>
+            <p lang="en" class="quiet">
+              A Mato with a white center and three concentric circles.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>肩入れ</strong>
+              <span class="quiet">(かたいれ) Kataire</span>
+            </p>
+            <p lang="ja">
+              「矢」を番えず弓の力を測る時，または肩慣らし等で弓を引くこと。
+            </p>
+            <p lang="en" class="quiet">
+              Measuring the strength of a Yumi without nocking a Ya, or drawing
+              the Yumi while warming up.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>片離れ</strong>
+              <span class="quiet">(かたばなれ) Katabanare</span>
+            </p>
+            <p lang="ja">右手，左手のいずれか一方の手で離れること。</p>
+            <p lang="en" class="quiet">
+              Releasing with only either the right or left hand.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>片矢</strong> <span class="quiet">(かたや) Kataya</span>
+            </p>
+            <p lang="ja">「甲矢」または「乙矢」いずれか1本の矢のこと。</p>
+            <p lang="en" class="quiet">A single Ya; either Haya or Otoya.</p>
+          </li>
+          <li>
+            <p>
+              <strong>勝手</strong> <span class="quiet">(かって) Katte</span>
+            </p>
+            <p lang="ja">右手のこと。「馬手」とも言う。</p>
+            <p lang="en" class="quiet">
+              The right hand; also referred to as Mete.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>勝手離れ</strong>
+              <span class="quiet">(かってはなれ) Kattebanare</span>
+            </p>
+            <p lang="ja">
+              左手より右手の方が勝って離すもの。「馬手離れ」･「右手離れ」とも言う。
+            </p>
+            <p lang="en" class="quiet">
+              When the right hand is stronger than the left hand when releasing.
+              Also referred to as Metebanare or Migitebanare.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>上切詰藤</strong>
+              <span class="quiet">(かみきりつめどう) Kamikiritsumedo</span>
+            </p>
+            <p lang="ja">
+              外竹，内竹と「上関板」を固定するために巻く籐のこと。
+            </p>
+            <p lang="en" class="quiet">
+              The cane wrapping that holds together the Todake, Uchidake and
+              Uwasekiita.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>上座</strong>
+              <span class="quiet">(かみざ/じょうざ) Kamiza/Joza</span>
+            </p>
+            <p lang="ja">上位の席･場所のこと。</p>
+            <p lang="en" class="quiet">The higher seat or position.</p>
+          </li>
+          <li>
+            <p>
+              <strong>空筈</strong>
+              <span class="quiet">(からはず) Karahazu</span>
+            </p>
+            <p lang="ja">
+              「引分け」時，「筈」が弦から外れて，「矢零れ」せずに離れた時，矢が飛ばないこと。
+            </p>
+            <p lang="en" class="quiet">
+              During Hikiwake, the Hazu become loose from the Tsuru but there is
+              no Yakobore and during the release, the Ya does not fly.
+            </p>
+          </li>
+          <li>
+            <p><strong>跪坐</strong> <span class="quiet">(きざ) Kiza</span></p>
+            <p lang="ja">爪立って膝頭を床に付け腰を下ろした姿勢のこと。</p>
+            <p lang="en" class="quiet">
+              The posture in which one sits tip of the toes with the knees on
+              the floor and the lower back is lowered.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>基本体</strong>
+              <span class="quiet">(きほんたい) Kihontai</span>
+            </p>
+            <p lang="ja">4基本姿勢，8基本動作のこと。</p>
+            <p lang="en" class="quiet">
+              The four Basic Postures and eight Basic Movement.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>基本体型</strong>
+              <span class="quiet">(きほんたいけい) Kihontaikei</span>
+            </p>
+            <p lang="ja">「縦横十文字」と「五重十文字」の体型のこと。</p>
+            <p lang="en" class="quiet">
+              Refers to the body form of the Tateyoko-Jumonji and Goju-jumonji.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>行射</strong>
+              <span class="quiet">(ぎょうしゃ) Gyosha</span>
+            </p>
+            <p lang="ja">弓を引く一連の動作のこと。</p>
+            <p lang="en" class="quiet">
+              The series of movement when drawing the Yumi.
+            </p>
+          </li>
+          <li>
+            <p><strong>切り</strong> <span class="quiet">(きり) Kiri</span></p>
+            <p lang="ja">離れのこと。</p>
+            <p lang="en" class="quiet">Refers to Hanare.</p>
+          </li>
+          <li>
+            <p>
+              <strong>ぎり粉</strong> <span class="quiet">(ぎりこ) Giriko</span>
+            </p>
+            <p lang="ja">
+              「弽」の親指の滑り止めの粉。使用時ギリギリと音がする(木脂を煮詰め油を除去した粉)
+            </p>
+            <p lang="en" class="quiet">
+              A powder used to stop the thumb of the Yugake from slipping. Makes
+              a "giri giri" sound when applied. (Powder made from tree resin
+              with the oil reduced by boiling.)
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>切り下げ</strong>
+              <span class="quiet">(きりさげ) Kirisage</span>
+            </p>
+            <p lang="ja">
+              「離れ」で両手または右手か左手が大きく下へ落ちること。
+            </p>
+            <p lang="en" class="quiet">
+              When both hands or either the right or left hand drops in Hanare.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>気力</strong>
+              <span class="quiet">(きりょく) Kiryoku</span>
+            </p>
+            <p lang="ja">活動にたえることが出来る精神力。</p>
+            <p lang="en" class="quiet">
+              The will power that allows an action to continue.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>近的</strong>
+              <span class="quiet">(きんてき) Kinteki</span>
+            </p>
+            <p lang="ja">28ｍの距離に的を置くこと。</p>
+            <p lang="en" class="quiet">
+              Placing the mato at a distance of 28 meters.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>天鼠･薬煉</strong>
+              <span class="quiet">(くすね) Kusune</span>
+            </p>
+            <p lang="ja">
+              松脂と油を混ぜたもので，弦の補強や中仕掛けを作る時に用いる。
+            </p>
+            <p lang="en" class="quiet">
+              A mixture of pine resin and oil applied for reinforcing the Tsuru
+              or when making the Nakajikake.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>口割</strong>
+              <span class="quiet">(くちわり) Kuchiwari</span>
+            </p>
+            <p lang="ja">「会」で矢が唇の位置にあること。</p>
+            <p lang="en" class="quiet">
+              Placing the Ya to the line of the mouth in Kai.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>繰り込み</strong>
+              <span class="quiet">(くりこみ) Kurikomi</span>
+            </p>
+            <p lang="ja">
+              「矢番え」動作で「筈」を持って弦の辺りにに矢を送り込む動作のこと。
+            </p>
+            <p lang="en" class="quiet">
+              The movement during Yatsugae when taking the Hazu and moving it
+              towards the Tsuru.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>下座</strong>
+              <span class="quiet">(げざ) Geza/Shimoza</span>
+            </p>
+            <p lang="ja">下位の席･場所のこと。</p>
+            <p lang="en" class="quiet">The lower seat or position.</p>
+          </li>
+          <li>
+            <p>
+              <strong>侯串</strong> <span class="quiet">(ごぐし) Gogushi</span>
+            </p>
+            <p lang="ja">「的」を垜に固定させる串のこと。</p>
+            <p lang="en" class="quiet">
+              A skewer to hold the Mato into place on the Azuchi.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>虎口</strong> <span class="quiet">(ここう) Koko</span>
+            </p>
+            <p lang="ja">左手の親指の根元と人差指との間の股の部分のこと。</p>
+            <p lang="en" class="quiet">
+              The skin between the base of the thumb and forefinger of the left
+              hand.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>五重十文字</strong>
+              <span class="quiet">(ごじゅうじゅうもんじ) Goju-Jumonji</span>
+            </p>
+            <p lang="ja">
+              五ヶ所の十文字のこと。(1)弓と矢(2)弓と「押手」の「手の内」(3)「弽」の拇指と弦
+              (4)胸の中筋と両肩を結ぶ線(5)首筋と矢
+            </p>
+            <p lang="en" class="quiet">
+              The five areas of the Jumonji: 1) the Yumi and Ya, 2) the Yumi and
+              Tenouchi of the Oshide 3) the thumb of the Yugake and the Tsuru,
+              4) the center line of chest and the connection line of the
+              shoulders, 5) The line of the neck and Ya.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>五胴</strong> <span class="quiet">(ごどう) Godo</span>
+            </p>
+            <p lang="ja">
+              反る，屈む，懸かる，退く，中正の五つの身体の状態のこと。
+            </p>
+            <p lang="en" class="quiet">
+              Postures: Soru (bending backwards), Kagamu (bending forward),
+              Kakaru (leaning forwards towards mato) and Chusei (correct).
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>小離れ</strong>
+              <span class="quiet">(こばなれ) Kobanare</span>
+            </p>
+            <p lang="ja">右手が小さく離れること。</p>
+            <p lang="en" class="quiet">A small release of the right-hand.</p>
+          </li>
+          <li>
+            <p>
+              <strong>五部の詰</strong>
+              <span class="quiet">(ごぶのつめ) Gobu-no-tsume</span>
+            </p>
+            <p lang="ja">
+              左右の拳，左右の肩，胸の5ヶ所を正しく骨法に従い嵌め合うこと。
+            </p>
+            <p lang="en" class="quiet">
+              When the five points consisting of the left and right fist, the
+              left and right shoulder, and the chest fit together according to
+              correct skeletal alignment.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="materials" id="group-2">
+        <h2>さ行</h2>
+        <ul>
+          <li>
+            <p>
+              <strong>差肩</strong>
+              <span class="quiet">(さしがた) Sashigata</span>
+            </p>
+            <p lang="ja">左肩の高い方のこと。</p>
+            <p lang="en" class="quiet">When the left shoulder is higher.</p>
+          </li>
+          <li>
+            <p>
+              <strong>坐射</strong> <span class="quiet">(ざしゃ) Zasha</span>
+            </p>
+            <p lang="ja">
+              本座に坐って礼をし，立って射位に進み，座して矢番えをして立って射ること。
+            </p>
+            <p lang="en" class="quiet">
+              Shooting procedure in which Rei si performed while sitting,
+              standing up move into Shai sit down to nock the Ya and stand up to
+              shoot the Yumi.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>左進右退</strong>
+              <span class="quiet">(さしんうたい) Sashin-Utai</span>
+            </p>
+            <p lang="ja">進む時は左足から，退く時は右足から運ぶ動作のこと。</p>
+            <p lang="en" class="quiet">
+              When moving forward, the left foot leads; when withdrawing back,
+              the right foot leads.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>定めの座</strong>
+              <span class="quiet">(さだめのざ) Sadamenoza</span>
+            </p>
+            <p lang="ja">
+              「射礼」の時，「射手」及び「介添え」が「脇正面」に対して「礼」を行う位置のこと。
+            </p>
+            <p lang="en" class="quiet">
+              The position in which Ite and Kaizoe execute Rei towards
+              Waki-Shomen during a Sharei.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>三重十文字</strong>
+              <span class="quiet">(さんじゅうじゅうもんじ) Sanju-Jumonji</span>
+            </p>
+            <p lang="ja">
+              足底・腰・肩の線が上から見たときに一枚になる状態のこと。
+            </p>
+            <p lang="en" class="quiet">
+              The posture where seen from above, the soles of the feet, lower
+              back and shoulders are aligned in one plane.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>残心･残身</strong>
+              <span class="quiet">(ざんしん) Zanshin</span>
+            </p>
+            <p lang="ja">矢が離れた直後の心･身の状態のこと。</p>
+            <p lang="en" class="quiet">
+              The condition of the spirit and body immediately after the Ya has
+              been released.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>三位一体</strong>
+              <span class="quiet">(さんみいったい) Sami-ittai</span>
+            </p>
+            <p lang="ja">身･心･弓の三者が合して一つになること。</p>
+            <p lang="en" class="quiet">
+              When the body, spirit and Yumi come together to become one.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>死気体</strong>
+              <span class="quiet">(しきたい) Shikitai</span>
+            </p>
+            <p lang="ja">気力，活力がない体のこと。</p>
+            <p lang="en" class="quiet">
+              The physical body empty of Kiryoku or energy.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>指建礼</strong>
+              <span class="quiet">(しけんれい) Shikenrei</span>
+            </p>
+            <p lang="ja">指先が床に付く程度に屈する礼のこと。</p>
+            <p lang="en" class="quiet">
+              A method of bowing where the upper body leans forward until the
+              fingertips touch the floor.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>自然の離れ</strong>
+              <span class="quiet">(しぜんのはなれ) Shizen-no-hanare</span>
+            </p>
+            <p lang="ja">機が熟し自然に離れること。</p>
+            <p lang="en" class="quiet">
+              A release that naturally occurs when the moment has come.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>下押し</strong>
+              <span class="quiet">(したおし) Shitaoshi</span>
+            </p>
+            <p lang="ja">
+              手首が下に折れ，左手拳を上向きに押す「手の内」のこと。
+            </p>
+            <p lang="en" class="quiet">
+              A Tenouchi where the wrist is bent pointing downwards and the left
+              fist is pushing upwards.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>下がけ</strong>
+              <span class="quiet">(したがけ) Shitagake</span>
+            </p>
+            <p lang="ja">「弽」の下に着けるもので，布で作った手袋のこと。</p>
+            <p lang="en" class="quiet">Cloth glove worn under the Yugake.</p>
+          </li>
+          <li>
+            <p>
+              <strong>下切詰籐</strong>
+              <span class="quiet">(したきりずめどう) Shitakirizumedo</span>
+            </p>
+            <p lang="ja">
+              外竹，内竹と「下関板」を固定するために巻く籐のこと。
+            </p>
+            <p lang="en" class="quiet">
+              The cane wrapping that holds together the Todake, Uchidake and
+              Shimosekiita.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>下弦</strong>
+              <span class="quiet">(したづる) Shitazuru</span>
+            </p>
+            <p lang="ja">「中仕掛け」より下部の弦のこと。</p>
+            <p lang="en" class="quiet">
+              The part of the Tsuru below the Nakajikake.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>下弦を引く</strong>
+              <span class="quiet">(したづるをひく) Shitazuru wo hiku</span>
+            </p>
+            <p lang="ja">「弦枕」の下のほうを引っ張るように引くこと。</p>
+            <p lang="en" class="quiet">
+              Drawing by pulling with the lower part of the Tsurumakura.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>下成節</strong>
+              <span class="quiet">(したなりぶし) Shitanaribushi</span>
+            </p>
+            <p lang="ja">弓の内竹の下部から2番目の節のこと。</p>
+            <p lang="en" class="quiet">
+              The second node of the bamboo from the bottom on the Uchidake of
+              the Yumi.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>下矧</strong>
+              <span class="quiet">(したはぎ) Shitahagi</span>
+            </p>
+            <p lang="ja">
+              矢羽根を「箆」に付ける時，「矢尻」側を糸で巻き留めた所のこと。「本矧」とも言う。
+            </p>
+            <p lang="en" class="quiet">
+              The area where thread is wrapped on the side of the Yajiri when
+              fixing the Yabane to the No. Also referred as the Motohagi.
+            </p>
+          </li>
+          <li>
+            <p><strong>失</strong> <span class="quiet">(しつ) Shitsu</span></p>
+            <p lang="ja">
+              弦切れ，「筈」こぼれ，弓を落とす等の失態をすること。
+            </p>
+            <p lang="en" class="quiet">
+              An error such as Tsurugire, Hazukobore, or dropping the Yumi.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>四部の離れ</strong>
+              <span class="quiet">(しべのはなれ) Shibe-no-hanare</span>
+            </p>
+            <p lang="ja">
+              左右の拳，左右の肩の四ヶ所が一致して離れる理想的な離れのこと。
+            </p>
+            <p lang="en" class="quiet">
+              An ideal Hanare in which the four points of the left and right
+              fist and the left and right shoulder separate at the same time.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>自満</strong> <span class="quiet">(じまん) Jiman</span>
+            </p>
+            <p lang="ja">離れの瞬間の満ちた状態のこと。</p>
+            <p lang="en" class="quiet">
+              A state of fullness at the moment of Hanare.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>持満</strong> <span class="quiet">(じまん) Jiman</span>
+            </p>
+            <p lang="ja">「会」で精気が満ちるのを待つこと。</p>
+            <p lang="en" class="quiet">
+              The moment in Kai waiting for one's Seiki (Spiritual Energy) to
+              become full.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>下関板</strong>
+              <span class="quiet">(しもせきいた) Shimosekiita</span>
+            </p>
+            <p lang="ja">弓の下端の内竹側に付けた木片の板のこと。</p>
+            <p lang="en" class="quiet">
+              The wooden block fixed to the side of the Uchidake, at the lower
+              end of the Yumi.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>下弭</strong>
+              <span class="quiet">(しもはず) Shimohazu</span>
+            </p>
+            <p lang="ja">
+              弓の下端の弦輪がかかる部分のこと。「本弭」とも言う。
+            </p>
+            <p lang="en" class="quiet">
+              The lower end of the Yumi where the Tsuruwa is looped. Also
+              referred to as the Motohazu.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>射位</strong> <span class="quiet">(しゃい) Shai</span>
+            </p>
+            <p lang="ja">「行射」の時，「射手」が立つ位置のこと。</p>
+            <p lang="en" class="quiet">
+              The center position where Ite stands during Gyosha.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>射会</strong> <span class="quiet">(しゃかい) Shakai</span>
+            </p>
+            <p lang="ja">競技を行う大会のこと。</p>
+            <p lang="en" class="quiet">
+              A Taikai (gathering) in which Kyogi (a competition) is held.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>射法八節</strong>
+              <span class="quiet">(しゃほうはっせつ) Shaho-Hassetsu</span>
+            </p>
+            <p lang="ja">弓を射るための8つの過程のこと。</p>
+            <p lang="en" class="quiet">
+              The eight steps of shooting of the yumi.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>斜面打起し</strong>
+              <span class="quiet">(しゃめんうちおこし) Shamen-Uchiokoshi</span>
+            </p>
+            <p lang="ja">斜面の弓構えから左斜め上に打起こす方法のこと。</p>
+            <p lang="en" class="quiet">
+              The method of Uchiokoshi starting from the side aslant Yugamae.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>射礼</strong> <span class="quiet">(しゃれい) Sharei</span>
+            </p>
+            <p lang="ja">
+              「射」の基本となる態度，動作，射法，射技を示す「行射」の形のこと。
+            </p>
+            <p lang="en" class="quiet">
+              The basic attitude, movements, Shaho and technique of the Sha
+              displayed in the form of a Gyosha.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>掌根</strong>
+              <span class="quiet">(しょうこん) Shokon</span>
+            </p>
+            <p lang="ja">てのひらの付け根辺りのこと。</p>
+            <p lang="en" class="quiet">The base of the palm.</p>
+          </li>
+          <li>
+            <p>
+              <strong>順立</strong>
+              <span class="quiet">(じゅんだち) Jundachi</span>
+            </p>
+            <p lang="ja">
+              多人数で行射する時，1番から1本ずつ順次後ろへ射る事。
+            </p>
+            <p lang="en" class="quiet">
+              When performing Gyosha with several people, shooting starts from
+              No. 1 (Ichiban) in order, one arrow at a time.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>正面打起し</strong>
+              <span class="quiet"
+                >(しょうめんうちおこし) Shomen-Uchiokoshi</span
+              >
+            </p>
+            <p lang="ja">
+              正面の「弓構え」から両腕を真上の高さに「打起し」「大三」をとる方法のこと。
+            </p>
+            <p lang="en" class="quiet">
+              The method of starting with Yugamae in Shomen, raising both of
+              elbows straight up to the height in Uchiokoshi and forming Daisan.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>隙がない</strong>
+              <span class="quiet">(すきがない) Suki ga nai</span>
+            </p>
+            <p lang="ja">無駄のない構え，動作のこと。</p>
+            <p lang="en" class="quiet">
+              Posture and movement in which nothing is wasted.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>素引き</strong> <span class="quiet">(すびき) Subiki</span>
+            </p>
+            <p lang="ja">矢を番えずに弓を引くこと。</p>
+            <p lang="en" class="quiet">
+              Drawing the Yumi without knocking a Ya.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>澄し</strong> <span class="quiet">(すまし) Sumashi</span>
+            </p>
+            <p lang="ja">雑念を払い，心を静めること。</p>
+            <p lang="en" class="quiet">
+              Clearing worldly thoughts and calming the mind.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>生気体</strong>
+              <span class="quiet">(せいきたい) Seikitai</span>
+            </p>
+            <p lang="ja">気力，活力がみなぎる身体のこと。</p>
+            <p lang="en" class="quiet">
+              The physical body filled with Kiryoku and energy.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>正鵠</strong>
+              <span class="quiet">(せいこう/せいこく) Seiko / Seikoku</span>
+            </p>
+            <p lang="ja">「的」の中心のこと。</p>
+            <p lang="en" class="quiet">The center of the mato.</p>
+          </li>
+          <li>
+            <p>
+              <strong>正坐</strong> <span class="quiet">(せいざ) Seiza</span>
+            </p>
+            <p lang="ja">坐った姿勢のこと。</p>
+            <p lang="en" class="quiet">
+              The posture when sitting on the floor.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>背負い的</strong>
+              <span class="quiet">(せおいまと) Shoimato</span>
+            </p>
+            <p lang="ja">「射位」で的の中心線上より前側に向かって立つこと。</p>
+            <p lang="en" class="quiet">
+              Standing and facing forward of the center-line of the mato at
+              Shai.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>関板</strong>
+              <span class="quiet">(せきいた) Sekiita</span>
+            </p>
+            <p lang="ja">弓の上下両端の内竹側に接着してある木片のこと。</p>
+            <p lang="en" class="quiet">
+              The wooden pieces glued on the Uchidake side at both the upper and
+              lower ends of the Yumi.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>関止め板</strong>
+              <span class="quiet">(せきどめいた) Sekitomeita</span>
+            </p>
+            <p lang="ja">弓の上下内側に付けた板のこと。</p>
+            <p lang="en" class="quiet">
+              The wooden block fixed to the inner side or the upper and lower
+              end of the Yumi.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>折手礼</strong>
+              <span class="quiet">(せっしゅれい) Sesshurei</span>
+            </p>
+            <p lang="ja">掌が床に付き，指先が膝頭程度に屈する礼のこと。</p>
+            <p lang="en" class="quiet">
+              Bowing with the palms of the hands placed on the floor, with the
+              tips of the fingers brought towards the line of the kneecap.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>袖摺節</strong>
+              <span class="quiet">(そですりぶし) Sodesuribushi</span>
+            </p>
+            <p lang="ja">矢じりから3番目の節のこと。「押取節」とも言う。</p>
+            <p lang="en" class="quiet">
+              The third bamboo joint from the Yajiri. Also referred to as the
+              Ottoribushi.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>側木</strong> <span class="quiet">(そばき) Sobaki</span>
+            </p>
+            <p lang="ja">弓の外竹と内竹に挟まれた両側の木のこと。</p>
+            <p lang="en" class="quiet">
+              The wood on both sides of the Yumi that is placed between the
+              Uchidake and the Todake.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>反り胴</strong>
+              <span class="quiet">(そりどう) Sorido</span>
+            </p>
+            <p lang="ja">後ろにのけぞるように反る「胴造り」のこと・</p>
+            <p lang="en" class="quiet">
+              A Dozukuri where the body is leaning backwards.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>蹲踞</strong> <span class="quiet">(そんきょ) Sonkyo</span>
+            </p>
+            <p lang="ja">
+              爪立って膝頭を床に付けないよう腰を下ろした姿勢のこと。
+            </p>
+            <p lang="en" class="quiet">
+              The posture of squatting on the tip of the toes and with the knees
+              not touching the floor.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="materials" id="group-3">
+        <h2>た行</h2>
+        <ul>
+          <li>
+            <p>
+              <strong>体型</strong> <span class="quiet">(たいけい) Taikei</span>
+            </p>
+            <p lang="ja">体格の型(体つき)。</p>
+            <p lang="en" class="quiet">
+              The form of one's physique (one's build).
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>大三</strong> <span class="quiet">(だいさん) Daisan</span>
+            </p>
+            <p lang="ja">
+              「矢尺」のほぼ半分ほどを引いた状態のこと「肘力･中力」とも言う。
+            </p>
+            <p lang="en" class="quiet">
+              When about half of the Yajaku has been drawn. Also referred to as
+              Churiki.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>抱き的</strong>
+              <span class="quiet">(だきまと) Dakimato</span>
+            </p>
+            <p lang="ja">「的」の中心より後側に向かって「足踏み」すること。</p>
+            <p lang="en" class="quiet">
+              Doing Ashibumi on a line pointing behind the center of the Mato.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>襷さばき</strong>
+              <span class="quiet">(たすきさばき) Tasuki-Sabaki</span>
+            </p>
+            <p lang="ja">たすきを掛ける動作作法のこと。</p>
+            <p lang="en" class="quiet">The method of tying up the Tasuki.</p>
+          </li>
+          <li>
+            <p>
+              <strong>ただ矢束</strong>
+              <span class="quiet">(ただやづか) Tada Yazuka</span>
+            </p>
+            <p lang="ja">
+              「矢束」をただ引いただけで，「詰合い」も「伸合い」もない「会」のこと。
+            </p>
+            <p lang="en" class="quiet">
+              A Kai in which the Yazuka is drawn, but without Tsumeia or Nobiai.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>縦横十文字</strong>
+              <span class="quiet">(たてよこじゅうもんじ) Tateyoko-Jumonji</span>
+            </p>
+            <p lang="ja">
+              足，腰，脊柱，頚椎の縦線と，両肩，両腕，両肘，両手指の横線が十文字になること。
+            </p>
+            <p lang="en" class="quiet">
+              The vertical line formed by legs, lower back, spine, vertebrae of
+              the neck, and the horizontal line formed by both shoulders, arms,
+              elbows, and fingers on both hands making up the Jumonji (Cross).
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>丹田</strong> <span class="quiet">(たんでん) Tanden</span>
+            </p>
+            <p lang="ja">下腹部のへそ下辺りのこと。</p>
+            <p lang="en" class="quiet">
+              The area of the abdomen below the navel.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>縮み</strong> <span class="quiet">(ちじみ) Chijimi</span>
+            </p>
+            <p lang="ja">「会」の状態で，気力や肩･肘等が緩むこと。</p>
+            <p lang="en" class="quiet">
+              Kiryoku, shoulders, and elbows etc. become slack in Kai.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>中胴</strong>
+              <span class="quiet">(ちゅうどう) Chudo</span>
+            </p>
+            <p lang="ja">「弓」を引く正しい身体の姿勢のこと。</p>
+            <p lang="en" class="quiet">
+              The correct body posture when drawing the Yumi.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>肘力･中力</strong>
+              <span class="quiet">(ちゅうりき) Churiki</span>
+            </p>
+            <p lang="ja">
+              「矢尺」のほぼ半分ほどを引いた状態のこと「大三」とも言う。
+            </p>
+            <p lang="en" class="quiet">
+              When about half of the Yajaku has been drawn. Also referred to as
+              Daisan.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>角見</strong> <span class="quiet">(つのみ) Tsunomi</span>
+            </p>
+            <p lang="ja">弓手の拇指の付け根のこと。</p>
+            <p lang="en" class="quiet">The base of the thumb on Yunde.</p>
+          </li>
+          <li>
+            <p>
+              <strong>爪揃え</strong>
+              <span class="quiet">(つまそろえ) Tsumasoroe</span>
+            </p>
+            <p lang="ja">左手の中指，薬指，小指の3指の爪先が揃うこと。</p>
+            <p lang="en" class="quiet">
+              Lining up the tip of the middle finger, ring finger and little
+              finger on the left hand.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>詰合い</strong>
+              <span class="quiet">(つめあい) Tsumeai</span>
+            </p>
+            <p lang="ja">
+              「会」で，各関節がかみ合わさり，「伸合い」ができる状態になること。
+            </p>
+            <p lang="en" class="quiet">
+              The condition in which all of the joint are engaged and Nobiai is
+              possible during Kai.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>弦調べ</strong>
+              <span class="quiet">(つるしらべ) Tsurushirabe</span>
+            </p>
+            <p lang="ja">「弓構え」の時，中間の上下の弦を調べる動作のこと。</p>
+            <p lang="en" class="quiet">
+              Looking up and down on the central part of the Tsuru during
+              Yugamae.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>弦音</strong> <span class="quiet">(つるね) Tsurune</span>
+            </p>
+            <p lang="ja">
+              離れで，弦が弓の額木･「姫反」を打って発する音のこと。
+            </p>
+            <p lang="en" class="quiet">
+              The sound made at Hanare when the Tsuru hits the Hitaiki
+              (Himezori).
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>弦巻</strong>
+              <span class="quiet">(つるまき) Tsurumaki</span>
+            </p>
+            <p lang="ja">替弦を巻いておく器具のこと。</p>
+            <p lang="en" class="quiet">
+              An item used for winding and keeping a Kaezuru (spare string).
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>弦枕</strong>
+              <span class="quiet">(つるまくら) Tsurumakura</span>
+            </p>
+            <p lang="ja">
+              「弽」の親指の内側付け根のところにある溝で，弦が掛かるところのこと。
+            </p>
+            <p lang="en" class="quiet">
+              The groove in the Yugake at the base of the thumb in which the
+              Tsuru is knocked into.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>弦道</strong>
+              <span class="quiet">(つるみち) Tsurumichi</span>
+            </p>
+            <p lang="ja">「弓構え」から「会」まで弦の通る道筋のこと。</p>
+            <p lang="en" class="quiet">
+              The path the Tsuru travels from Yugamae to Kai.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>弦輪</strong> <span class="quiet">(つるわ) Tsuruwa</span>
+            </p>
+            <p lang="ja">
+              弓の「弭」に掛けるために輪状にした弦のこと。(上は赤の「弦輪」･下は白の「弦輪」)
+            </p>
+            <p lang="en" class="quiet">
+              The ring-shaped part of the Tsuru looped onto the Hazu of the
+              Yumi. (The upper Tsuruwa is red while the lower Tsuruwa is white.)
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>出肩</strong> <span class="quiet">(でかた) Dekata</span>
+            </p>
+            <p lang="ja">左肩が前に出る肩のこと。</p>
+            <p lang="en" class="quiet">
+              When the left shoulder extends outwards in front of the body.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>手下</strong> <span class="quiet">(てした) Teshita</span>
+            </p>
+            <p lang="ja">弓の握りの下の部分のこと。</p>
+            <p lang="en" class="quiet">
+              The part of the Yumi below the Nigiri.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>手下節</strong>
+              <span class="quiet">(てしたぶし) Teshitabushi</span>
+            </p>
+            <p lang="ja">弓の外竹の下部から3番目，握りの下にある節のこと。</p>
+            <p lang="en" class="quiet">
+              The third bamboo joint from the Todake, below the Nigiri.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>手の内</strong>
+              <span class="quiet">(てのうち) Tenouchi</span>
+            </p>
+            <p lang="ja">左手で弓を握る方法のこと。</p>
+            <p lang="en" class="quiet">
+              The method of gripping the Yumi with the left hand.
+            </p>
+          </li>
+          <li>
+            <p><strong>照る</strong> <span class="quiet">(てる) Teru</span></p>
+            <p lang="ja">
+              「行射」の時，弓が垂直でなく反るように引分けること。
+            </p>
+            <p lang="en" class="quiet">
+              During Gyosha, the Yumi is not vertical when being drawn and is
+              slanted backwards.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>天文筋</strong>
+              <span class="quiet">(てんもんすじ) Tenmonsuji</span>
+            </p>
+            <p lang="ja">
+              人差指から小指の間接を曲げた時にできる手のひらのしわの筋のこと。
+            </p>
+            <p lang="en" class="quiet">
+              A fold spanning the palm of the hand when knuckles at the base of
+              the fingers from the forefinger to the little finger are flexed.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>籐頭</strong>
+              <span class="quiet">(とうがしら) Togashira</span>
+            </p>
+            <p lang="ja">弓の握りと「矢摺籐」の接する所のこと。</p>
+            <p lang="en" class="quiet">
+              The part of the Yumi where the Nigiri and Yazurido meet.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>道着</strong> <span class="quiet">(どうぎ) Dogi</span>
+            </p>
+            <p lang="ja">「袂」がなく，「筒袖」にした衣服のこと。</p>
+            <p lang="en" class="quiet">
+              Clothing which is not Tamoto (long-sleeved) but is Tsutsusode
+              (tight-sleeved).
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>胴造り</strong>
+              <span class="quiet">(どうづくり) Dozukuri</span>
+            </p>
+            <p lang="ja">弓を引く時に身体を整える方法のこと。</p>
+            <p lang="en" class="quiet">
+              The way of arranging one's body when drawing the Yumi.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>道宝</strong> <span class="quiet">(どうほう) Doho</span>
+            </p>
+            <p lang="ja">
+              「弦」に矢の「筈」をはめる処を作る時に麻を巻き締める為に使用する道具。
+            </p>
+            <p lang="en" class="quiet">
+              A tool used for tightly winding hemp fibers onto the area when the
+              Hazu of the Ya is nocked into the Tsuru.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>外掛羽</strong>
+              <span class="quiet">(とがけば) Togakeba</span>
+            </p>
+            <p lang="ja">矢を番えた時外側になる羽根のこと。</p>
+            <p lang="en" class="quiet">
+              The Hane on the outside when the Ya has been knocked.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>外竹</strong> <span class="quiet">(とだけ) Todake</span>
+            </p>
+            <p lang="ja">弦を掛けた弓の外側の竹のこと。</p>
+            <p lang="en" class="quiet">
+              The bamboo on the outside of Yumi when it is strung with a Tsuru.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>鳥打ち</strong>
+              <span class="quiet">(とりうち) Toriuchi</span>
+            </p>
+            <p lang="ja">
+              「姫反り」の下で，一番反りの大きい場所の上辺のこと。
+            </p>
+            <p lang="en" class="quiet">
+              The area above the largest curves below the Himezori.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>取掛け</strong>
+              <span class="quiet">(とりかけ) Torikake</span>
+            </p>
+            <p lang="ja">「弽」に弦を掛ける動作のこと。</p>
+            <p lang="en" class="quiet">Setting the Yugake onto the Tsuru.</p>
+          </li>
+          <li>
+            <p>
+              <strong>取矢</strong> <span class="quiet">(とりや) Toriya</span>
+            </p>
+            <p lang="ja">「甲矢」を射る時，「乙矢」を右手に持つこと。</p>
+            <p lang="en" class="quiet">
+              Holding Otoya in the right hand when shooting Haya.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>執り弓の姿勢</strong>
+              <span class="quiet">(とりゆみのしせい) Toriyumi-no-shisei</span>
+            </p>
+            <p lang="ja">弓と矢を持った正しい姿勢のこと。</p>
+            <p lang="en" class="quiet">
+              The correct posture for holding the Yumi and Ya.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="materials" id="group-4">
+        <h2>な行</h2>
+        <ul>
+          <li>
+            <p>
+              <strong>中押し</strong>
+              <span class="quiet">(なかおし) Nakaoshi</span>
+            </p>
+            <p lang="ja">
+              手首が折れず，中指と親指が中心になって押す「手の内」のこと。
+            </p>
+            <p lang="en" class="quiet">
+              Tenouchi where the pushing action is made with the wrist unbent.
+              Mainly using the middle finger and the thumb.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>中仕掛け</strong>
+              <span class="quiet">(なかじかけ) Nakajikake</span>
+            </p>
+            <p lang="ja">矢を番える辺りの弦に麻を巻いて補強した部分のこと。</p>
+            <p lang="en" class="quiet">
+              The section of the Tsuru where the Ya is nocked and has been
+              reinforced with hemp fibers.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>握</strong> <span class="quiet">(にぎり) Nigiri</span>
+            </p>
+            <p lang="ja">弓を握る部分のこと。</p>
+            <p lang="en" class="quiet">The part of the Yumi that is gripped.</p>
+          </li>
+          <li>
+            <p><strong>箆</strong> <span class="quiet">(の) No</span></p>
+            <p lang="ja">矢の竹のこと。</p>
+            <p lang="en" class="quiet">The bamboo of the Ya.</p>
+          </li>
+          <li>
+            <p>
+              <strong>退肩</strong>
+              <span class="quiet">(のきがた) Nokigata</span>
+            </p>
+            <p lang="ja">左肩が後ろに控えている肩のこと。</p>
+            <p lang="en" class="quiet">When the left shoulder is held back.</p>
+          </li>
+          <li>
+            <p>
+              <strong>退き胴</strong>
+              <span class="quiet">(のきどう) Nokido</span>
+            </p>
+            <p lang="ja">「的」と反対方向に傾いている「胴造り」のこと。</p>
+            <p lang="en" class="quiet">
+              A Dozukuri that is inclined away from the Mato.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>退く離れ</strong>
+              <span class="quiet">(のくはなれ) Nokuhanare</span>
+            </p>
+            <p lang="ja">体が後ろに逃げ，両手は前に出る離れのこと。</p>
+            <p lang="en" class="quiet">
+              A Hanare where the body is pulled back and both hands release
+              towards the front.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>箆調べ</strong>
+              <span class="quiet">(のしらべ) Noshirabe</span>
+            </p>
+            <p lang="ja">弦調べの後，「箆」を調べる動作のこと。</p>
+            <p lang="en" class="quiet">
+              The movement after Tsurushirabe, looking along the No.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>箆中節</strong>
+              <span class="quiet">(のなかぶし) Nonakabushi</span>
+            </p>
+            <p lang="ja">「箆」の中ほどにある節のこと。(矢尻から2つ目の節。)</p>
+            <p lang="en" class="quiet">
+              The bamboo joint near the center of the No. (The second joint from
+              the Yajiri.)
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>伸合い</strong>
+              <span class="quiet">(のびあい) Nobiai</span>
+            </p>
+            <p lang="ja">「会」で，気力を充実させ間断なく体を伸ばすこと。</p>
+            <p lang="en" class="quiet">
+              Stretching the body when Kiryoku becomes full and without
+              disruption in Kai.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>伸び弓</strong>
+              <span class="quiet">(のびゆみ) Nobiyumi</span>
+            </p>
+            <p lang="ja">標準とする2.21ｍよりも長い弓のこと。</p>
+            <p lang="en" class="quiet">
+              Yumi that is longer than the standard 2.21 meters.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="materials" id="group-5">
+        <h2>は行</h2>
+        <ul>
+          <li>
+            <p><strong>弝</strong> <span class="quiet">(は) Ha</span></p>
+            <p lang="ja">弓の握る部分のこと。握り皮を巻くことからの名称。</p>
+            <p lang="en" class="quiet">
+              The part of the Yumi that is gripped. The name is derived from
+              wrapping the Nigirikawa.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>掃き矢</strong> <span class="quiet">(はきや) Hakiya</span>
+            </p>
+            <p lang="ja">
+              引いた矢が的の前の地面を摺って「垜」に届く状態のこと。
+            </p>
+            <p lang="en" class="quiet">
+              A released Ya that scraps along the ground in front of the Mato
+              before reaching the Azuchi.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>走り羽</strong>
+              <span class="quiet">(はしりば) Hashiriba</span>
+            </p>
+            <p lang="ja">矢を番えた時，上に向いて付いている羽根のこと。</p>
+            <p lang="en" class="quiet">
+              The Hane on the Ya facing upwards when it has been nocked.
+            </p>
+          </li>
+          <li>
+            <p><strong>筈</strong> <span class="quiet">(はず) Hazu</span></p>
+            <p lang="ja">弦を番えるところ。</p>
+            <p lang="en" class="quiet">
+              The part of the Ya where the Tsuru is nocked.
+            </p>
+          </li>
+          <li>
+            <p><strong>弭</strong> <span class="quiet">(はず) Hazu</span></p>
+            <p lang="ja">弓の両端の弦輪を掛ける所のこと。</p>
+            <p lang="en" class="quiet">
+              The two end of Yumi where the Tsuruwa are looped to.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>筈こぼれ</strong>
+              <span class="quiet">(はずこぼれ) Hazukobore</span>
+            </p>
+            <p lang="ja">矢を番えた後，離れる前に矢が弦からはずれること。</p>
+            <p lang="en" class="quiet">
+              The Ya after being nocked, loosens from the Tsuru before it can be
+              released.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>筈巻</strong>
+              <span class="quiet">(はずまき) Hazumaki</span>
+            </p>
+            <p lang="ja">矢の「筈」の際を糸で巻いて固めること。</p>
+            <p lang="en" class="quiet">
+              A thread wound to fortify the Hazu to the Ya.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>外れ</strong> <span class="quiet">(はずれ) Hazure</span>
+            </p>
+            <p lang="ja">「的」にあたらないこと。</p>
+            <p lang="en" class="quiet">Not hitting the Mato.</p>
+          </li>
+          <li>
+            <p>
+              <strong>肌いれ</strong>
+              <span class="quiet">(はだいれ) Hadaire</span>
+            </p>
+            <p lang="ja">「和服」で，左袖を戻すこと。</p>
+            <p lang="en" class="quiet">
+              Returning the left sleeve when wearing Wafuku (Kimono).
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>肌脱ぎ</strong>
+              <span class="quiet">(はだぬぎ) Hadanugi</span>
+            </p>
+            <p lang="ja">「和服」で，左袖を脱ぐこと。</p>
+            <p lang="en" class="quiet">
+              Removing the left sleeve when wearing Wafuku (Kimono).
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>八部の詰</strong>
+              <span class="quiet">(はちぶのつめ) Hachibu-no-tsume</span>
+            </p>
+            <p lang="ja">
+              「五部の詰」に足，腰，腹を加えた8ヶ所を正しく骨法に従い嵌め合うこと。
+            </p>
+            <p lang="en" class="quiet">
+              Adding the feet, lower Back, and stomach to the Gobu-no-tsume and
+              tightening together these eight areas according to correct
+              skeletal alignment.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>羽中節</strong>
+              <span class="quiet">(はなかぶし) Hanakabushi</span>
+            </p>
+            <p lang="ja">矢羽根の間にある節のこと。</p>
+            <p lang="en" class="quiet">
+              The bamboo joint near the middle of the Yabane.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>離れ</strong> <span class="quiet">(はなれ) Hanare</span>
+            </p>
+            <p lang="ja">離れの瞬間のこと。</p>
+            <p lang="en" class="quiet">The moment of release.</p>
+          </li>
+          <li>
+            <p>
+              <strong>羽引き</strong> <span class="quiet">(はびき) Habiki</span>
+            </p>
+            <p lang="ja">
+              「弓構え」で，弓と弦の間を羽の長さ程両肘で張って開くこと。
+            </p>
+            <p lang="en" class="quiet">
+              Opening the space between the Yumi and the Tsuru to a feather's
+              length by stretching the elbows during Yugamae.
+            </p>
+          </li>
+          <li>
+            <p><strong>甲矢</strong> <span class="quiet">(はや) Haya</span></p>
+            <p lang="ja">
+              先に射る矢のこと，羽根の表が外向きに付けてある矢のこと。
+            </p>
+            <p lang="en" class="quiet">
+              The first Ya to be shot. The Ya where the Hane is facing outside.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>早気</strong> <span class="quiet">(はやけ) Hayake</span>
+            </p>
+            <p lang="ja">
+              「会」に入らないうちに離れるか，または「会」に入った直後に離れること。
+            </p>
+            <p lang="en" class="quiet">
+              Releasing before reaching Kai or releasing immediately after
+              reaching Kai.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>払う離れ</strong>
+              <span class="quiet">(はらうはなれ) Harauhanare</span>
+            </p>
+            <p lang="ja">前にあるものを払いのけるような離れのこと。</p>
+            <p lang="en" class="quiet">
+              A release that appears as if one is trying to sway something away
+              in front of them.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>張顔</strong>
+              <span class="quiet">(はりがお) Harigao</span>
+            </p>
+            <p lang="ja">弓に弦を掛け張った時，弓を側面から見た形のこと。</p>
+            <p lang="en" class="quiet">
+              The shape of the Yumi seen from its side-view when strung with the
+              Tsuru.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>半月の狙い</strong>
+              <span class="quiet">(はんげつのねらい) Hangetsu-no-nerai</span>
+            </p>
+            <p lang="ja">「的」を「矢摺籐」の左側に付けて狙うこと。</p>
+            <p lang="en" class="quiet">
+              Aiming by cutting the Mato in half with the left side of the
+              Yazurido.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>半足</strong>
+              <span class="quiet">(はんそく) Hansoku</span>
+            </p>
+            <p lang="ja">足裏の長さの半分のこと。</p>
+            <p lang="en" class="quiet">Half length of one's foot.</p>
+          </li>
+          <li>
+            <p>
+              <strong>ひかがみ</strong>
+              <span class="quiet">(ひかがみ) Hikagami</span>
+            </p>
+            <p lang="ja">膝の関節の内側のこと。</p>
+            <p lang="en" class="quiet">The back or hollow of the knee.</p>
+          </li>
+          <li>
+            <p>
+              <strong>引かぬ矢束</strong>
+              <span class="quiet">(ひかぬやづか) Hikanu Yazuka</span>
+            </p>
+            <p lang="ja">
+              「矢束」を一杯に引き，「詰合い」「伸合い」が働いている「会」のこと。
+            </p>
+            <p lang="en" class="quiet">
+              When the Yazuka has been fully drawn, and Tsumeai and Nobiai are
+              working in Kai.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>引分け</strong>
+              <span class="quiet">(ひきわけ) Hikiwake</span>
+            </p>
+            <p lang="ja">弓矢を引き開く方法のこと。</p>
+            <p lang="en" class="quiet">
+              The method for drawing and opening the Yumiya (Yumi and Ya).
+            </p>
+          </li>
+          <li>
+            <p><strong>びく</strong> <span class="quiet">(びく) Biku</span></p>
+            <p lang="ja">「会」の状態で，無意識に急に引き戻ること。</p>
+            <p lang="en" class="quiet">
+              An unconscious and abrupt contraction in Kai.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>引く矢束</strong>
+              <span class="quiet">(ひくやづか) Hiku Yazuka</span>
+            </p>
+            <p lang="ja">
+              「矢束」を一杯に引いた後もさらに矢を引いていく「会」のこと。
+            </p>
+            <p lang="en" class="quiet">
+              When the Ya is drawn further even after the Yazuka has been fully
+              drawn in Kai.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>膝を生かす</strong>
+              <span class="quiet">(ひざをいかす) Hiza wo ikasu</span>
+            </p>
+            <p lang="ja">
+              「跪坐」で主たる物を持った膝を床から少し上げる動作のこと。
+            </p>
+            <p lang="en" class="quiet">
+              A movement in Kiza in which the knee on the side carrying the
+              principal object is lifted slightly off the floor.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>一つ的射礼</strong>
+              <span class="quiet">(ひとつまとしゃれい) Hitotsumato-sharei</span>
+            </p>
+            <p lang="ja">
+              一つの「的」を3人(2人又は4人の場合もある)で射る「射礼」のこと。
+            </p>
+            <p lang="en" class="quiet">
+              Sharei which is performed with three people shooting at one mato
+              (situations with two or four people are also possible).
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>一手</strong> <span class="quiet">(ひとて) Hitote</span>
+            </p>
+            <p lang="ja">矢2本のこと。(｛甲矢｝と｛乙矢｝2本の矢のこと)。</p>
+            <p lang="en" class="quiet">A pair of Ya. (Haya and Otoya).</p>
+          </li>
+          <li>
+            <p>
+              <strong>捻皮</strong>
+              <span class="quiet">(ひねりかわ) Hinerikawa</span>
+            </p>
+            <p lang="ja">「弽」の人差指の根元に貼った皮のこと。</p>
+            <p lang="en" class="quiet">
+              A piece of leather glued to the base of the forefinger on the
+              Yugake.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>姫反り</strong>
+              <span class="quiet">(ひめぞり) Himezori</span>
+            </p>
+            <p lang="ja">
+              「上切詰籐」より下のゆるやかに反った曲線の辺りのこと。
+            </p>
+            <p lang="en" class="quiet">
+              The gently curving line of the area below the Kamikirizumedo.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>姫反節</strong>
+              <span class="quiet">(ひめぞりぶし) Himezoribushi</span>
+            </p>
+            <p lang="ja">弓の内竹の最上部の節のこと。</p>
+            <p lang="en" class="quiet">
+              The joint on the topmost section of the Uchidake of a Yumi.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>開き足</strong>
+              <span class="quiet">(ひらきあし) Hirakiashi</span>
+            </p>
+            <p lang="ja">「跪坐」から90度向きを変える足さばきのこと。</p>
+            <p lang="en" class="quiet">
+              Turning of the legs 90 degrees while in Kiza.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>平付け</strong>
+              <span class="quiet">(ひらづけ) Hirazuke</span>
+            </p>
+            <p lang="ja">「会」で右手の甲が前に向く形のこと。</p>
+            <p lang="en" class="quiet">
+              In Kai, the back of the right hand is facing forward.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>伏し胴</strong>
+              <span class="quiet">(ふしどう) Fushido</span>
+            </p>
+            <p lang="ja">前かがみになる身体のこと。「屈む胴」ともいう。</p>
+            <p lang="en" class="quiet">
+              When the body is bent forward. Also called Kagamudo.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>筆粉</strong> <span class="quiet">(ふでこ) Fudeko</span>
+            </p>
+            <p lang="ja">「弓道」では，握りの滑りを止める粉のこと。</p>
+            <p lang="en" class="quiet">
+              A powder used in Kyudo to stop the Nigiri from slipping.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>べた押</strong>
+              <span class="quiet">(べたおし) Betaoshi</span>
+            </p>
+            <p lang="ja">手首が折れ，てのひらで弓を押すこと。</p>
+            <p lang="en" class="quiet">
+              The Yumi is pushed with the palm and the wrist bent.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>帽子</strong> <span class="quiet">(ぼうし) Boushi</span>
+            </p>
+            <p lang="ja">「弽」の親指部分の上を覆う部分のこと。</p>
+            <p lang="en" class="quiet">
+              The part of the Yugake that covers the thumb.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>頬摺り羽</strong>
+              <span class="quiet">(ほうずりば) Hozuriba</span>
+            </p>
+            <p lang="ja">矢を番えた時，内側になる羽根のこと。</p>
+            <p lang="en" class="quiet">
+              La pluma del lado interior de la flecha (hacia el arquero) cuando
+              esta ha sido encajada en la cuerda.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>頬付け</strong>
+              <span class="quiet">(ほうづけ) Hozuke</span>
+            </p>
+            <p lang="ja">「会」で，矢が頬に付くこと。</p>
+            <p lang="en" class="quiet">When the Ya touches the cheek in Kai.</p>
+          </li>
+          <li>
+            <p><strong>拇指</strong> <span class="quiet">(ぼし) Boshi</span></p>
+            <p lang="ja">親指。</p>
+            <p lang="en" class="quiet">The thumb.</p>
+          </li>
+          <li>
+            <p>
+              <strong>本座</strong> <span class="quiet">(ほんざ) Honza</span>
+            </p>
+            <p lang="ja">
+              「立射」は「射位」より2歩手前，「坐射」は「射位」より3歩手前の位置のこと。
+            </p>
+            <p lang="en" class="quiet">
+              The position which is two steps in front of Shai in Rissha; and
+              three steps in front of Shai in Zasha.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="materials" id="group-6">
+        <h2>ま行</h2>
+        <ul>
+          <li>
+            <p>
+              <strong>間合い</strong> <span class="quiet">(まあい) Maai</span>
+            </p>
+            <p lang="ja">「行射」における動作の速度と間隔を適切に測ること。</p>
+            <p lang="en" class="quiet">
+              Measuring the adequate speed and distance of movements during
+              Gyosha.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>巻藁</strong>
+              <span class="quiet">(まきわら) Makiwara</span>
+            </p>
+            <p lang="ja">射術練習用に堅くたばねた藁束のこと。</p>
+            <p lang="en" class="quiet">
+              A tightly bound straw bale used for practicing Shajutsu (Shooting
+              Technique).
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>的正面</strong>
+              <span class="quiet">(まとしょうめん) Matoshomen</span>
+            </p>
+            <p lang="ja">的の方向のこと。</p>
+            <p lang="en" class="quiet">The direction of the target.</p>
+          </li>
+          <li>
+            <p>
+              <strong>三つ弽</strong>
+              <span class="quiet">(みつがけ) Mitsugake</span>
+            </p>
+            <p lang="ja">指の数が3本ある弽のこと。</p>
+            <p lang="en" class="quiet">A Yugake with three fingers.</p>
+          </li>
+          <li>
+            <p>
+              <strong>向羽</strong> <span class="quiet">(むこうば) Mukoba</span>
+            </p>
+            <p lang="ja">
+              矢を番えた時，外側になる羽根のこと。「外掛羽」とも言う。
+            </p>
+            <p lang="en" class="quiet">
+              The Hane on the outside when the Ya has been nocked. Also referred
+              to as Togakeba.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>胸弦</strong>
+              <span class="quiet">(むなづる) Munazuru</span>
+            </p>
+            <p lang="ja">「会」で弦が胸に付くこと。</p>
+            <p lang="en" class="quiet">
+              When the Tsuru touches the chest in Kai.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>胸当て</strong>
+              <span class="quiet">(むねあて) Muneate</span>
+            </p>
+            <p lang="ja">
+              行射時に胸を弦から保護するための当て物のこと。(一般的に女子が使用する。)
+            </p>
+            <p lang="en" class="quiet">
+              A covering worn during Gyosha to guard the chest from Tsuru. (In
+              general it is used by women.)
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>目づかい</strong>
+              <span class="quiet">(めづかい) Mezukai</span>
+            </p>
+            <p lang="ja">目の使い方のこと。</p>
+            <p lang="en" class="quiet">The use of one's eyes.</p>
+          </li>
+          <li>
+            <p>
+              <strong>馬手(妻手)</strong> <span class="quiet">(めて) Mete</span>
+            </p>
+            <p lang="ja">右手のこと。「勝手」とも言う。</p>
+            <p lang="en" class="quiet">
+              The right-hand. Also referred to as Katte.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>馬手離れ</strong>
+              <span class="quiet">(めてばなれ) Metebanare</span>
+            </p>
+            <p lang="ja">
+              左手より右手の勝って離すもの。「勝手離れ」，「右手離れ」とも言う。
+            </p>
+            <p lang="en" class="quiet">
+              The strength in the right-hand is used to release over the left
+              hand. Also referred to as Kattebanare or Migitebanare.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>目通り</strong>
+              <span class="quiet">(めどおり) Medoori</span>
+            </p>
+            <p lang="ja">目の高さの辺りのこと。</p>
+            <p lang="en" class="quiet">Around the height of one's eye level.</p>
+          </li>
+          <li>
+            <p>
+              <strong>もたれ</strong> <span class="quiet">(もたれ) Motare</span>
+            </p>
+            <p lang="ja">
+              「会」に入り，離れる機会を逸し，離れが生まれない状態。
+            </p>
+            <p lang="en" class="quiet">
+              After reaching Kai, the chance for Hanare is lost and Hanare isn't
+              able to be produced.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>持的射礼</strong>
+              <span class="quiet">(もちまとしゃれい) Mochimato-Sharei</span>
+            </p>
+            <p lang="ja">「射手」毎に専用の的を射る「射礼」のこと。</p>
+            <p lang="en" class="quiet">
+              A Sharei in which each Ite shoots at their own Mato.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>本矧</strong>
+              <span class="quiet">(もとはぎ) Motohagi</span>
+            </p>
+            <p lang="ja">
+              「矢羽根」を「箆」に付ける時，「矢尻」側を糸で巻き留めた所のこと。「下矧」ともいう。
+            </p>
+            <p lang="en" class="quiet">
+              The place where the thread is wrapped on the side of the Yajiri
+              when fixing the Yabane to the No. Also referred to as the
+              Shitahagi.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>本弭</strong>
+              <span class="quiet">(もとはず) Motohazu</span>
+            </p>
+            <p lang="ja">
+              弓の下端の弦輪の掛かる部分のこと。「下弭」とも言う。
+            </p>
+            <p lang="en" class="quiet">
+              The lower end of the Yumi where the Tsuruwa is looped. Also
+              referred to as Shimohazu.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>物見</strong> <span class="quiet">(ものみ) Monomi</span>
+            </p>
+            <p lang="ja">顔を的に向けること。</p>
+            <p lang="en" class="quiet">Turning one's gaze the Mato.</p>
+          </li>
+          <li>
+            <p>
+              <strong>物見返し</strong>
+              <span class="quiet">(ものみがえし) Monomigaeshi</span>
+            </p>
+            <p lang="ja">「的」に向けた顔を戻すこと。</p>
+            <p lang="en" class="quiet">
+              Returning one's gaze from the direction of the Mato.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>諸弽</strong>
+              <span class="quiet">(もろがけ) Morogake</span>
+            </p>
+            <p lang="ja">指の数が5本ある弽のこと。</p>
+            <p lang="en" class="quiet">A Yugake with five fingers.</p>
+          </li>
+        </ul>
+      </section>
+      <section class="materials" id="group-7">
+        <h2>や行</h2>
+        <ul>
+          <li>
+            <p>
+              <strong>矢色</strong> <span class="quiet">(やいろ) Yairo</span>
+            </p>
+            <p lang="ja">矢が振れて飛んでいくこと。</p>
+            <p lang="en" class="quiet">When a Ya wavers in flight.</p>
+          </li>
+          <li>
+            <p>
+              <strong>矢口</strong> <span class="quiet">(やぐち) Yaguchi</span>
+            </p>
+            <p lang="ja">弓と矢が接する所のこと。</p>
+            <p lang="en" class="quiet">
+              The point in which the Yumi and Ya intersect.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>矢口があく</strong>
+              <span class="quiet">(やぐちがあく) Yaguchi ga aku</span>
+            </p>
+            <p lang="ja">弓と矢の間に空間ができること。</p>
+            <p lang="en" class="quiet">
+              An opening that occurs between the Yumi and Ya.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>矢こぼれ</strong>
+              <span class="quiet">(やこぼれ) Yakobore</span>
+            </p>
+            <p lang="ja">
+              矢を「番えた」後，「離れ」の前に弦から外れ落ちること。「筈こぼれ」とも言う。
+            </p>
+            <p lang="en" class="quiet">
+              A Ya that has been nocked but loosens from the Tsuru and falls
+              before Hanare. Also referred to as Hazukobore.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>矢先</strong> <span class="quiet">(やさき) Yasaki</span>
+            </p>
+            <p lang="ja">「矢尻」の側の矢の部分のこと。</p>
+            <p lang="en" class="quiet">
+              The part of the Ya on the side of the Yajiri.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>矢尻</strong> <span class="quiet">(やじり) Yajiri</span>
+            </p>
+            <p lang="ja">矢じり</p>
+            <p lang="en" class="quiet">Arrowhead.</p>
+          </li>
+          <li>
+            <p>
+              <strong>矢筋</strong> <span class="quiet">(やすじ) Yasuji</span>
+            </p>
+            <p lang="ja">矢が飛んで行く方向のこと。</p>
+            <p lang="en" class="quiet">The direction the Ya will fly.</p>
+          </li>
+          <li>
+            <p>
+              <strong>矢摺籐</strong>
+              <span class="quiet">(やずりどう) Yazurido</span>
+            </p>
+            <p lang="ja">弓の握りの上部に巻いた籐のこと。</p>
+            <p lang="en" class="quiet">
+              The cane wrapping above the Nigiri on the Yumi.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>矢束</strong> <span class="quiet">(やづか) Yazuka</span>
+            </p>
+            <p lang="ja">進退の骨格に合った矢の長さのこと。</p>
+            <p lang="en" class="quiet">
+              The length of the Ya appropriate for one's physical build.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>矢番え動作</strong>
+              <span class="quiet">(やつがえどうさ) Yatsugae Dosa</span>
+            </p>
+            <p lang="ja">矢を弦に番える動作のこと。</p>
+            <p lang="en" class="quiet">
+              The movement of nocking the Ya into the Tsuru.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>矢筒</strong> <span class="quiet">(やづつ) Yazutsu</span>
+            </p>
+            <p lang="ja">矢を入れておく道具のこと。</p>
+            <p lang="en" class="quiet">
+              An item used for storing the Ya (a quiver).
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>矢所</strong>
+              <span class="quiet">(やどころ) Yadokoro</span>
+            </p>
+            <p lang="ja">射られた矢が届いた着点のこと。</p>
+            <p lang="en" class="quiet">
+              The place where the released Ya lands.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>矢乗り</strong> <span class="quiet">(やのり) Yanori</span>
+            </p>
+            <p lang="ja">
+              放された矢の進む道のこと。または，「会」の狙いの「矢筋」の線のこと。
+            </p>
+            <p lang="en" class="quiet">
+              The path of the Ya moving forward. It is also line of the Yasuji
+              when aiming in Kai.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>矢枕</strong>
+              <span class="quiet">(やまくら) Yamakura</span>
+            </p>
+            <p lang="ja">左手の拇指の末関節上で，矢が乗る所のこと。</p>
+            <p lang="en" class="quiet">
+              The joint where the Ya rests at the base of thumb of the left
+              hand.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>矢道</strong> <span class="quiet">(やみち) Yamichi</span>
+            </p>
+            <p lang="ja">矢が飛んで行く空間のこと。</p>
+            <p lang="en" class="quiet">The area in which the Ya flies over.</p>
+          </li>
+          <li>
+            <p>
+              <strong>矢渡</strong>
+              <span class="quiet">(やわたし) Yawatashi</span>
+            </p>
+            <p lang="ja">射会の始めに最初に行う射礼のこと。</p>
+            <p lang="en" class="quiet">
+              The first Sharei to take place at the beginning of the Shakai.
+            </p>
+          </li>
+          <li>
+            <p><strong>揖</strong> <span class="quiet">(ゆう) Yu</span></p>
+            <p lang="ja">上体を10cmほど屈する礼のこと。</p>
+            <p lang="en" class="quiet">
+              A method of bowing where the upper body is bent forward 10
+              centimeters.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>弓返り</strong>
+              <span class="quiet">(ゆがえり) Yugaeri</span>
+            </p>
+            <p lang="ja">「離れ」で弦が左手の甲側に回転すること。</p>
+            <p lang="en" class="quiet">
+              When the Tsuru rotates to the back of the left hand in Hanare.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>弓構え</strong>
+              <span class="quiet">(ゆがまえ) Yugamae</span>
+            </p>
+            <p lang="ja">弓矢を構える方法のこと。</p>
+            <p lang="en" class="quiet">The method of readying the Yumiya.</p>
+          </li>
+          <li>
+            <p>
+              <strong>弓摺羽</strong>
+              <span class="quiet">(ゆずりば) Yuzuriba</span>
+            </p>
+            <p lang="ja">
+              矢を番えた時，内側になる羽根のこと。「頬摺羽」とも言う。
+            </p>
+            <p lang="en" class="quiet">
+              The Hane on the inside when the Ya has been nocked. Also referred
+              to as the Hozuriba.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>弓倒し</strong>
+              <span class="quiet">(ゆだおし) Yudaoshi</span>
+            </p>
+            <p lang="ja">「離れ」の後，「執弓」の姿勢に戻す動作のこと。</p>
+            <p lang="en" class="quiet">
+              The movement in returning to the Toriyumi posture following
+              Hanare.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>弓袋</strong>
+              <span class="quiet">(ゆぶくろ) Yubukuro</span>
+            </p>
+            <p lang="ja">弓を収納する袋のこと。</p>
+            <p lang="en" class="quiet">A bag used for storing Yumi.</p>
+          </li>
+          <li>
+            <p>
+              <strong>弓巻</strong> <span class="quiet">(ゆまき) Yumaki</span>
+            </p>
+            <p lang="ja">弓に巻きつけて収納する帯状の布のこと。</p>
+            <p lang="en" class="quiet">
+              A belt-shaped cloth for wrapping and storing the Yumi.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>弓立て</strong>
+              <span class="quiet">(ゆみたて) Yumitate</span>
+            </p>
+            <p lang="ja">弓を立てておくための器具のこと。</p>
+            <p lang="en" class="quiet">A rack for standing up the Yumi.</p>
+          </li>
+          <li>
+            <p>
+              <strong>弓成り</strong>
+              <span class="quiet">(ゆみなり) Yuminari</span>
+            </p>
+            <p lang="ja">
+              弦を掛けた時，側面から見た弓の形のこと。「張顔」とも言う・
+            </p>
+            <p lang="en" class="quiet">
+              The shape of the Yumi seen from the side-view the Tsuru has been
+              stung. Also referred to as the Harigao.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>弓張板</strong>
+              <span class="quiet">(ゆみはりいた) Yumihariita</span>
+            </p>
+            <p lang="ja">弓を張る時，弓の「末弭」を支える板のこと。</p>
+            <p lang="en" class="quiet">
+              A board used to support the Urahazu when stringing the Yumi.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>弓懐</strong>
+              <span class="quiet">(ゆみふところ) Yumifutokoro</span>
+            </p>
+            <p lang="ja">
+              「弓構え」で，矢と体との間にできる円相の空間のこと。
+            </p>
+            <p lang="en" class="quiet">
+              The circular space between the Ya and body in Yugamae.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>弓矢</strong> <span class="quiet">(ゆみや) Yumiya</span>
+            </p>
+            <p lang="ja">弓と矢のこと。</p>
+            <p lang="en" class="quiet">The Yumi and Ya.</p>
+          </li>
+          <li>
+            <p>
+              <strong>弓手</strong> <span class="quiet">(ゆんで) Yunde</span>
+            </p>
+            <p lang="ja">左手のこと。「押手」とも言う。</p>
+            <p lang="en" class="quiet">
+              The left hand. Also referred to as the Oshide.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>弓手の離れ</strong>
+              <span class="quiet">(ゆんでのはなれ) Yunde-no-hanare</span>
+            </p>
+            <p lang="ja">左手の手先で的に押しこむようにし離れること。</p>
+            <p lang="en" class="quiet">
+              A release as if trying to push the left hand through the Mato.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>四つ弽</strong>
+              <span class="quiet">(よつがけ) Yotsugake</span>
+            </p>
+            <p lang="ja">指の数が4本ある「弽」のこと。</p>
+            <p lang="en" class="quiet">A Yugake with four fingers.</p>
+          </li>
+          <li>
+            <p>
+              <strong>四つ矢</strong>
+              <span class="quiet">(よつや) Yotsuya</span>
+            </p>
+            <p lang="ja">矢4本のこと。(「甲矢」･「乙矢」の「一手」二組)</p>
+            <p lang="en" class="quiet">
+              Four arrows. Two sets of a Hitote of Haya and Otoya.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="materials" id="group-8">
+        <h2>ら行</h2>
+        <ul>
+          <li>
+            <p>
+              <strong>立射</strong> <span class="quiet">(りっしゃ) Rissha</span>
+            </p>
+            <p lang="ja">
+              立って「射位」に入り，立ったまま「矢番え」をし。立って引くこと。
+            </p>
+            <p lang="en" class="quiet">
+              When taking position in Shai, carrying out Yatsugae, and the Yumi
+              while maintaining standing posture.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>脇正面</strong>
+              <span class="quiet">(わきしょうめん) Wakishomen</span>
+            </p>
+            <p lang="ja">審判員席のこと。</p>
+            <p lang="en" class="quiet">
+              The seat of the judges (Shimpan-in Seki).
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="materials">
+        <h2>弓道の心コンテンツ</h2>
+        <ul>
+          <li><a href="index.html">弓道の心　詳しく見る</a></li>
+          <li><a href="syaho.html">射法について　詳しく見る</a></li>
+          <li><a href="terminology.html">弓道用語辞典　詳しく見る</a></li>
+        </ul>
+      </section>
+      <p class="source">
+        <a
+          href="../howto/terminology.html"
+          target="_blank"
+          rel="noopener"
+          >公式サイトの掲載内容を確認する</a
+        >
+      </p>
+    </main>
+    <footer class="bottom">
+      <span>公益財団法人 全日本弓道連盟</span
+      ><a href="../all-pages.html">全ページ一覧</a>
+    </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script>
+(function(){
+  var K="..";
+  var reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var M=[["弓道の心",[["弓道の心","/howto/"],["弓道の歴史","/howto/history.html"],["射法について","/howto/syaho.html"],["弓道用語辞典","/howto/terminology.html"]]],
+   ["見学・入門",[["弓道を始めたい方","/begin/"],["道具について","/begin/tool.html"],["よくある質問","/begin/faq.html"],["上達への道","/improve/"],["動画（MOVIE）","/movie/"]]],
+   ["大会・審査会情報",[["全国大会","/schedule/taikai/"],["中央審査会","/schedule/chuoshinsa/"],["連合審査会","/schedule/association/"],["地方審査会","/schedule/region/"],["資料・申込書","/documents/"]]],
+   ["全国弓道場",[["全国弓道場マップ","/map/"],["中央道場概要と使用日程","/schedule/chuoshinsa/overview.html"]]],
+   ["全日本弓道連盟について",[["概要","/aboutus/overview.html"],["中期計画","/aboutus/plan.html"],["加盟団体","/aboutus/org.html"],["職員採用案内","/aboutus/recruit.html"],["ブック（刊行物）","/aboutus/book.html"],["公式グッズ","/aboutus/officialgoods.html"]]]];
+  var NAV=["弓道の心","見学・入門","大会・審査会","弓道場","連盟について"];
+  var cur$=document.getElementById("cur"), cw=document.getElementById("cw"), nav=document.getElementById("nav"), mb=document.getElementById("mb"), hdr$=document.querySelector("header.site")||document.querySelector("header");
+  cw.innerHTML=M.map(function(g){return '<section class="grp"><h3><button type="button">'+g[0]+'</button></h3><ul>'+g[1].map(function(l){return '<li><a href="'+K+l[1]+'">'+l[0]+'</a></li>';}).join("")+'</ul></section>';}).join("");
+  nav.innerHTML=NAV.map(function(n){return '<button type="button">'+n+'</button>';}).join("");
+  var grps=cw.querySelectorAll(".grp"), navB=nav.querySelectorAll("button"), isOpen=false, act=-1, tm;
+  var desk=function(){return matchMedia("(min-width:900px)").matches;};
+  var D=function(x){return reduce?0:x;};
+  function reveal(){
+    if(!isOpen){isOpen=true; if(hdr$)hdr$.classList.add("menu-open"); cur$.style.visibility="visible"; gsap.to(cur$,{clipPath:"inset(0 0 0% 0)",duration:D(.7),ease:"power3.out"});}
+    gsap.fromTo(cur$.querySelectorAll(".grp.on li"),{y:14,opacity:0},{y:0,opacity:1,duration:D(.5),stagger:.04,ease:"power2.out",overwrite:true});
+  }
+  function show(i){act=i;grps.forEach(function(s,k){s.classList.toggle("on",k===i);});navB.forEach(function(b,k){b.classList.toggle("on",k===i);});reveal();}
+  function hide(){
+    if(!isOpen)return; isOpen=false; act=-1; if(hdr$)hdr$.classList.remove("menu-open");
+    navB.forEach(function(b){b.classList.remove("on");}); grps.forEach(function(s){s.classList.remove("on");});
+    gsap.to(cur$,{clipPath:"inset(0 0 100% 0)",duration:D(.5),ease:"power3.in",onComplete:function(){if(!isOpen)cur$.style.visibility="hidden";}});
+    document.body.style.overflow=""; mb.textContent="メニュー"; mb.setAttribute("aria-expanded","false");
+  }
+  navB.forEach(function(b,k){
+    b.addEventListener("mouseenter",function(){if(desk()){clearTimeout(tm);show(k);}});
+    b.addEventListener("click",function(){if(desk()){(isOpen&&act===k)?hide():show(k);}});
+  });
+  [nav,cur$].forEach(function(el){
+    el.addEventListener("mouseenter",function(){clearTimeout(tm);});
+    el.addEventListener("mouseleave",function(){if(desk())tm=setTimeout(hide,280);});
+  });
+  mb.onclick=function(){
+    if(isOpen){hide();return;}
+    grps.forEach(function(s){s.classList.remove("on");}); reveal();
+    document.body.style.overflow="hidden"; mb.textContent="閉じる"; mb.setAttribute("aria-expanded","true");
+  };
+  grps.forEach(function(s){s.querySelector("button").addEventListener("click",function(){
+    if(desk())return; var o=s.classList.contains("on"); grps.forEach(function(x){x.classList.remove("on");}); if(!o)s.classList.add("on");
+  });});
+})();
+</script>
+</body>
+</html>
