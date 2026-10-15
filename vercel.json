@@ -2,6 +2,12 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
+    { "source": "/site-complete/page/:num", "destination": "/notice/page/:num", "permanent": false },
+    { "source": "/site-complete/page/:num/", "destination": "/notice/page/:num", "permanent": false },
+    { "source": "/page/:num", "destination": "/notice/page/:num", "permanent": false },
+    { "source": "/page/:num/", "destination": "/notice/page/:num", "permanent": false },
+    { "source": "/site-complete/notice/page/:num", "destination": "/notice/page/:num", "permanent": false },
+    { "source": "/site-complete/notice/page/:num/", "destination": "/notice/page/:num", "permanent": false },
     { "source": "/overview", "destination": "/aboutus/overview", "permanent": false },
     { "source": "/plan", "destination": "/aboutus/plan", "permanent": false },
     { "source": "/rule", "destination": "/aboutus/rule", "permanent": false },
