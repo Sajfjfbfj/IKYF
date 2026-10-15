@@ -1,7 +1,7 @@
 import os
 import re
 
-with open('的場の水鏡.html', 'r', encoding='utf-8', errors='ignore') as f:
+with open('index.html', 'r', encoding='utf-8', errors='ignore') as f:
     c = f.read()
 
 links = re.findall(r'href=["\']([^"\']*)["\']', c)

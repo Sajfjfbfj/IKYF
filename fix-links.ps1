@@ -1,5 +1,5 @@
 # fix-links.ps1
-# association 配下の全HTMLで、的場の水鏡.html へのリンクを同じタブで開くようにする
+# association index.html へのリンクを同じタブで開くようにする
 # ※ このファイルは「ホームページ素材」フォルダに置いて、そこで実行してください
 
 $root = Join-Path $PSScriptRoot "site-complete\association"
@@ -9,10 +9,10 @@ if (-not (Test-Path -LiteralPath $root)) {
     exit 1
 }
 
-# 「的場の水鏡」を文字コードから組み立てる(文字化け対策)
+# 「index」を文字コードから組み立てる(文字化け対策)
 $name = -join ([char[]](0x7684, 0x5834, 0x306E, 0x6C34, 0x93E1))
 
-# 的場の水鏡.html を指す <a ...> 開始タグにマッチ(../ の深さが違っても対応)
+# index.html を指す <a ...> 開始タグにマッチ(../ の深さが違っても対応)
 $tagPattern = '<a\b[^>]*href="[^"]*' + [regex]::Escape($name) + '\.html"[^>]*>'
 
 $utf8NoBom = New-Object System.Text.UTF8Encoding($false)

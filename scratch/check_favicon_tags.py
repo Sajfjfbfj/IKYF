@@ -13,7 +13,7 @@ print("Favicon tags found in site-complete:")
 for m in sorted(list(matches))[:20]:
     print(" ", m)
 
-with open('的場の水鏡.html', 'r', encoding='utf-8', errors='ignore') as f:
+with open('index.html', 'r', encoding='utf-8', errors='ignore') as f:
     c = f.read()
 icons = re.findall(r'<link[^>]+rel=["\'](?:shortcut )?icon["\'][^>]*>', c)
-print("Favicon tags in 的場の水鏡.html:", icons)
+print("Favicon tags in index.html:", icons)

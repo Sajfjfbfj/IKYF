@@ -33,7 +33,7 @@ def fix_chuoshinsa_files():
             
         file_dir = os.path.dirname(os.path.abspath(file_path))
         root_rel = os.path.relpath(site_root, file_dir).replace('\\', '/') + '/'
-        matoba_rel = root_rel + "../的場の水鏡.html"
+        matoba_rel = root_rel + "../index.html"
         
         print(f"Processing {year} ({file_path}): root_rel = {root_rel}")
         
@@ -42,7 +42,7 @@ def fix_chuoshinsa_files():
             
         soup = BeautifulSoup(content, 'html.parser')
         
-        # 1. Update logo link to 的場の水鏡.html
+        # 1. Update logo link to index.html
         mark_a = soup.find('a', class_='mark')
         if mark_a:
             mark_a['href'] = matoba_rel

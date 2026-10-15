@@ -121,7 +121,7 @@ foreach ($url in $urls) {
 }
 Write-Progress -Activity "ページ生成" -Completed
 
-$homeHtml = [IO.File]::ReadAllText((Join-Path $PSScriptRoot "的場の水鏡.html"))
+$homeHtml = [IO.File]::ReadAllText((Join-Path $PSScriptRoot "index.html"))
 $homeHtml = $homeHtml.Replace('K="https://www.kyudo.jp"', 'K="."')
 $homeHtml = [regex]::Replace($homeHtml, 'href="https://www\.kyudo\.jp(/[^"#?]*)"', 'href=".$1"')
 $homeHtml = [regex]::Replace($homeHtml, 'href="\./([^".][^"]*\.(?:pdf|docx?|xlsx?))"', 'href="https://www.kyudo.jp/$1"', [System.Text.RegularExpressions.RegexOptions]::IgnoreCase)

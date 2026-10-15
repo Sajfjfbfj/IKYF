@@ -11,7 +11,7 @@ files = [
     r'site-complete\notice\page\45\index.html',
     r'site-complete\notice\page\5\index.html',
     r'site-complete\notice\page\8\index.html',
-    r'的場の水鏡.html'
+    r'index.html'
 ]
 
 for fp in files:
