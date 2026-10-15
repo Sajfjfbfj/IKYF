@@ -3,6 +3,10 @@
   "trailingSlash": false,
   "rewrites": [
     { "source": "/map", "destination": "/map/index.html" },
-    { "source": "/map/", "destination": "/map/index.html" }
+    { "source": "/map/", "destination": "/map/index.html" },
+    {
+      "source": "/(aboutus|begin|howto|info|notice|notice-cat|schedule|taikai|chuoshinsa|category|association-area|region-area|improve|news|documents|movie|img|pdf)/:path*",
+      "destination": "/site-complete/$1/:path*"
+    }
   ]
 }
