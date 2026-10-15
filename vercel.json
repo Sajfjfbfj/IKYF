@@ -1,9 +1,6 @@
 {
   "cleanUrls": true,
   "redirects": [
-    { "source": "/(aboutus|begin|howto|info|notice|notice-cat|schedule|taikai|chuoshinsa|category|association-area|region-area|improve|news|documents|movie)", "destination": "/$1/", "permanent": false },
-    { "source": "/schedule/(taikai|chuoshinsa|association|region)", "destination": "/schedule/$1/", "permanent": false },
-    { "source": "/category/(taikai|chuoshinsa)", "destination": "/category/$1/", "permanent": false },
     { "source": "/overview", "destination": "/aboutus/overview.html", "permanent": false },
     { "source": "/plan", "destination": "/aboutus/plan.html", "permanent": false },
     { "source": "/rule", "destination": "/aboutus/rule.html", "permanent": false },
@@ -22,32 +19,38 @@
   "rewrites": [
     { "source": "/map", "destination": "/map/index.html" },
     { "source": "/map/", "destination": "/map/index.html" },
-    { "source": "/all-pages", "destination": "/site-complete/all-pages.html" },
-    { "source": "/all-pages.html", "destination": "/site-complete/all-pages.html" },
-    {
-      "source": "/schedule/:sub(taikai|chuoshinsa|association|region)/",
-      "destination": "/site-complete/schedule/:sub/index.html"
-    },
-    {
-      "source": "/schedule/:sub(taikai|chuoshinsa|association|region)",
-      "destination": "/site-complete/schedule/:sub/index.html"
-    },
-    {
-      "source": "/category/:sub(taikai|chuoshinsa)/",
-      "destination": "/site-complete/category/:sub/index.html"
-    },
-    {
-      "source": "/category/:sub(taikai|chuoshinsa)",
-      "destination": "/site-complete/category/:sub/index.html"
-    },
-    {
-      "source": "/:folder(aboutus|begin|howto|info|notice|notice-cat|schedule|taikai|chuoshinsa|category|association-area|region-area|improve|news|documents|movie)/",
-      "destination": "/site-complete/:folder/index.html"
-    },
-    {
-      "source": "/:folder(aboutus|begin|howto|info|notice|notice-cat|schedule|taikai|chuoshinsa|category|association-area|region-area|improve|news|documents|movie)",
-      "destination": "/site-complete/:folder/index.html"
-    },
+    { "source": "/aboutus", "destination": "/site-complete/aboutus/index.html" },
+    { "source": "/aboutus/", "destination": "/site-complete/aboutus/index.html" },
+    { "source": "/begin", "destination": "/site-complete/begin/index.html" },
+    { "source": "/begin/", "destination": "/site-complete/begin/index.html" },
+    { "source": "/howto", "destination": "/site-complete/howto/index.html" },
+    { "source": "/howto/", "destination": "/site-complete/howto/index.html" },
+    { "source": "/info", "destination": "/site-complete/info/index.html" },
+    { "source": "/info/", "destination": "/site-complete/info/index.html" },
+    { "source": "/notice", "destination": "/site-complete/notice/index.html" },
+    { "source": "/notice/", "destination": "/site-complete/notice/index.html" },
+    { "source": "/schedule", "destination": "/site-complete/schedule/index.html" },
+    { "source": "/schedule/", "destination": "/site-complete/schedule/index.html" },
+    { "source": "/schedule/taikai", "destination": "/site-complete/schedule/taikai/index.html" },
+    { "source": "/schedule/taikai/", "destination": "/site-complete/schedule/taikai/index.html" },
+    { "source": "/schedule/chuoshinsa", "destination": "/site-complete/schedule/chuoshinsa/index.html" },
+    { "source": "/schedule/chuoshinsa/", "destination": "/site-complete/schedule/chuoshinsa/index.html" },
+    { "source": "/schedule/association", "destination": "/site-complete/schedule/association/index.html" },
+    { "source": "/schedule/association/", "destination": "/site-complete/schedule/association/index.html" },
+    { "source": "/schedule/region", "destination": "/site-complete/schedule/region/index.html" },
+    { "source": "/schedule/region/", "destination": "/site-complete/schedule/region/index.html" },
+    { "source": "/category/chuoshinsa", "destination": "/site-complete/category/chuoshinsa/index.html" },
+    { "source": "/category/chuoshinsa/", "destination": "/site-complete/category/chuoshinsa/index.html" },
+    { "source": "/category/taikai", "destination": "/site-complete/category/taikai/index.html" },
+    { "source": "/category/taikai/", "destination": "/site-complete/category/taikai/index.html" },
+    { "source": "/improve", "destination": "/site-complete/improve/index.html" },
+    { "source": "/improve/", "destination": "/site-complete/improve/index.html" },
+    { "source": "/news", "destination": "/site-complete/news/index.html" },
+    { "source": "/news/", "destination": "/site-complete/news/index.html" },
+    { "source": "/documents", "destination": "/site-complete/documents/index.html" },
+    { "source": "/documents/", "destination": "/site-complete/documents/index.html" },
+    { "source": "/movie", "destination": "/site-complete/movie/index.html" },
+    { "source": "/movie/", "destination": "/site-complete/movie/index.html" },
     {
       "source": "/(aboutus|begin|howto|info|notice|notice-cat|schedule|taikai|chuoshinsa|category|association-area|region-area|improve|news|documents|movie|img|pdf)/:path*",
       "destination": "/site-complete/$1/:path*"
