@@ -22,6 +22,32 @@
   "rewrites": [
     { "source": "/map", "destination": "/map/index.html" },
     { "source": "/map/", "destination": "/map/index.html" },
+    { "source": "/all-pages", "destination": "/site-complete/all-pages.html" },
+    { "source": "/all-pages.html", "destination": "/site-complete/all-pages.html" },
+    {
+      "source": "/schedule/:sub(taikai|chuoshinsa|association|region)/",
+      "destination": "/site-complete/schedule/:sub/index.html"
+    },
+    {
+      "source": "/schedule/:sub(taikai|chuoshinsa|association|region)",
+      "destination": "/site-complete/schedule/:sub/index.html"
+    },
+    {
+      "source": "/category/:sub(taikai|chuoshinsa)/",
+      "destination": "/site-complete/category/:sub/index.html"
+    },
+    {
+      "source": "/category/:sub(taikai|chuoshinsa)",
+      "destination": "/site-complete/category/:sub/index.html"
+    },
+    {
+      "source": "/:folder(aboutus|begin|howto|info|notice|notice-cat|schedule|taikai|chuoshinsa|category|association-area|region-area|improve|news|documents|movie)/",
+      "destination": "/site-complete/:folder/index.html"
+    },
+    {
+      "source": "/:folder(aboutus|begin|howto|info|notice|notice-cat|schedule|taikai|chuoshinsa|category|association-area|region-area|improve|news|documents|movie)",
+      "destination": "/site-complete/:folder/index.html"
+    },
     {
       "source": "/(aboutus|begin|howto|info|notice|notice-cat|schedule|taikai|chuoshinsa|category|association-area|region-area|improve|news|documents|movie|img|pdf)/:path*",
       "destination": "/site-complete/$1/:path*"
