@@ -1,8 +1,23 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false,
   "redirects": [
-    { "source": "/faq", "destination": "/begin/faq", "permanent": false }
+    { "source": "/(aboutus|begin|howto|info|notice|notice-cat|schedule|taikai|chuoshinsa|category|association-area|region-area|improve|news|documents|movie)", "destination": "/$1/", "permanent": false },
+    { "source": "/schedule/(taikai|chuoshinsa|association|region)", "destination": "/schedule/$1/", "permanent": false },
+    { "source": "/category/(taikai|chuoshinsa)", "destination": "/category/$1/", "permanent": false },
+    { "source": "/overview", "destination": "/aboutus/overview.html", "permanent": false },
+    { "source": "/plan", "destination": "/aboutus/plan.html", "permanent": false },
+    { "source": "/rule", "destination": "/aboutus/rule.html", "permanent": false },
+    { "source": "/recruit", "destination": "/aboutus/recruit.html", "permanent": false },
+    { "source": "/book", "destination": "/aboutus/book.html", "permanent": false },
+    { "source": "/latestissue", "destination": "/aboutus/latestissue.html", "permanent": false },
+    { "source": "/officialgoods", "destination": "/aboutus/officialgoods.html", "permanent": false },
+    { "source": "/org", "destination": "/aboutus/org.html", "permanent": false },
+    { "source": "/backnumber", "destination": "/aboutus/backnumber.html", "permanent": false },
+    { "source": "/faq", "destination": "/begin/faq.html", "permanent": false },
+    { "source": "/tool", "destination": "/begin/tool.html", "permanent": false },
+    { "source": "/history", "destination": "/howto/history.html", "permanent": false },
+    { "source": "/syaho", "destination": "/howto/syaho.html", "permanent": false },
+    { "source": "/terminology", "destination": "/howto/terminology.html", "permanent": false }
   ],
   "rewrites": [
     { "source": "/map", "destination": "/map/index.html" },
