@@ -20,7 +20,9 @@ canvas,.fb,.veil{position:fixed;inset:0;width:100%;height:100%;display:block}
 .veil{background:var(--bg);opacity:0;pointer-events:none;z-index:1}
 button{all:unset;cursor:pointer}
 button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
-header{position:fixed;z-index:5;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:flex-start;padding:calc(env(safe-area-inset-top,0px) + 3vh) 5vw 0;text-shadow:0 1px 16px rgba(20,18,28,.7)}
+header{position:fixed;z-index:5;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:flex-start;padding:calc(env(safe-area-inset-top,0px) + 3vh) 5vw 2vh;background:transparent;border-bottom:1px solid transparent;text-shadow:0 1px 16px rgba(20,18,28,.7);transition:background .35s ease,border-color .35s ease,backdrop-filter .35s ease,text-shadow .35s ease}
+header.scrolled{background:rgba(20,18,28,.88);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom-color:var(--line);text-shadow:none}
+header.menu-open{background:transparent !important;border-bottom-color:transparent !important;backdrop-filter:none !important;text-shadow:0 1px 16px rgba(20,18,28,.7)}
 .mark b{display:block;font-size:19px;letter-spacing:.16em}
 .mark span{font-size:11px;letter-spacing:.12em;color:var(--sub)}
 .nav{display:none;gap:2.2em}
@@ -179,19 +181,19 @@ footer a:hover{color:var(--ink)}
    ["全国弓道場",[["全国弓道場マップ","/map/"],["中央道場概要と使用日程","/schedule/chuoshinsa/overview.html"]]],
    ["全日本弓道連盟について",[["概要","/aboutus/overview.html"],["中期計画","/aboutus/plan.html"],["加盟団体","/aboutus/org.html"],["職員採用案内","/aboutus/recruit.html"],["ブック（刊行物）","/aboutus/book.html"],["公式グッズ","/aboutus/officialgoods.html"]]]];
   var NAV=["弓道の心","見学・入門","大会・審査会","弓道場","連盟について"];
-  var cur$=document.getElementById("cur"), cw=document.getElementById("cw"), nav=document.getElementById("nav"), mb=document.getElementById("mb");
+  var cur$=document.getElementById("cur"), cw=document.getElementById("cw"), nav=document.getElementById("nav"), mb=document.getElementById("mb"), hdr$=document.querySelector("header");
   cw.innerHTML=M.map(function(g){return '<section class="grp"><h3><button type="button">'+g[0]+'</button></h3><ul>'+g[1].map(function(l){return '<li><a href="'+K+l[1]+'">'+l[0]+'</a></li>';}).join("")+'</ul></section>';}).join("");
   nav.innerHTML=NAV.map(function(n){return '<button type="button">'+n+'</button>';}).join("");
   var grps=cw.querySelectorAll(".grp"), navB=nav.querySelectorAll("button"), isOpen=false, act=-1, tm;
   var desk=function(){return matchMedia("(min-width:900px)").matches;};
   var D=function(x){return reduce?0:x;};
   function reveal(){
-    if(!isOpen){isOpen=true; cur$.style.visibility="visible"; gsap.to(cur$,{clipPath:"inset(0 0 0% 0)",duration:D(.7),ease:"power3.out"});}
+    if(!isOpen){isOpen=true; if(hdr$)hdr$.classList.add("menu-open"); cur$.style.visibility="visible"; gsap.to(cur$,{clipPath:"inset(0 0 0% 0)",duration:D(.7),ease:"power3.out"});}
     gsap.fromTo(cur$.querySelectorAll(".grp.on li"),{y:14,opacity:0},{y:0,opacity:1,duration:D(.5),stagger:.04,ease:"power2.out",overwrite:true});
   }
   function show(i){act=i;grps.forEach(function(s,k){s.classList.toggle("on",k===i);});navB.forEach(function(b,k){b.classList.toggle("on",k===i);});reveal();}
   function hide(){
-    if(!isOpen)return; isOpen=false; act=-1;
+    if(!isOpen)return; isOpen=false; act=-1; if(hdr$)hdr$.classList.remove("menu-open");
     navB.forEach(function(b){b.classList.remove("on");}); grps.forEach(function(s){s.classList.remove("on");});
     gsap.to(cur$,{clipPath:"inset(0 0 100% 0)",duration:D(.5),ease:"power3.in",onComplete:function(){if(!isOpen)cur$.style.visibility="hidden";}});
     document.body.style.overflow=""; mb.textContent="メニュー"; mb.setAttribute("aria-expanded","false");
@@ -287,6 +289,7 @@ footer a:hover{color:var(--ink)}
     setSeason(state.m>.5?1:0);
     var fade=1-clamp((y-heroLen())/(h*.4));
     ui.style.opacity=fade; ui.style.pointerEvents=fade<.05?"none":"auto";
+    if(hdr$) hdr$.classList.toggle("scrolled", fade < 0.85);
     veil.style.opacity=clamp((y-h*1.2)/(h*.8))*.78;
     var gp=clamp((y-g.offsetTop)/(g.offsetHeight-h)); setX(-gp*maxX);
     var mx=document.documentElement.scrollHeight-h, pr=mx>0?clamp(y/mx):0;
