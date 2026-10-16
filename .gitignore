@@ -3,3 +3,5 @@ temp_kyudo/
 memo
 *.py
 *.txt
+!robots.txt
+!*/robots.txt

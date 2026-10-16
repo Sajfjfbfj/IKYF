@@ -1,6 +1,17 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    }
+  ],
   "redirects": [
     { "source": "/notice/:num(\\d+)", "destination": "/notice/page/:num", "permanent": false },
     { "source": "/notice/:num(\\d+)/", "destination": "/notice/page/:num", "permanent": false },
