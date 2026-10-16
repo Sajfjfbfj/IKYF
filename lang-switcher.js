@@ -111,10 +111,65 @@
     document.body.appendChild(s);
   }
 
+  // 5. 英語翻訳時の不要な補足語句 "(Japanese archery)" の自動除去
+  function cleanTranslations() {
+    function cleanText(text) {
+      return text.replace(/\s*[\(（]Japanese archery[\)）]/gi, '');
+    }
+
+    function cleanNode(node) {
+      if (!node) return;
+      if (node.nodeType === Node.TEXT_NODE) {
+        if (node.nodeValue && /[\(（]Japanese archery[\)）]/i.test(node.nodeValue)) {
+          node.nodeValue = cleanText(node.nodeValue);
+        }
+      } else if (node.nodeType === Node.ELEMENT_NODE) {
+        if (node.tagName !== 'SCRIPT' && node.tagName !== 'STYLE') {
+          for (var i = 0; i < node.childNodes.length; i++) {
+            cleanNode(node.childNodes[i]);
+          }
+        }
+      }
+    }
+
+    cleanNode(document.body);
+
+    if (window.MutationObserver && !window._kyudoObserverInitialized) {
+      window._kyudoObserverInitialized = true;
+      var observer = new MutationObserver(function(mutations) {
+        for (var i = 0; i < mutations.length; i++) {
+          var m = mutations[i];
+          if (m.type === 'characterData') {
+            if (m.target && m.target.nodeValue && /[\(（]Japanese archery[\)）]/i.test(m.target.nodeValue)) {
+              m.target.nodeValue = cleanText(m.target.nodeValue);
+            }
+          } else if (m.type === 'childList') {
+            for (var j = 0; j < m.addedNodes.length; j++) {
+              cleanNode(m.addedNodes[j]);
+            }
+          }
+        }
+      });
+
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true,
+        characterData: true
+      });
+    }
+  }
+
   function init() {
     setupMenuLink();
     if (getLang() === 'en') {
       loadGoogleTranslate();
+      cleanTranslations();
+      var count = 0;
+      var timer = setInterval(function() {
+        cleanTranslations();
+        count++;
+        if (count > 20) clearInterval(timer);
+      }, 500);
     }
   }
 
