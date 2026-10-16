@@ -1,9 +1,10 @@
 /**
  * 全日本弓道連盟 サイト多言語翻訳（日英切替）スクリプト
  * ヘッダーやレイアウトのデザインを一切崩さず、メニュー内の既存「English」リンクと連動
+ * 英語翻訳時のテキスト重なり（縦書きタイトルやテーブル項目等）を完全防止
  */
 (function() {
-  // 1. スタイルの動的注入（Google翻訳の余計な枠を完全排除）
+  // 1. スタイルの動的注入（Google翻訳の余計な枠を完全排除＆英語翻訳時の重なり解消）
   var css = `
     .goog-te-banner-frame, iframe.skiptranslate { display: none !important; visibility: hidden !important; height: 0 !important; width: 0 !important; }
     body { top: 0px !important; position: static !important; }
@@ -13,6 +14,65 @@
     .util a.lang-active {
       color: var(--accent, #b79be0) !important;
       font-weight: 600;
+    }
+
+    /* ===== 英語翻訳時のレイアウト重なり・崩れ防止スタイル ===== */
+    /* トップページタイトル（日本語縦書きから英語横書きへ自然に切り替え、capやseasonsとの重なりを防止） */
+    html.lang-en .title, html.translated-ltr .title {
+      writing-mode: horizontal-tb !important;
+      position: absolute !important;
+      top: calc(env(safe-area-inset-top,0px) + 13vh) !important;
+      right: 7vw !important;
+      left: auto !important;
+      max-width: min(86vw, 18em) !important;
+      font-size: clamp(24px, 4.2vw, 44px) !important;
+      line-height: 1.35 !important;
+      letter-spacing: .06em !important;
+      text-align: right !important;
+    }
+    @media (max-width: 768px) {
+      html.lang-en .title, html.translated-ltr .title {
+        top: calc(env(safe-area-inset-top,0px) + 11vh) !important;
+        right: 7vw !important;
+        left: 7vw !important;
+        max-width: none !important;
+        text-align: left !important;
+        font-size: clamp(22px, 5.5vw, 30px) !important;
+      }
+      html.lang-en .cap, html.translated-ltr .cap {
+        bottom: calc(env(safe-area-inset-bottom,0px) + 4vh) !important;
+        left: 7vw !important;
+        right: 7vw !important;
+        max-width: none !important;
+      }
+    }
+
+    /* ギャラリー見出し（縦書きから横書きへ） */
+    html.lang-en .lab, html.translated-ltr .lab {
+      writing-mode: horizontal-tb !important;
+      font-size: clamp(15px, 1.8vw, 20px) !important;
+      letter-spacing: .08em !important;
+      line-height: 1.4 !important;
+      max-width: 11em !important;
+      margin-right: 2vw !important;
+      text-align: left !important;
+    }
+
+    /* 定義リスト（項目名英語化による被り防止） */
+    html.lang-en .spec>div, html.translated-ltr .spec>div {
+      grid-template-columns: 14em 1fr !important;
+    }
+    @media (max-width: 760px) {
+      html.lang-en .spec>div, html.translated-ltr .spec>div {
+        grid-template-columns: 1fr !important;
+        gap: .3em !important;
+      }
+    }
+
+    /* ナビゲーションメニューの英語長文化対応 */
+    html.lang-en .nav, html.translated-ltr .nav {
+      gap: 1.2em !important;
+      font-size: 13px !important;
     }
   `;
   var style = document.createElement("style");
@@ -162,6 +222,7 @@
   function init() {
     setupMenuLink();
     if (getLang() === 'en') {
+      document.documentElement.classList.add('lang-en');
       loadGoogleTranslate();
       cleanTranslations();
       var count = 0;
@@ -170,6 +231,8 @@
         count++;
         if (count > 20) clearInterval(timer);
       }, 500);
+    } else {
+      document.documentElement.classList.remove('lang-en');
     }
   }
 
