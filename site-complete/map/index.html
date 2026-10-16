@@ -84,18 +84,24 @@ header.site .mark span{font:11px "Shippori Mincho","Yu Mincho",serif;letter-spac
     setTimeout(function(){map.invalidateSize();},0);window.addEventListener("load",function(){map.invalidateSize();});window.addEventListener("resize",function(){map.invalidateSize();});
     layer=L.layerGroup().addTo(map);rend=L.canvas({padding:.5,tolerance:10});
   }
+  function isEnglish(){
+    var m=document.cookie.match(/(?:^|;)\s*googtrans=([^;]+)/);
+    return (m&&m[1].indexOf('/en')!==-1)||document.documentElement.classList.contains('lang-en')||document.documentElement.classList.contains('translated-ltr');
+  }
   function pop(d){
+    var isEn=isEnglish();
     var name=esc(d[0]);
-    var zip=d[1]?'〒'+esc(d[1])+'<br>':'';
+    var zip=d[1]?(isEn?'Zip: ':'〒')+esc(d[1])+'<br>':'';
     var addr=esc(d[2]||'');
     var telNum=(d[3]||'').replace(/[^\d-]/g,'');
-    var tel=d[3]?'<p class="popup-tel">電話：<a href="tel:'+telNum+'">'+esc(d[3])+'</a></p>':'';
+    var telLabel=isEn?'Tel: ':'電話：';
+    var tel=d[3]?'<p class="popup-tel">'+telLabel+'<a href="tel:'+telNum+'">'+esc(d[3])+'</a></p>':'';
     var links='<div class="popup-links">';
-    if(d[4])links+='<a href="'+esc(d[4])+'" target="_blank" rel="noopener">webサイト</a>';
+    if(d[4])links+='<a href="'+esc(d[4])+'" target="_blank" rel="noopener">'+(isEn?'Website':'webサイト')+'</a>';
     var mapQuery=encodeURIComponent(d[5]||(d[2]?d[0]+' '+d[2]:d[0]));
-    links+='<a href="https://maps.google.com/?q='+mapQuery+'" target="_blank" rel="noopener">Googleマップ</a>';
+    links+='<a href="https://maps.google.com/?q='+mapQuery+'" target="_blank" rel="noopener">'+(isEn?'Google Maps':'Googleマップ')+'</a>';
     links+='</div>';
-    return '<b>'+name+'</b><div class="popup-addr">'+zip+addr+'</div>'+tel+links;
+    return '<div class="dojo-popup-body" lang="ja"><b>'+name+'</b><div class="popup-addr">'+zip+addr+'</div>'+tel+links+'</div>';
   }
   function setActive(i){
     ul.querySelectorAll("li.active").forEach(function(el){el.classList.remove("active");});
@@ -103,15 +109,24 @@ header.site .mark span{font:11px "Shippori Mincho","Yu Mincho",serif;letter-spac
     if(li){li.classList.add("active");li.scrollIntoView({behavior:"smooth",block:"nearest"});}
   }
   function render(){
+    var isEn=isEnglish();
+    var qInput=document.getElementById("q");
+    if(qInput&&isEn&&!qInput.dataset.enSet){
+      qInput.placeholder="Search by dojo name, prefecture, or city...";
+      qInput.dataset.enSet="1";
+    }
+    var opt0=pf.querySelector("option[value='']");
+    if(opt0&&isEn){opt0.textContent="All Prefectures";}
     var k=q.value.replace(/\s+/g,"").toLowerCase();
     var pv=pf.value,r=[];D.forEach(function(d,i){if(pv&&d.p!==pv)return;if(!k||(d[0]+d[1]+d[2]+d[1].replace(/-/g,"")).replace(/\s+/g,"").toLowerCase().indexOf(k)>-1)r.push(i);});
     n.textContent=r.length;
     ul.innerHTML=r.map(function(i){var d=D[i];
-      var web=d[4]?'<a href="'+esc(d[4])+'" target="_blank" rel="noopener">webサイト</a>':'';
+      var web=d[4]?'<a href="'+esc(d[4])+'" target="_blank" rel="noopener">'+(isEn?'Website':'webサイト')+'</a>':'';
       var mapQuery=encodeURIComponent(d[5]||(d[2]?d[0]+' '+d[2]:d[0]));
-      var mapLink='<a href="https://maps.google.com/?q='+mapQuery+'" target="_blank" rel="noopener">マップ</a>';
-      return '<li data-i="'+i+'"><div class="d"><b data-i="'+i+'">'+esc(d[0])+'</b><span>'+esc(d[1])+' '+esc(d[2])+'</span>'+(d[3]?'<span>電話：'+esc(d[3])+'</span>':'')+'</div><div class="l">'+web+mapLink+'</div></li>';
-    }).join("")||'<li class="quiet">該当する弓道場はありません。</li>';
+      var mapLink='<a href="https://maps.google.com/?q='+mapQuery+'" target="_blank" rel="noopener">'+(isEn?'Map':'マップ')+'</a>';
+      var tel=d[3]?'<span>'+(isEn?'Tel: ':'電話：')+esc(d[3])+'</span>':'';
+      return '<li data-i="'+i+'"><div class="d"><b data-i="'+i+'">'+esc(d[0])+'</b><span>'+esc(d[1])+' '+esc(d[2])+'</span>'+tel+'</div><div class="l">'+web+mapLink+'</div></li>';
+    }).join("")||'<li class="quiet">'+(isEn?'No kyudo dojo found.':'該当する弓道場はありません。')+'</li>';
     if(!map)return;
     layer.clearLayers();mk={};var pts=[];
     r.forEach(function(i){var d=D[i];if(d[6]==null||d[7]==null)return;
