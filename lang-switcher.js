@@ -2,8 +2,21 @@
  * 全日本弓道連盟 サイト多言語翻訳（日英切替）スクリプト
  * ヘッダーやレイアウトのデザインを一切崩さず、メニュー内の既存「English」リンクと連動
  * 英語翻訳時のテキスト重なり（縦書きタイトル、メニュー内のTour/Introduction、テーブル項目等）を完全防止
+ * ブラウザの「戻る」「進む」（bfcache / popstate）時にも確実に英語翻訳を維持
  */
 (function() {
+  // 言語状態の判定（Cookieから取得）
+  function getLang() {
+    var m = document.cookie.match(/(?:^|;)\s*googtrans=([^;]+)/);
+    if (m && m[1].indexOf('/en') !== -1) return 'en';
+    return 'ja';
+  }
+
+  // 英語モードなら即座に html タグにクラスを付与（FOUC・重なり防止）
+  if (getLang() === 'en') {
+    document.documentElement.classList.add('lang-en');
+  }
+
   // 1. スタイルの動的注入（Google翻訳の余計な枠を完全排除＆英語翻訳時の重なり解消）
   var css = `
     .goog-te-banner-frame, iframe.skiptranslate { display: none !important; visibility: hidden !important; height: 0 !important; width: 0 !important; }
@@ -116,14 +129,7 @@
   style.textContent = css;
   document.head.appendChild(style);
 
-  // 2. 言語状態の判定（Cookieから取得）
-  function getLang() {
-    var m = document.cookie.match(/(?:^|;)\s*googtrans=([^;]+)/);
-    if (m && m[1].indexOf('/en') !== -1) return 'en';
-    return 'ja';
-  }
-
-  // 3. メニュー内のEnglishリンクを検出してイベントをバインド
+  // 2. メニュー内のEnglishリンクを検出してイベントをバインド
   function setupMenuLink() {
     var isEn = (getLang() === 'en');
     var links = document.querySelectorAll('.util a');
@@ -165,27 +171,29 @@
         var parts = host.split('.');
         var isDomain = (parts.length > 2);
         var domainStr = isDomain ? '; domain=.' + parts.slice(-2).join('.') : '';
+        var sameSite = '; SameSite=Lax';
 
         if (getLang() === 'en') {
           // 日本語に戻す: Cookieを消去
-          var exp = '; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/';
+          var exp = '; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/' + sameSite;
           document.cookie = 'googtrans=' + exp;
           document.cookie = 'googtrans=' + exp + '; domain=' + host;
           if (isDomain) document.cookie = 'googtrans=' + exp + domainStr;
-          document.cookie = 'googtrans=/ja/ja; path=/;';
+          document.cookie = 'googtrans=/ja/ja; path=/;' + sameSite;
         } else {
-          // 英語に切り替え
+          // 英語に切り替え: 有効期限1年を設定
           var val = '/ja/en';
-          document.cookie = 'googtrans=' + val + '; path=/;';
-          document.cookie = 'googtrans=' + val + '; domain=' + host + '; path=/;';
-          if (isDomain) document.cookie = 'googtrans=' + val + domainStr + '; path=/;';
+          var oneYear = '; expires=' + new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toUTCString();
+          document.cookie = 'googtrans=' + val + '; path=/' + oneYear + sameSite;
+          document.cookie = 'googtrans=' + val + '; domain=' + host + '; path=/' + oneYear + sameSite;
+          if (isDomain) document.cookie = 'googtrans=' + val + domainStr + '; path=/' + oneYear + sameSite;
         }
         location.reload();
       };
     }
   }
 
-  // 4. Google Translate API のロード
+  // 3. Google Translate API のロード
   function loadGoogleTranslate() {
     if (document.getElementById("google_translate_element")) return;
 
@@ -208,7 +216,7 @@
     document.body.appendChild(s);
   }
 
-  // 5. 英語翻訳時の不要な補足語句 "(Japanese archery)" の自動除去
+  // 4. 英語翻訳時の不要な補足語句 "(Japanese archery)" の自動除去
   function cleanTranslations() {
     function cleanText(text) {
       return text.replace(/\s*[\(（]Japanese archery[\)）]/gi, '');
@@ -256,6 +264,7 @@
     }
   }
 
+  // 5. 初期化実行
   function init() {
     setupMenuLink();
     if (getLang() === 'en') {
@@ -272,6 +281,37 @@
       document.documentElement.classList.remove('lang-en');
     }
   }
+
+  // 6. ブラウザの「戻る」「進む」（bfcache / popstate）対策
+  // 戻るボタンで前のページに戻った際にも確実に英語翻訳を維持・復帰させる
+  window.addEventListener('pageshow', function(e) {
+    var curLang = getLang();
+    if (curLang === 'en') {
+      document.documentElement.classList.add('lang-en');
+      loadGoogleTranslate();
+      cleanTranslations();
+    } else {
+      document.documentElement.classList.remove('lang-en');
+    }
+
+    // bfcache（メモリキャッシュ）から復元された場合
+    if (e.persisted) {
+      var isEn = (curLang === 'en');
+      var hasTranslatedClass = document.documentElement.classList.contains('translated-ltr');
+      // Cookieの言語状態とページの翻訳状態に不一致がある場合はリロードして整合性を保つ
+      if ((isEn && !hasTranslatedClass) || (!isEn && hasTranslatedClass)) {
+        window.location.reload();
+      }
+    }
+  });
+
+  window.addEventListener('popstate', function() {
+    if (getLang() === 'en') {
+      document.documentElement.classList.add('lang-en');
+      loadGoogleTranslate();
+      cleanTranslations();
+    }
+  });
 
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", init);
