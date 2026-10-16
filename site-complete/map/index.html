@@ -82,26 +82,45 @@ header.site .mark span{font:11px "Shippori Mincho","Yu Mincho",serif;letter-spac
     var pale=L.tileLayer("https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png",{minZoom:4,maxZoom:18,attribution:"<a href=\"https://maps.gsi.go.jp/development/ichiran.html\" target=\"_blank\" rel=\"noopener\">地理院タイル</a>"});
     L.control.layers({"衛星写真":photo,"地図":pale},null,{position:"topright",collapsed:false}).addTo(map);
     setTimeout(function(){map.invalidateSize();},0);window.addEventListener("load",function(){map.invalidateSize();});window.addEventListener("resize",function(){map.invalidateSize();});
-    layer=L.layerGroup().addTo(map);rend=L.canvas({padding:.5});
+    layer=L.layerGroup().addTo(map);rend=L.canvas({padding:.5,tolerance:10});
   }
   function pop(d){
-    var w=d[4]?'<a href="'+esc(d[4])+'" target="_blank" rel="noopener">webサイト</a>':"";
-    return '<b>'+esc(d[0])+'</b>'+esc(d[1])+' '+esc(d[2])+(d[3]?'<br>電話：'+esc(d[3]):'')+'<br>'+w+'<a href="http://maps.google.co.jp/maps?q='+encodeURIComponent("'"+d[5])+'" target="_blank" rel="noopener">Googleマップ</a>';
+    var name=esc(d[0]);
+    var zip=d[1]?'〒'+esc(d[1])+'<br>':'';
+    var addr=esc(d[2]||'');
+    var telNum=(d[3]||'').replace(/[^\d-]/g,'');
+    var tel=d[3]?'<p class="popup-tel">電話：<a href="tel:'+telNum+'">'+esc(d[3])+'</a></p>':'';
+    var links='<div class="popup-links">';
+    if(d[4])links+='<a href="'+esc(d[4])+'" target="_blank" rel="noopener">webサイト</a>';
+    var mapQuery=encodeURIComponent(d[5]||(d[2]?d[0]+' '+d[2]:d[0]));
+    links+='<a href="https://maps.google.com/?q='+mapQuery+'" target="_blank" rel="noopener">Googleマップ</a>';
+    links+='</div>';
+    return '<b>'+name+'</b><div class="popup-addr">'+zip+addr+'</div>'+tel+links;
+  }
+  function setActive(i){
+    ul.querySelectorAll("li.active").forEach(function(el){el.classList.remove("active");});
+    var li=ul.querySelector("li[data-i='"+i+"']");
+    if(li){li.classList.add("active");li.scrollIntoView({behavior:"smooth",block:"nearest"});}
   }
   function render(){
     var k=q.value.replace(/\s+/g,"").toLowerCase();
     var pv=pf.value,r=[];D.forEach(function(d,i){if(pv&&d.p!==pv)return;if(!k||(d[0]+d[1]+d[2]+d[1].replace(/-/g,"")).replace(/\s+/g,"").toLowerCase().indexOf(k)>-1)r.push(i);});
     n.textContent=r.length;
     ul.innerHTML=r.map(function(i){var d=D[i];
-      var web=d[4]?'<a href="'+esc(d[4])+'" target="_blank" rel="noopener">webサイト</a>':"";
-      var map='<a href="http://maps.google.co.jp/maps?q='+encodeURIComponent("'"+d[5])+'" target="_blank" rel="noopener">マップ</a>';
-      return '<li><div class="d"><b data-i="'+i+'">'+esc(d[0])+'</b><span>'+esc(d[1])+' '+esc(d[2])+'</span>'+(d[3]?'<span>電話：'+esc(d[3])+'</span>':'')+'</div><div class="l">'+web+map+'</div></li>';
+      var web=d[4]?'<a href="'+esc(d[4])+'" target="_blank" rel="noopener">webサイト</a>':'';
+      var mapQuery=encodeURIComponent(d[5]||(d[2]?d[0]+' '+d[2]:d[0]));
+      var mapLink='<a href="https://maps.google.com/?q='+mapQuery+'" target="_blank" rel="noopener">マップ</a>';
+      return '<li data-i="'+i+'"><div class="d"><b data-i="'+i+'">'+esc(d[0])+'</b><span>'+esc(d[1])+' '+esc(d[2])+'</span>'+(d[3]?'<span>電話：'+esc(d[3])+'</span>':'')+'</div><div class="l">'+web+mapLink+'</div></li>';
     }).join("")||'<li class="quiet">該当する弓道場はありません。</li>';
     if(!map)return;
     layer.clearLayers();mk={};var pts=[];
-    r.forEach(function(i){var d=D[i];if(d[6]==null)return;
-      var m=L.circleMarker([d[6],d[7]],{renderer:rend,radius:6,color:"#ffffff",weight:1.5,fillColor:"#9b73e6",fillOpacity:.95}).bindPopup(function(){return pop(d);});
-      m.bindTooltip(d[0]);layer.addLayer(m);mk[i]=m;pts.push([d[6],d[7]]);});
+    r.forEach(function(i){var d=D[i];if(d[6]==null||d[7]==null)return;
+      var m=L.circleMarker([d[6],d[7]],{renderer:rend,radius:8,color:"#ffffff",weight:1.5,fillColor:"#9b73e6",fillOpacity:.95});
+      m.bindPopup(function(){return pop(d);},{maxWidth:320,autoPanPadding:[20,20]});
+      m.bindTooltip(d[0],{direction:'top',offset:[0,-6]});
+      m.on("click",function(){setActive(i);m.openPopup();});
+      layer.addLayer(m);mk[i]=m;pts.push([d[6],d[7]]);
+    });
     if((k||pv)&&pts.length)map.fitBounds(pts,{maxZoom:pv&&!k?9:13,padding:[30,30]});
     else if(!k&&!pv)map.setView([37.5,137.5],5);
   }
@@ -109,8 +128,10 @@ header.site .mark span{font:11px "Shippori Mincho","Yu Mincho",serif;letter-spac
     var b=e.target.closest("b[data-i]");if(!b||!map)return;
     var i=+b.getAttribute("data-i"),m=mk[i],d=D[i];
     if(!m){return;}
+    setActive(i);
     document.getElementById("map").scrollIntoView({behavior:"smooth",block:"nearest"});
-    map.setView([d[6],d[7]],15);m.openPopup();
+    map.setView([d[6],d[7]],15);
+    setTimeout(function(){m.openPopup();},150);
   });
   pf.addEventListener("change",render);q.addEventListener("input",render);render();
 })();
