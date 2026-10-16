@@ -1,7 +1,7 @@
 /**
  * 全日本弓道連盟 サイト多言語翻訳（日英切替）スクリプト
  * ヘッダーやレイアウトのデザインを一切崩さず、メニュー内の既存「English」リンクと連動
- * 英語翻訳時のテキスト重なり（縦書きタイトルやテーブル項目等）を完全防止
+ * 英語翻訳時のテキスト重なり（縦書きタイトル、メニュー内のTour/Introduction、テーブル項目等）を完全防止
  */
 (function() {
   // 1. スタイルの動的注入（Google翻訳の余計な枠を完全排除＆英語翻訳時の重なり解消）
@@ -44,6 +44,43 @@
         left: 7vw !important;
         right: 7vw !important;
         max-width: none !important;
+      }
+    }
+
+    /* メニュー内（#cur）の英語翻訳時レイアウト調整（Tour / Introduction等の被りを完全防止） */
+    html.lang-en .grp.on, html.translated-ltr .grp.on {
+      display: grid !important;
+      grid-template-columns: minmax(11em, 1.2fr) 2.8fr !important;
+      gap: 3vw !important;
+    }
+    html.lang-en .grp h3, html.translated-ltr .grp h3 {
+      font-size: clamp(20px, 2.2vw, 32px) !important;
+      letter-spacing: .04em !important;
+      line-height: 1.25 !important;
+      overflow-wrap: break-word !important;
+      word-break: normal !important;
+    }
+    html.lang-en .grp ul, html.translated-ltr .grp ul {
+      columns: 2 !important;
+      column-gap: 3vw !important;
+    }
+    html.lang-en .grp a, html.translated-ltr .grp a {
+      font-size: clamp(14px, 1.3vw, 18px) !important;
+      letter-spacing: .04em !important;
+      line-height: 1.5 !important;
+      word-break: normal !important;
+      overflow-wrap: break-word !important;
+    }
+    @media (max-width: 899px) {
+      html.lang-en .grp.on, html.translated-ltr .grp.on {
+        display: block !important;
+      }
+      html.lang-en .grp h3, html.translated-ltr .grp h3 {
+        font-size: 16px !important;
+        letter-spacing: .04em !important;
+      }
+      html.lang-en .grp ul, html.translated-ltr .grp ul {
+        columns: 1 !important;
       }
     }
 
