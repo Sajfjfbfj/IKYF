@@ -1,8 +1,9 @@
 /**
- * 全日本弓道連盟 サイト多言語翻訳（日英切替）スクリプト
+ * 全日本弓道連盟 サイト多言語翻訳（日英切替）＆ 自動バージョン更新スクリプト
  * ヘッダーやレイアウトのデザインを一切崩さず、メニュー内の既存「English」リンクと連動
  * 英語翻訳時のテキスト重なり（縦書きタイトル、メニュー内のTour/Introduction、テーブル項目等）を完全防止
  * ブラウザの「戻る」「進む」（bfcache / popstate）時にも確実に英語翻訳を維持
+ * スマホPWA・ホーム画面Webアプリの自動更新＆キャッシュクリア機能を統合
  */
 (function() {
   // 言語状態の判定（Cookieから取得）
@@ -17,7 +18,7 @@
     document.documentElement.classList.add('lang-en');
   }
 
-  // 1. スタイルの動的注入（Google翻訳の余計な枠を完全排除＆英語翻訳時の重なり解消）
+  // 1. スタイルの動的注入（Google翻訳の余計な枠を完全排除＆英語翻訳時の重なり解消＆トースト通知）
   var css = `
     .goog-te-banner-frame, iframe.skiptranslate { display: none !important; visibility: hidden !important; height: 0 !important; width: 0 !important; }
     body { top: 0px !important; position: static !important; }
@@ -124,6 +125,28 @@
       gap: 1.2em !important;
       font-size: 13px !important;
     }
+
+    /* 更新通知トーストスタイル */
+    #appToast {
+      position: fixed;
+      bottom: 28px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(20, 18, 28, 0.94);
+      color: #f3eef8;
+      border: 1px solid rgba(183, 155, 224, 0.45);
+      border-radius: 999px;
+      padding: 9px 22px;
+      font-size: 13px;
+      letter-spacing: .08em;
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.6);
+      z-index: 9999;
+      opacity: 0;
+      transition: opacity 0.35s ease;
+      pointer-events: none;
+      font-family: "Shippori Mincho", "Yu Mincho", serif;
+      white-space: nowrap;
+    }
   `;
   var style = document.createElement("style");
   style.textContent = css;
@@ -193,7 +216,91 @@
     }
   }
 
-  // 3. Google Translate API のロード
+  // 3. 自動更新＆キャッシュクリア機構（PWA / ホーム画面アプリ対応）
+  function setupAppUpdater() {
+    var util = document.querySelector('.util');
+    if (util && !document.getElementById('appUpdateBtn')) {
+      var updateBtn = document.createElement('a');
+      updateBtn.id = 'appUpdateBtn';
+      updateBtn.href = '#';
+      updateBtn.className = 'notranslate';
+      var isEn = (getLang() === 'en');
+      updateBtn.textContent = isEn ? 'Update to Latest' : '最新版に更新';
+      updateBtn.onclick = function(e) {
+        e.preventDefault();
+        checkAppVersion(true);
+      };
+      util.appendChild(updateBtn);
+    }
+
+    function showToast(msg) {
+      var toast = document.getElementById('appToast');
+      if (!toast) {
+        toast = document.createElement('div');
+        toast.id = 'appToast';
+        toast.className = 'notranslate';
+        document.body.appendChild(toast);
+      }
+      toast.textContent = msg;
+      toast.style.opacity = '1';
+      setTimeout(function() {
+        toast.style.opacity = '0';
+      }, 2600);
+    }
+
+    function forceReload() {
+      var url = new URL(window.location.href);
+      url.searchParams.set('_v', Date.now());
+      window.location.replace(url.toString());
+    }
+
+    function checkAppVersion(isManual) {
+      var fetchUrl = '/version.json?_t=' + Date.now();
+      fetch(fetchUrl, { cache: 'no-store' })
+        .then(function(res) {
+          if (!res.ok) throw new Error('Fetch failed');
+          return res.json();
+        })
+        .then(function(data) {
+          if (!data || !data.buildId) return;
+          var localId = localStorage.getItem('ikyf_build_id');
+          if (!localId) {
+            localStorage.setItem('ikyf_build_id', data.buildId);
+            if (isManual) {
+              showToast(getLang() === 'en' ? 'Already up to date' : '既に最新バージョンです');
+            }
+          } else if (localId !== data.buildId) {
+            localStorage.setItem('ikyf_build_id', data.buildId);
+            showToast(getLang() === 'en' ? 'Updating to latest version...' : '最新版に更新しています...');
+            setTimeout(forceReload, 600);
+          } else if (isManual) {
+            showToast(getLang() === 'en' ? 'Reloading...' : '最新版を再読み込みします...');
+            setTimeout(forceReload, 500);
+          }
+        })
+        .catch(function() {
+          if (isManual) {
+            forceReload();
+          }
+        });
+    }
+
+    // 起動時のチェック
+    checkAppVersion(false);
+
+    // スマホでバックグラウンドから復帰した時（アプリを再度開いた時）に自動チェック
+    document.addEventListener('visibilitychange', function() {
+      if (document.visibilityState === 'visible') {
+        checkAppVersion(false);
+      }
+    });
+
+    window.addEventListener('pageshow', function() {
+      checkAppVersion(false);
+    });
+  }
+
+  // 4. Google Translate API のロード
   function loadGoogleTranslate() {
     if (document.getElementById("google_translate_element")) return;
 
@@ -216,7 +323,7 @@
     document.body.appendChild(s);
   }
 
-  // 4. 英語翻訳時の不要な補足語句 "(Japanese archery)" の自動除去
+  // 5. 英語翻訳時の不要な補足語句 "(Japanese archery)" の自動除去
   function cleanTranslations() {
     function cleanText(text) {
       return text.replace(/\s*[\(（]Japanese archery[\)）]/gi, '');
@@ -264,9 +371,10 @@
     }
   }
 
-  // 5. 初期化実行
+  // 6. 初期化実行
   function init() {
     setupMenuLink();
+    setupAppUpdater();
     if (getLang() === 'en') {
       document.documentElement.classList.add('lang-en');
       loadGoogleTranslate();
@@ -282,8 +390,7 @@
     }
   }
 
-  // 6. ブラウザの「戻る」「進む」（bfcache / popstate）対策
-  // 戻るボタンで前のページに戻った際にも確実に英語翻訳を維持・復帰させる
+  // 7. ブラウザの「戻る」「進む」（bfcache / popstate）対策
   window.addEventListener('pageshow', function(e) {
     var curLang = getLang();
     if (curLang === 'en') {
@@ -294,11 +401,9 @@
       document.documentElement.classList.remove('lang-en');
     }
 
-    // bfcache（メモリキャッシュ）から復元された場合
     if (e.persisted) {
       var isEn = (curLang === 'en');
       var hasTranslatedClass = document.documentElement.classList.contains('translated-ltr');
-      // Cookieの言語状態とページの翻訳状態に不一致がある場合はリロードして整合性を保つ
       if ((isEn && !hasTranslatedClass) || (!isEn && hasTranslatedClass)) {
         window.location.reload();
       }
