@@ -1,3 +1,5 @@
 scratch/
 temp_kyudo/
 memo
+*.py
+*.txt
