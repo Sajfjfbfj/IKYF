@@ -41,8 +41,16 @@
     { "source": "/faq", "destination": "/begin/faq", "permanent": false },
     { "source": "/tool", "destination": "/begin/tool", "permanent": false },
     { "source": "/history", "destination": "/howto/history", "permanent": false },
-    { "source": "/syaho", "destination": "/howto/syaho", "permanent": false },
-    { "source": "/terminology", "destination": "/howto/terminology", "permanent": false }
+    { "source": "/terminology", "destination": "/howto/terminology", "permanent": false },
+    { "source": "/site-complete/chuoshinsa/overview", "destination": "/schedule/chuoshinsa/overview", "permanent": false },
+    { "source": "/site-complete/chuoshinsa/overview.html", "destination": "/schedule/chuoshinsa/overview", "permanent": false },
+    { "source": "/chuoshinsa/overview", "destination": "/schedule/chuoshinsa/overview", "permanent": false },
+    { "source": "/chuoshinsa/overview.html", "destination": "/schedule/chuoshinsa/overview", "permanent": false },
+    { "source": "/site-complete/taikai", "destination": "/schedule/taikai", "permanent": false },
+    { "source": "/site-complete/chuoshinsa", "destination": "/schedule/chuoshinsa", "permanent": false },
+    { "source": "/site-complete/association", "destination": "/schedule/association", "permanent": false },
+    { "source": "/site-complete/region", "destination": "/schedule/region", "permanent": false },
+    { "source": "/site-complete/documents", "destination": "/documents", "permanent": false }
   ],
   "rewrites": [
     { "source": "/map", "destination": "/map/index.html" },
